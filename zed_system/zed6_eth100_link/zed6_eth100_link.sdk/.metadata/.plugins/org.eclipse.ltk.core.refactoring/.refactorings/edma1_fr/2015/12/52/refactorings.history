@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;edma1_fr/src/freertos_hello_world.c&apos; to &apos;edma_main.c&apos;" description="Rename resource &apos;freertos_hello_world.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/freertos_hello_world.c" name="edma_main.c" stamp="1451069499424" updateReferences="true"/>
+</session>

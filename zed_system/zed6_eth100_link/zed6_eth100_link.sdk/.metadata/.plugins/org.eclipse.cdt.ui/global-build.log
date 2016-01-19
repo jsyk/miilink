@@ -1,0 +1,2520 @@
+13:09:43 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.d" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+../src/freertos_hello_world.c:3:22: fatal error: FreeRTOS.h: No such file or directory
+src/subdir.mk:21: recipe for target 'src/freertos_hello_world.o' failed
+ #include "FreeRTOS.h"
+                      ^
+compilation terminated.
+make: *** [src/freertos_hello_world.o] Error 1
+13:09:56 **** Clean-only build of configuration Debug for project hello3_fr ****
+make clean 
+rm -rf  ./src/freertos_hello_world.o  ./src/freertos_hello_world.d  hello3_fr.elf.size  hello3_fr.elf
+ 
+13:09:56 **** Clean-only build of project freertos821_xilinx_bsp_0 ****
+make -k clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+13:09:56 **** Build of project freertos821_xilinx_bsp_0 ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_1/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_3/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_5/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/freertos821_xilinx_v1_0/src
+make -C ps7_cortexa9_0/libsrc/freertos821_xilinx_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+include
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_1/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/bram_v4_0/src
+make -C ps7_cortexa9_0/libsrc/bram_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_0/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/emaclite_v4_1/src
+make -C ps7_cortexa9_0/libsrc/emaclite_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling ddrps
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_1/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_3/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_5/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/freertos821_xilinx_v1_0/src
+make -C ps7_cortexa9_0/libsrc/freertos821_xilinx_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+Compiling FreeRTOS
+arm-xilinx-eabi-ar: creating ../../../lib/libfreertos.a
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_1/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_0/src
+make -C ps7_cortexa9_0/libsrc/bram_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling bram
+Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_0/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpio
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/emaclite_v4_1/src
+make -C ps7_cortexa9_0/libsrc/emaclite_v4_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling emaclite
+Finished building libraries
+13:10:11 **** Build of configuration Debug for project hello3_fr ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.d" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+../src/freertos_hello_world.c: In function 'prvRxTask':
+../src/freertos_hello_world.c:152:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+../src/freertos_hello_world.c:150:7: warning: unused variable 'Recdstring' [-Wunused-variable]
+  char Recdstring[15] = "";
+       ^
+Finished building: ../src/freertos_hello_world.c
+ 
+Building target: hello3_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "hello3_fr.elf"  ./src/freertos_hello_world.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: hello3_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hello3_fr.elf  |tee "hello3_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82868	   3192	  58988	 145048	  23698	hello3_fr.elf
+Finished building: hello3_fr.elf.size
+ 
+13:10:55 **** Auto Build of configuration Debug for project hello3_fr ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.d" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+../src/freertos_hello_world.c: In function 'prvRxTask':
+../src/freertos_hello_world.c:152:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+../src/freertos_hello_world.c:150:7: warning: unused variable 'Recdstring' [-Wunused-variable]
+  char Recdstring[15] = "";
+       ^
+Finished building: ../src/freertos_hello_world.c
+ 
+Building target: hello3_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "hello3_fr.elf"  ./src/freertos_hello_world.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: hello3_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hello3_fr.elf  |tee "hello3_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82868	   3192	  58988	 145048	  23698	hello3_fr.elf
+Finished building: hello3_fr.elf.size
+ 
+13:14:42 **** Auto Build of configuration Debug for project hello3_fr ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.d" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+../src/freertos_hello_world.c: In function 'prvRxTask':
+../src/freertos_hello_world.c:152:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+../src/freertos_hello_world.c:150:7: warning: unused variable 'Recdstring' [-Wunused-variable]
+  char Recdstring[15] = "";
+       ^
+../src/freertos_hello_world.c: In function 'prvTxEth100Task':
+../src/freertos_hello_world.c:431:11: warning: unused variable 'frm_tag' [-Wunused-variable]
+  uint32_t frm_tag = 0;
+           ^
+../src/freertos_hello_world.c:430:11: warning: unused variable 'frms_bottom' [-Wunused-variable]
+  uint32_t frms_bottom[(1 << FRTAG_W)];
+           ^
+Finished building: ../src/freertos_hello_world.c
+ 
+Building target: hello3_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "hello3_fr.elf"  ./src/freertos_hello_world.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: hello3_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hello3_fr.elf  |tee "hello3_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82868	   3192	  58988	 145048	  23698	hello3_fr.elf
+Finished building: hello3_fr.elf.size
+ 
+13:15:58 **** Auto Build of configuration Debug for project hello3_fr ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.d" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+../src/freertos_hello_world.c: In function 'prvRxTask':
+../src/freertos_hello_world.c:152:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+../src/freertos_hello_world.c:150:7: warning: unused variable 'Recdstring' [-Wunused-variable]
+  char Recdstring[15] = "";
+       ^
+../src/freertos_hello_world.c: In function 'prvTxEth100Task':
+../src/freertos_hello_world.c:457:13: warning: unused variable 'tag' [-Wunused-variable]
+    uint32_t tag = (*ETH100TX_REG_RBOT_WFRLEN >> 2*FRBUF_MEMADDR_W);
+             ^
+../src/freertos_hello_world.c:431:11: warning: unused variable 'frm_tag' [-Wunused-variable]
+  uint32_t frm_tag = 0;
+           ^
+../src/freertos_hello_world.c:430:11: warning: variable 'frms_bottom' set but not used [-Wunused-but-set-variable]
+  uint32_t frms_bottom[(1 << FRTAG_W)];
+           ^
+Finished building: ../src/freertos_hello_world.c
+ 
+Building target: hello3_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "hello3_fr.elf"  ./src/freertos_hello_world.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: hello3_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hello3_fr.elf  |tee "hello3_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82868	   3192	  58988	 145048	  23698	hello3_fr.elf
+Finished building: hello3_fr.elf.size
+ 
+13:16:10 **** Auto Build of configuration Debug for project hello3_fr ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.d" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+../src/freertos_hello_world.c: In function 'prvRxTask':
+../src/freertos_hello_world.c:152:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+../src/freertos_hello_world.c:150:7: warning: unused variable 'Recdstring' [-Wunused-variable]
+  char Recdstring[15] = "";
+       ^
+../src/freertos_hello_world.c: In function 'prvTxEth100Task':
+../src/freertos_hello_world.c:431:11: warning: unused variable 'frm_tag' [-Wunused-variable]
+  uint32_t frm_tag = 0;
+           ^
+Finished building: ../src/freertos_hello_world.c
+ 
+Building target: hello3_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "hello3_fr.elf"  ./src/freertos_hello_world.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: hello3_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hello3_fr.elf  |tee "hello3_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82868	   3192	  58988	 145048	  23698	hello3_fr.elf
+Finished building: hello3_fr.elf.size
+ 
+13:16:30 **** Auto Build of configuration Debug for project hello3_fr ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.d" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+../src/freertos_hello_world.c: In function 'prvRxTask':
+../src/freertos_hello_world.c:152:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+../src/freertos_hello_world.c:150:7: warning: unused variable 'Recdstring' [-Wunused-variable]
+  char Recdstring[15] = "";
+       ^
+../src/freertos_hello_world.c: In function 'prvTxEth100Task':
+../src/freertos_hello_world.c:431:11: warning: unused variable 'frm_tag' [-Wunused-variable]
+  uint32_t frm_tag = 0;
+           ^
+Finished building: ../src/freertos_hello_world.c
+ 
+Building target: hello3_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "hello3_fr.elf"  ./src/freertos_hello_world.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: hello3_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hello3_fr.elf  |tee "hello3_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82868	   3192	  58988	 145048	  23698	hello3_fr.elf
+Finished building: hello3_fr.elf.size
+ 
+13:16:55 **** Auto Build of configuration Debug for project hello3_fr ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.d" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+../src/freertos_hello_world.c: In function 'prvRxTask':
+../src/freertos_hello_world.c:152:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+../src/freertos_hello_world.c:150:7: warning: unused variable 'Recdstring' [-Wunused-variable]
+  char Recdstring[15] = "";
+       ^
+../src/freertos_hello_world.c: In function 'prvTxEth100Task':
+../src/freertos_hello_world.c:431:11: warning: unused variable 'frm_ntag' [-Wunused-variable]
+  uint32_t frm_ntag = 1;
+           ^
+Finished building: ../src/freertos_hello_world.c
+ 
+Building target: hello3_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "hello3_fr.elf"  ./src/freertos_hello_world.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: hello3_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hello3_fr.elf  |tee "hello3_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82868	   3192	  58988	 145048	  23698	hello3_fr.elf
+Finished building: hello3_fr.elf.size
+ 
+13:17:32 **** Auto Build of configuration Debug for project hello3_fr ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.d" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+../src/freertos_hello_world.c: In function 'prvRxTask':
+../src/freertos_hello_world.c:152:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+../src/freertos_hello_world.c:150:7: warning: unused variable 'Recdstring' [-Wunused-variable]
+  char Recdstring[15] = "";
+       ^
+Finished building: ../src/freertos_hello_world.c
+ 
+Building target: hello3_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "hello3_fr.elf"  ./src/freertos_hello_world.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: hello3_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hello3_fr.elf  |tee "hello3_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82932	   3192	  58988	 145112	  236d8	hello3_fr.elf
+Finished building: hello3_fr.elf.size
+ 
+13:22:00 **** Auto Build of configuration Debug for project hello3_fr ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.d" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+../src/freertos_hello_world.c: In function 'prvRxTask':
+../src/freertos_hello_world.c:152:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+../src/freertos_hello_world.c:150:7: warning: unused variable 'Recdstring' [-Wunused-variable]
+  char Recdstring[15] = "";
+       ^
+Finished building: ../src/freertos_hello_world.c
+ 
+Building target: hello3_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "hello3_fr.elf"  ./src/freertos_hello_world.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: hello3_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hello3_fr.elf  |tee "hello3_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82932	   3192	  58988	 145112	  236d8	hello3_fr.elf
+Finished building: hello3_fr.elf.size
+ 
+17:17:08 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+17:33:18 **** Auto Build of configuration Debug for project hello3_fr ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.d" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+../src/freertos_hello_world.c: In function 'prvRxTask':
+../src/freertos_hello_world.c:159:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+../src/freertos_hello_world.c:157:7: warning: unused variable 'Recdstring' [-Wunused-variable]
+  char Recdstring[15] = "";
+       ^
+Finished building: ../src/freertos_hello_world.c
+ 
+Building target: hello3_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "hello3_fr.elf"  ./src/freertos_hello_world.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: hello3_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hello3_fr.elf  |tee "hello3_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82932	   3192	  58988	 145112	  236d8	hello3_fr.elf
+Finished building: hello3_fr.elf.size
+ 
+17:34:12 **** Auto Build of configuration Debug for project hello3_fr ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.d" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+../src/freertos_hello_world.c: In function 'prvRxTask':
+../src/freertos_hello_world.c:159:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+../src/freertos_hello_world.c:157:7: warning: unused variable 'Recdstring' [-Wunused-variable]
+  char Recdstring[15] = "";
+       ^
+Finished building: ../src/freertos_hello_world.c
+ 
+Building target: hello3_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "hello3_fr.elf"  ./src/freertos_hello_world.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: hello3_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hello3_fr.elf  |tee "hello3_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82932	   3192	  58988	 145112	  236d8	hello3_fr.elf
+Finished building: hello3_fr.elf.size
+ 
+17:34:25 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+17:37:17 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+17:50:15 **** Auto Build of configuration Debug for project hello3_fr ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.d" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+../src/freertos_hello_world.c: In function 'main':
+../src/freertos_hello_world.c:114:15: error: unknown type name 'XScuGic_Config'
+  extern const XScuGic_Config XScuGic_ConfigTable[];
+               ^
+../src/freertos_hello_world.c:115:15: error: unknown type name 'XScuGic_VectorTableEntry'
+  static const XScuGic_VectorTableEntry *pxVectorTable = XScuGic_ConfigTable[ XPAR_SCUGIC_SINGLE_DEVICE_ID ].HandlerTable;
+               ^
+../src/freertos_hello_world.c:115:108: error: request for member 'HandlerTable' in something not a structure or union
+  static const XScuGic_VectorTableEntry *pxVectorTable = XScuGic_ConfigTable[ XPAR_SCUGIC_SINGLE_DEVICE_ID ].HandlerTable;
+                                                                                                            ^
+../src/freertos_hello_world.c:115:41: warning: unused variable 'pxVectorTable' [-Wunused-variable]
+  static const XScuGic_VectorTableEntry *pxVectorTable = XScuGic_ConfigTable[ XPAR_SCUGIC_SINGLE_DEVICE_ID ].HandlerTable;
+                                         ^
+../src/freertos_hello_world.c: In function 'prvRxTask':
+../src/freertos_hello_world.c:160:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+../src/freertos_hello_world.c:158:7: warning: unused variable 'Recdstring' [-Wunused-variable]
+  char Recdstring[15] = "";
+       ^
+src/subdir.mk:21: recipe for target 'src/freertos_hello_world.o' failed
+make: *** [src/freertos_hello_world.o] Error 1
+17:50:31 **** Auto Build of configuration Debug for project hello3_fr ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.d" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+../src/freertos_hello_world.c: In function 'main':
+../src/freertos_hello_world.c:116:41: warning: unused variable 'pxVectorTable' [-Wunused-variable]
+  static const XScuGic_VectorTableEntry *pxVectorTable = XScuGic_ConfigTable[ XPAR_SCUGIC_SINGLE_DEVICE_ID ].HandlerTable;
+                                         ^
+../src/freertos_hello_world.c: In function 'prvRxTask':
+../src/freertos_hello_world.c:161:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+../src/freertos_hello_world.c:159:7: warning: unused variable 'Recdstring' [-Wunused-variable]
+  char Recdstring[15] = "";
+       ^
+Finished building: ../src/freertos_hello_world.c
+ 
+Building target: hello3_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "hello3_fr.elf"  ./src/freertos_hello_world.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: hello3_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hello3_fr.elf  |tee "hello3_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82932	   3196	  58988	 145116	  236dc	hello3_fr.elf
+Finished building: hello3_fr.elf.size
+ 
+17:54:36 **** Auto Build of configuration Debug for project hello3_fr ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.d" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+../src/freertos_hello_world.c: In function 'main':
+../src/freertos_hello_world.c:122:28: error: assignment of member 'Handler' in read-only object
+  pxVectorTable[62].Handler = Eth100_RX_IRQHandler;
+                            ^
+../src/freertos_hello_world.c: In function 'prvRxTask':
+../src/freertos_hello_world.c:167:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+../src/freertos_hello_world.c:165:7: warning: unused variable 'Recdstring' [-Wunused-variable]
+  char Recdstring[15] = "";
+       ^
+src/subdir.mk:21: recipe for target 'src/freertos_hello_world.o' failed
+make: *** [src/freertos_hello_world.o] Error 1
+17:54:56 **** Auto Build of configuration Debug for project hello3_fr ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.d" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+../src/freertos_hello_world.c: In function 'main':
+../src/freertos_hello_world.c:120:51: warning: initialization discards 'const' qualifier from pointer target type
+  static XScuGic_VectorTableEntry *pxVectorTable = XScuGic_ConfigTable[ XPAR_SCUGIC_SINGLE_DEVICE_ID ].HandlerTable;
+                                                   ^
+../src/freertos_hello_world.c: In function 'prvRxTask':
+../src/freertos_hello_world.c:167:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+../src/freertos_hello_world.c:165:7: warning: unused variable 'Recdstring' [-Wunused-variable]
+  char Recdstring[15] = "";
+       ^
+Finished building: ../src/freertos_hello_world.c
+ 
+Building target: hello3_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "hello3_fr.elf"  ./src/freertos_hello_world.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: hello3_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hello3_fr.elf  |tee "hello3_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  83060	   3196	  58988	 145244	  2375c	hello3_fr.elf
+Finished building: hello3_fr.elf.size
+ 
+17:55:02 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+17:56:39 **** Auto Build of configuration Debug for project hello3_fr ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.d" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+../src/freertos_hello_world.c: In function 'main':
+../src/freertos_hello_world.c:120:51: warning: initialization discards 'const' qualifier from pointer target type
+  static XScuGic_VectorTableEntry *pxVectorTable = XScuGic_ConfigTable[ XPAR_SCUGIC_SINGLE_DEVICE_ID ].HandlerTable;
+                                                   ^
+../src/freertos_hello_world.c:120:35: warning: unused variable 'pxVectorTable' [-Wunused-variable]
+  static XScuGic_VectorTableEntry *pxVectorTable = XScuGic_ConfigTable[ XPAR_SCUGIC_SINGLE_DEVICE_ID ].HandlerTable;
+                                   ^
+../src/freertos_hello_world.c: In function 'prvRxTask':
+../src/freertos_hello_world.c:167:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+../src/freertos_hello_world.c:165:7: warning: unused variable 'Recdstring' [-Wunused-variable]
+  char Recdstring[15] = "";
+       ^
+Finished building: ../src/freertos_hello_world.c
+ 
+Building target: hello3_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "hello3_fr.elf"  ./src/freertos_hello_world.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: hello3_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hello3_fr.elf  |tee "hello3_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82996	   3196	  58988	 145180	  2371c	hello3_fr.elf
+Finished building: hello3_fr.elf.size
+ 
+17:56:45 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+17:57:19 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+17:58:05 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+17:58:36 **** Auto Build of configuration Debug for project hello3_fr ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.d" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+../src/freertos_hello_world.c: In function 'prvRxTask':
+../src/freertos_hello_world.c:167:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+../src/freertos_hello_world.c:165:7: warning: unused variable 'Recdstring' [-Wunused-variable]
+  char Recdstring[15] = "";
+       ^
+Finished building: ../src/freertos_hello_world.c
+ 
+Building target: hello3_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "hello3_fr.elf"  ./src/freertos_hello_world.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: hello3_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hello3_fr.elf  |tee "hello3_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82996	   3192	  58988	 145176	  23718	hello3_fr.elf
+Finished building: hello3_fr.elf.size
+ 
+18:00:13 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+18:00:21 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+18:01:55 **** Auto Build of configuration Debug for project hello3_fr ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.d" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+../src/freertos_hello_world.c: In function 'main':
+../src/freertos_hello_world.c:120:51: warning: initialization discards 'const' qualifier from pointer target type
+  static XScuGic_VectorTableEntry *pxVectorTable = XScuGic_ConfigTable[ XPAR_SCUGIC_SINGLE_DEVICE_ID ].HandlerTable;
+                                                   ^
+../src/freertos_hello_world.c: In function 'prvRxTask':
+../src/freertos_hello_world.c:167:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+../src/freertos_hello_world.c:165:7: warning: unused variable 'Recdstring' [-Wunused-variable]
+  char Recdstring[15] = "";
+       ^
+Finished building: ../src/freertos_hello_world.c
+ 
+Building target: hello3_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "hello3_fr.elf"  ./src/freertos_hello_world.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: hello3_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hello3_fr.elf  |tee "hello3_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  83060	   3196	  58988	 145244	  2375c	hello3_fr.elf
+Finished building: hello3_fr.elf.size
+ 
+18:02:05 **** Auto Build of configuration Debug for project hello3_fr ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.d" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+../src/freertos_hello_world.c: In function 'prvRxTask':
+../src/freertos_hello_world.c:167:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+../src/freertos_hello_world.c:165:7: warning: unused variable 'Recdstring' [-Wunused-variable]
+  char Recdstring[15] = "";
+       ^
+Finished building: ../src/freertos_hello_world.c
+ 
+Building target: hello3_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "hello3_fr.elf"  ./src/freertos_hello_world.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: hello3_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hello3_fr.elf  |tee "hello3_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  83060	   3196	  58988	 145244	  2375c	hello3_fr.elf
+Finished building: hello3_fr.elf.size
+ 
+18:02:09 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+18:02:16 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+18:02:56 **** Auto Build of configuration Debug for project hello3_fr ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.d" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+../src/freertos_hello_world.c: In function 'prvRxTask':
+../src/freertos_hello_world.c:167:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+../src/freertos_hello_world.c:165:7: warning: unused variable 'Recdstring' [-Wunused-variable]
+  char Recdstring[15] = "";
+       ^
+Finished building: ../src/freertos_hello_world.c
+ 
+Building target: hello3_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "hello3_fr.elf"  ./src/freertos_hello_world.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: hello3_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hello3_fr.elf  |tee "hello3_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  83060	   3196	  58988	 145244	  2375c	hello3_fr.elf
+Finished building: hello3_fr.elf.size
+ 
+18:02:58 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+19:43:57 **** Auto Build of configuration Debug for project hello3_fr ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.d" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+../src/freertos_hello_world.c: In function 'prvRxTask':
+../src/freertos_hello_world.c:167:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+../src/freertos_hello_world.c:165:7: warning: unused variable 'Recdstring' [-Wunused-variable]
+  char Recdstring[15] = "";
+       ^
+Finished building: ../src/freertos_hello_world.c
+ 
+Building target: hello3_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "hello3_fr.elf"  ./src/freertos_hello_world.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: hello3_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hello3_fr.elf  |tee "hello3_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  83076	   3196	  58988	 145260	  2376c	hello3_fr.elf
+Finished building: hello3_fr.elf.size
+ 
+19:43:59 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+19:51:12 **** Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.d" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+Finished building: ../src/freertos_hello_world.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/freertos_hello_world.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  75124	   3120	  55868	 134112	  20be0	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+19:51:39 **** Clean-only build of configuration Debug for project edma1_fr ****
+make clean 
+rm -rf  ./src/freertos_hello_world.o  ./src/freertos_hello_world.d  edma1_fr.elf.size  edma1_fr.elf
+ 
+19:51:39 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  75108	   3120	  55868	 134096	  20bd0	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+19:53:34 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+In file included from ../src/edma_main.c:98:0:
+../src/edma_main.c: In function 'main':
+../src/edma_main.c:125:16: error: 'prvLEDCount' undeclared (first use in this function)
+  xTaskCreate(  prvLEDCount,      /* The function that implements the task. */
+                ^
+../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include/task.h:345:120: note: in definition of macro 'xTaskCreate'
+ #define xTaskCreate( pvTaskCode, pcName, usStackDepth, pvParameters, uxPriority, pxCreatedTask ) xTaskGenericCreate( ( pvTaskCode ), ( pcName ), ( usStackDepth ), ( pvParameters ), ( uxPriority ), ( pxCreatedTask ), ( NULL ), ( NULL ) )
+                                                                                                                        ^
+../src/edma_main.c:125:16: note: each undeclared identifier is reported only once for each function it appears in
+  xTaskCreate(  prvLEDCount,      /* The function that implements the task. */
+                ^
+src/subdir.mk:21: recipe for target 'src/edma_main.o' failed
+../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include/task.h:345:120: note: in definition of macro 'xTaskCreate'
+ #define xTaskCreate( pvTaskCode, pcName, usStackDepth, pvParameters, uxPriority, pxCreatedTask ) xTaskGenericCreate( ( pvTaskCode ), ( pcName ), ( usStackDepth ), ( pvParameters ), ( uxPriority ), ( pxCreatedTask ), ( NULL ), ( NULL ) )
+                                                                                                                        ^
+../src/edma_main.c: In function 'prvLEDCount':
+../src/edma_main.c:166:3: warning: implicit declaration of function 'XGpio_DiscreteWrite' [-Wimplicit-function-declaration]
+   XGpio_DiscreteWrite(&gpio_leds, 1, ++cnt);
+   ^
+../src/edma_main.c:166:24: error: 'gpio_leds' undeclared (first use in this function)
+   XGpio_DiscreteWrite(&gpio_leds, 1, ++cnt);
+                        ^
+../src/edma_main.c: At top level:
+../src/edma_main.c:171:13: warning: 'prvTxTask' defined but not used [-Wunused-function]
+ static void prvTxTask( void *pvParameters )
+             ^
+../src/edma_main.c:156:13: warning: 'prvLEDCount' defined but not used [-Wunused-function]
+ static void prvLEDCount( void *pvParameters )
+             ^
+make: *** [src/edma_main.o] Error 1
+19:53:49 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c: In function 'prvLEDCount':
+../src/edma_main.c:168:3: warning: implicit declaration of function 'XGpio_DiscreteWrite' [-Wimplicit-function-declaration]
+   XGpio_DiscreteWrite(&gpio_leds, 1, ++cnt);
+   ^
+../src/edma_main.c:168:24: error: 'gpio_leds' undeclared (first use in this function)
+   XGpio_DiscreteWrite(&gpio_leds, 1, ++cnt);
+                        ^
+../src/edma_main.c:168:24: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:21: recipe for target 'src/edma_main.o' failed
+../src/edma_main.c: At top level:
+../src/edma_main.c:173:13: warning: 'prvTxTask' defined but not used [-Wunused-function]
+ static void prvTxTask( void *pvParameters )
+             ^
+make: *** [src/edma_main.o] Error 1
+19:55:03 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c: In function 'main':
+../src/edma_main.c:124:2: warning: implicit declaration of function 'XGpio_Initialize' [-Wimplicit-function-declaration]
+  if (XGpio_Initialize(&gpio_leds, XPAR_GPIO_LEDS_DEVICE_ID) != XST_SUCCESS) {
+  ^
+../src/edma_main.c:124:24: error: 'gpio_leds' undeclared (first use in this function)
+  if (XGpio_Initialize(&gpio_leds, XPAR_GPIO_LEDS_DEVICE_ID) != XST_SUCCESS) {
+                        ^
+../src/edma_main.c:124:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/edma_main.c:124:64: error: 'XST_SUCCESS' undeclared (first use in this function)
+  if (XGpio_Initialize(&gpio_leds, XPAR_GPIO_LEDS_DEVICE_ID) != XST_SUCCESS) {
+src/subdir.mk:21: recipe for target 'src/edma_main.o' failed
+                                                                ^
+../src/edma_main.c:127:3: warning: implicit declaration of function 'XGpio_SetDataDirection' [-Wimplicit-function-declaration]
+   XGpio_SetDataDirection(&gpio_leds, 1, 0xFFFFFF00);
+   ^
+../src/edma_main.c:130:24: error: 'gpio_btns' undeclared (first use in this function)
+  if (XGpio_Initialize(&gpio_btns, XPAR_GPIO_BTNS_DEVICE_ID) != XST_SUCCESS) {
+                        ^
+../src/edma_main.c: In function 'prvLEDCount':
+../src/edma_main.c:180:3: warning: implicit declaration of function 'XGpio_DiscreteWrite' [-Wimplicit-function-declaration]
+   XGpio_DiscreteWrite(&gpio_leds, 1, ++cnt);
+   ^
+../src/edma_main.c:180:24: error: 'gpio_leds' undeclared (first use in this function)
+   XGpio_DiscreteWrite(&gpio_leds, 1, ++cnt);
+                        ^
+../src/edma_main.c: At top level:
+../src/edma_main.c:185:13: warning: 'prvTxTask' defined but not used [-Wunused-function]
+ static void prvTxTask( void *pvParameters )
+             ^
+make: *** [src/edma_main.o] Error 1
+19:55:18 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:107:8: error: unknown type name 'XGpio'
+ static XGpio gpio_leds;
+        ^
+../src/edma_main.c:108:8: error: unknown type name 'XGpio'
+ static XGpio gpio_btns;
+        ^
+../src/edma_main.c: In function 'main':
+../src/edma_main.c:129:2: warning: implicit declaration of function 'XGpio_Initialize' [-Wimplicit-function-declaration]
+  if (XGpio_Initialize(&gpio_leds, XPAR_GPIO_LEDS_DEVICE_ID) != XST_SUCCESS) {
+  ^
+../src/edma_main.c:129:64: error: 'XST_SUCCESS' undeclared (first use in this function)
+  if (XGpio_Initialize(&gpio_leds, XPAR_GPIO_LEDS_DEVICE_ID) != XST_SUCCESS) {
+                                                                ^
+../src/edma_main.c:129:64: note: each undeclared identifier is reported only once for each function it appears in
+../src/edma_main.c:132:3: warning: implicit declaration of function 'XGpio_SetDataDirection' [-Wimplicit-function-declaration]
+   XGpio_SetDataDirection(&gpio_leds, 1, 0xFFFFFF00);
+   ^
+../src/edma_main.c: In function 'prvLEDCount':
+../src/edma_main.c:185:3: warning: implicit declaration of function 'XGpio_DiscreteWrite' [-Wimplicit-function-declaration]
+src/subdir.mk:21: recipe for target 'src/edma_main.o' failed
+   XGpio_DiscreteWrite(&gpio_leds, 1, ++cnt);
+   ^
+../src/edma_main.c: At top level:
+../src/edma_main.c:190:13: warning: 'prvTxTask' defined but not used [-Wunused-function]
+ static void prvTxTask( void *pvParameters )
+             ^
+make: *** [src/edma_main.o] Error 1
+19:55:26 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:191:13: warning: 'prvTxTask' defined but not used [-Wunused-function]
+ static void prvTxTask( void *pvParameters )
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76484	   3168	  55900	 135552	  21180	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+19:56:54 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:191:13: warning: 'prvTxTask' defined but not used [-Wunused-function]
+ static void prvTxTask( void *pvParameters )
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76484	   3168	  55900	 135552	  21180	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+19:57:04 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+In file included from ../src/edma_main.c:99:0:
+../src/edma_main.c: In function 'prvTxTask':
+../src/edma_main.c:203:15: error: 'xQueue' undeclared (first use in this function)
+   xQueueSend( xQueue,   /* The queue being written to. */
+               ^
+../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include/queue.h:421:80: note: in definition of macro 'xQueueSend'
+ #define xQueueSend( xQueue, pvItemToQueue, xTicksToWait ) xQueueGenericSend( ( xQueue ), ( pvItemToQueue ), ( xTicksToWait ), queueSEND_TO_BACK )
+                                                                                ^
+../src/edma_main.c:203:15: note: each undeclared identifier is reported only once for each function it appears in
+   xQueueSend( xQueue,   /* The queue being written to. */
+               ^
+../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include/queue.h:421:80: note: in definition of macro 'xQueueSend'
+ #define xQueueSend( xQueue, pvItemToQueue, xTicksToWait ) xQueueGenericSend( ( xQueue ), ( pvItemToQueue ), ( xTicksToWait ), queueSEND_TO_BACK )
+                                                                                ^
+../src/edma_main.c: In function 'prvRxTask':
+../src/edma_main.c:217:19: error: 'xQueue' undeclared (first use in this function)
+   xQueueReceive(  xQueue,    /* The queue being read. */
+                   ^
+../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include/queue.h:814:81: note: in definition of macro 'xQueueReceive'
+ #define xQueueReceive( xQueue, pvBuffer, xTicksToWait ) xQueueGenericReceive( ( xQueue ), ( pvBuffer ), ( xTicksToWait ), pdFALSE )
+                                                                                 ^
+../src/edma_main.c: At top level:
+../src/edma_main.c:192:13: warning: 'prvTxTask' defined but not used [-Wunused-function]
+ static void prvTxTask( void *pvParameters )
+             ^
+make: *** [src/edma_main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/edma_main.o' failed
+19:57:15 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:115:13: warning: 'prvRxTask' used but never defined
+ static void prvRxTask( void *pvParameters );
+             ^
+../src/edma_main.c:114:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+./src/edma_main.o: In function `main':
+/home/jara/ownCloud-pluto/elektronika/zed6_eth100_link/zed6_eth100_link.sdk/edma1_fr/Debug/../src/edma_main.c:153: undefined reference to `prvRxTask'
+/home/jara/ownCloud-pluto/elektronika/zed6_eth100_link/zed6_eth100_link.sdk/edma1_fr/Debug/../src/edma_main.c:153: undefined reference to `prvRxTask'
+collect2: error: ld returned 1 exit status
+make: *** [edma1_fr.elf] Error 1
+makefile:36: recipe for target 'edma1_fr.elf' failed
+19:57:28 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:114:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:115:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76100	   3168	  55884	 135152	  20ff0	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+20:07:27 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+20:12:44 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:114:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:115:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76100	   3216	  55884	 135200	  21020	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+20:26:21 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+20:26:31 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma.d" -MT"src/edma.d" -o "src/edma.o" "../src/edma.c"
+Finished building: ../src/edma.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76100	   3216	  55884	 135200	  21020	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+20:37:28 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma.d" -MT"src/edma.d" -o "src/edma.o" "../src/edma.c"
+In file included from ../src/edma.c:1:0:
+../src/edma.h:20:17: error: unknown type name 'uint32_t'
+ extern volatile uint32_t *ETH100TX_REG_STAT;
+                 ^
+../src/edma.h:21:17: error: unknown type name 'uint32_t'
+ extern volatile uint32_t *ETH100TX_REG_RBOT_WFRLEN;
+                 ^
+../src/edma.h:22:17: error: unknown type name 'uint32_t'
+ extern volatile uint32_t *ETH100TX_REG_INFO_TXFRAMES;
+                 ^
+../src/edma.h:23:17: error: unknown type name 'uint32_t'
+ extern volatile uint32_t *ETH100TX_REG_INFO_TXBYTES;
+                 ^
+../src/edma.h:24:17: error: unknown type name 'uint32_t'
+ extern volatile uint32_t *ETH100TX_FRBUF;
+                 ^
+../src/edma.h:26:17: error: unknown type name 'uint32_t'
+src/subdir.mk:24: recipe for target 'src/edma.o' failed
+ extern volatile uint32_t *ETH100RX_REG_STAT;
+                 ^
+../src/edma.h:27:17: error: unknown type name 'uint32_t'
+ extern volatile uint32_t *ETH100RX_REG_CFRLEN;
+                 ^
+../src/edma.h:28:17: error: unknown type name 'uint32_t'
+ extern volatile uint32_t *ETH100RX_REG_REMFR;
+                 ^
+../src/edma.h:29:17: error: unknown type name 'uint32_t'
+ extern volatile uint32_t *ETH100RX_REG_INFO_RXFRAMES;
+                 ^
+../src/edma.h:30:17: error: unknown type name 'uint32_t'
+ extern volatile uint32_t *ETH100RX_REG_INFO_RXSOFS;
+                 ^
+../src/edma.h:31:17: error: unknown type name 'uint32_t'
+ extern volatile uint32_t *ETH100RX_REG_INFO_RXOVF;
+                 ^
+../src/edma.h:32:17: error: unknown type name 'uint32_t'
+ extern volatile uint32_t *ETH100RX_FRBUF;
+                 ^
+../src/edma.h:44:5: error: unknown type name 'uint32_t'
+     uint32_t bottom;
+     ^
+../src/edma.h:46:5: error: unknown type name 'uint32_t'
+     uint32_t frm_ntag;
+     ^
+../src/edma.h:48:5: error: unknown type name 'uint32_t'
+     uint32_t top;
+     ^
+../src/edma.h:51:5: error: unknown type name 'uint32_t'
+     uint32_t bottom_tag;
+     ^
+../src/edma.h:55:5: error: unknown type name 'uint32_t'
+     uint32_t frms_bottom[TXNTAGS];
+     ^
+../src/edma.h:58:5: error: unknown type name 'uint32_t'
+     uint32_t frm_num;
+     ^
+../src/edma.h:60:5: error: unknown type name 'uint32_t'
+     uint32_t info_txframes;
+     ^
+../src/edma.h:62:5: error: unknown type name 'uint32_t'
+     uint32_t info_txbytes;
+     ^
+../src/edma.c:4:10: error: unknown type name 'uint32_t'
+ volatile uint32_t *ETH100TX_REG_STAT = (void*)XPAR_AXI_ETH100_TXREGS_0_S_AXI_BASEADDR;
+          ^
+../src/edma.c:5:10: error: unknown type name 'uint32_t'
+ volatile uint32_t *ETH100TX_REG_RBOT_WFRLEN = (void*)(XPAR_AXI_ETH100_TXREGS_0_S_AXI_BASEADDR+4);
+          ^
+../src/edma.c:6:10: error: unknown type name 'uint32_t'
+ volatile uint32_t *ETH100TX_REG_INFO_TXFRAMES = (void*)(XPAR_AXI_ETH100_TXREGS_0_S_AXI_BASEADDR+0x10);
+          ^
+../src/edma.c:7:10: error: unknown type name 'uint32_t'
+ volatile uint32_t *ETH100TX_REG_INFO_TXBYTES = (void*)(XPAR_AXI_ETH100_TXREGS_0_S_AXI_BASEADDR+0x14);
+          ^
+../src/edma.c:8:10: error: unknown type name 'uint32_t'
+ volatile uint32_t *ETH100TX_FRBUF = (void*)XPAR_AXI_ETH100_TXBUF_0_S_AXI_BASEADDR;
+          ^
+../src/edma.c:10:10: error: unknown type name 'uint32_t'
+ volatile uint32_t *ETH100RX_REG_STAT = (void*)XPAR_AXI_ETH100_RXREGS_0_S_AXI_BASEADDR;
+          ^
+../src/edma.c:11:10: error: unknown type name 'uint32_t'
+ volatile uint32_t *ETH100RX_REG_CFRLEN = (void*)(XPAR_AXI_ETH100_RXREGS_0_S_AXI_BASEADDR+4);
+          ^
+../src/edma.c:12:10: error: unknown type name 'uint32_t'
+ volatile uint32_t *ETH100RX_REG_REMFR = (void*)(XPAR_AXI_ETH100_RXREGS_0_S_AXI_BASEADDR+8);
+          ^
+../src/edma.c:13:10: error: unknown type name 'uint32_t'
+ volatile uint32_t *ETH100RX_REG_INFO_RXFRAMES = (void*)(XPAR_AXI_ETH100_RXREGS_0_S_AXI_BASEADDR+0x10);
+          ^
+../src/edma.c:14:10: error: unknown type name 'uint32_t'
+ volatile uint32_t *ETH100RX_REG_INFO_RXSOFS = (void*)(XPAR_AXI_ETH100_RXREGS_0_S_AXI_BASEADDR+0x14);
+          ^
+../src/edma.c:15:10: error: unknown type name 'uint32_t'
+ volatile uint32_t *ETH100RX_REG_INFO_RXOVF = (void*)(XPAR_AXI_ETH100_RXREGS_0_S_AXI_BASEADDR+0x18);
+          ^
+../src/edma.c:16:10: error: unknown type name 'uint32_t'
+ volatile uint32_t *ETH100RX_FRBUF = (void*)XPAR_AXI_ETH100_RXBUF_0_S_AXI_BASEADDR;
+          ^
+make: *** [src/edma.o] Error 1
+20:37:58 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma.d" -MT"src/edma.d" -o "src/edma.o" "../src/edma.c"
+Finished building: ../src/edma.c
+ 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:114:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:115:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76100	   3216	  55884	 135200	  21020	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+22:08:59 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma.d" -MT"src/edma.d" -o "src/edma.o" "../src/edma.c"
+../src/edma.c: In function 'EdmaTx_UpdateSlotsByHw':
+../src/edma.c:28:5: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+src/subdir.mk:24: recipe for target 'src/edma.o' failed
+     for (uint32_t t = txlink->hwbottom_tag; t != etag; t = (t+1) & TXTAGMASK) {
+     ^
+../src/edma.c:28:5: note: use option -std=c99, -std=gnu99, -std=c11 or -std=gnu11 to compile your code
+make: *** [src/edma.o] Error 1
+22:09:00 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+22:09:35 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma.d" -MT"src/edma.d" -o "src/edma.o" "../src/edma.c"
+Finished building: ../src/edma.c
+ 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c: In function 'FillTestFrame':
+../src/edma_main.c:155:19: error: 'RemoteAddress' undeclared (first use in this function)
+     *FramePtr++ = RemoteAddress[0];
+                   ^
+../src/edma_main.c:155:19: note: each undeclared identifier is reported only once for each function it appears in
+../src/edma_main.c:165:19: error: 'LocalAddress' undeclared (first use in this function)
+src/subdir.mk:24: recipe for target 'src/edma_main.o' failed
+     *FramePtr++ = LocalAddress[0];
+                   ^
+../src/edma_main.c: In function 'prvTxEth100Task':
+../src/edma_main.c:213:67: error: 'frm_num' undeclared (first use in this function)
+                 xil_printf( "Eth100_Tx: sending a frame #%d\r\n", frm_num);
+                                                                   ^
+../src/edma_main.c:222:41: error: 'top' undeclared (first use in this function)
+                     uint32_t new_top = (top + frame_len/4) & TX_FRBUF_MASK;
+                                         ^
+../src/edma_main.c:222:30: warning: unused variable 'new_top' [-Wunused-variable]
+                     uint32_t new_top = (top + frame_len/4) & TX_FRBUF_MASK;
+                              ^
+../src/edma_main.c: At top level:
+../src/edma_main.c:23:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:24:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+make: *** [src/edma_main.o] Error 1
+22:09:35 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+22:10:20 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c: In function 'prvTxEth100Task':
+../src/edma_main.c:224:67: error: 'frm_num' undeclared (first use in this function)
+                 xil_printf( "Eth100_Tx: sending a frame #%d\r\n", frm_num);
+                                                                   ^
+../src/edma_main.c:224:67: note: each undeclared identifier is reported only once for each function it appears in
+../src/edma_main.c:233:41: error: 'top' undeclared (first use in this function)
+                     uint32_t new_top = (top + frame_len/4) & TX_FRBUF_MASK;
+                                         ^
+../src/edma_main.c:233:30: warning: unused variable 'new_top' [-Wunused-variable]
+src/subdir.mk:24: recipe for target 'src/edma_main.o' failed
+                     uint32_t new_top = (top + frame_len/4) & TX_FRBUF_MASK;
+                              ^
+../src/edma_main.c: At top level:
+../src/edma_main.c:23:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:24:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+make: *** [src/edma_main.o] Error 1
+22:10:25 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c: In function 'prvTxEth100Task':
+../src/edma_main.c:224:67: error: 'frm_num' undeclared (first use in this function)
+                 xil_printf( "Eth100_Tx: sending a frame #%d\r\n", frm_num);
+                                                                   ^
+../src/edma_main.c:224:67: note: each undeclared identifier is reported only once for each function it appears in
+../src/edma_main.c:233:41: error: 'top' undeclared (first use in this function)
+src/subdir.mk:24: recipe for target 'src/edma_main.o' failed
+                     uint32_t new_top = (top + frame_len/4) & TX_FRBUF_MASK;
+                                         ^
+../src/edma_main.c:233:30: warning: unused variable 'new_top' [-Wunused-variable]
+                     uint32_t new_top = (top + frame_len/4) & TX_FRBUF_MASK;
+                              ^
+../src/edma_main.c: At top level:
+../src/edma_main.c:23:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:24:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+make: *** [src/edma_main.o] Error 1
+22:10:25 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+22:11:04 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c: In function 'prvTxEth100Task':
+../src/edma_main.c:233:41: error: 'top' undeclared (first use in this function)
+                     uint32_t new_top = (top + frame_len/4) & TX_FRBUF_MASK;
+                                         ^
+../src/edma_main.c:233:41: note: each undeclared identifier is reported only once for each function it appears in
+../src/edma_main.c:233:30: warning: unused variable 'new_top' [-Wunused-variable]
+src/subdir.mk:24: recipe for target 'src/edma_main.o' failed
+                     uint32_t new_top = (top + frame_len/4) & TX_FRBUF_MASK;
+                              ^
+../src/edma_main.c: At top level:
+../src/edma_main.c:23:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:24:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+make: *** [src/edma_main.o] Error 1
+22:11:17 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:23:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:24:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78252	   3216	  56300	 137768	  21a28	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+22:12:08 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma.d" -MT"src/edma.d" -o "src/edma.o" "../src/edma.c"
+Finished building: ../src/edma.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78252	   3216	  56300	 137768	  21a28	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+22:12:09 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+22:12:11 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+22:13:36 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+22:13:45 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:23:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:24:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78252	   3216	  56300	 137768	  21a28	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+22:13:46 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+22:13:50 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+22:17:37 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:23:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:24:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78436	   3216	  56300	 137952	  21ae0	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+22:17:38 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+22:17:48 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+22:24:25 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma.d" -MT"src/edma.d" -o "src/edma.o" "../src/edma.c"
+Finished building: ../src/edma.c
+ 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:23:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:24:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78612	   3216	  56300	 138128	  21b90	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+22:24:29 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+22:24:30 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+22:24:32 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+22:42:37 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:23:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:24:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78708	   3216	  56300	 138224	  21bf0	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+22:42:38 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+22:42:41 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+22:47:33 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:23:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:24:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78716	   3216	  56300	 138232	  21bf8	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+22:47:33 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+22:47:36 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+22:50:30 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma.d" -MT"src/edma.d" -o "src/edma.o" "../src/edma.c"
+Finished building: ../src/edma.c
+ 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:23:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:24:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78828	   3216	  56300	 138344	  21c68	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+22:50:31 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+22:50:35 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+22:50:53 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+22:53:07 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma.d" -MT"src/edma.d" -o "src/edma.o" "../src/edma.c"
+Finished building: ../src/edma.c
+ 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:23:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:24:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78828	   3216	  56300	 138344	  21c68	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+22:53:07 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+22:53:09 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+22:56:21 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:22:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:23:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78828	   3216	  56300	 138344	  21c68	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+23:12:09 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma.d" -MT"src/edma.d" -o "src/edma.o" "../src/edma.c"
+../src/edma.c: In function 'EdmaTx_UpdateSlotsByHw':
+../src/edma.c:34:19: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+                 t != (etag+1) & TXTAGMASK; t = (t+1) & TXTAGMASK) {
+                   ^
+Finished building: ../src/edma.c
+ 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:22:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:23:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78828	   3216	  56300	 138344	  21c68	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+23:12:10 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+23:12:12 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+23:16:31 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+23:16:31 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+23:16:32 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+23:16:32 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+23:16:32 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+23:16:33 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+23:16:33 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+23:17:47 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma.d" -MT"src/edma.d" -o "src/edma.o" "../src/edma.c"
+Finished building: ../src/edma.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78828	   3216	  56300	 138344	  21c68	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+23:21:38 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+23:21:39 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+23:23:55 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+23:24:19 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+23:56:59 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:22:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:23:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78892	   3216	  56300	 138408	  21ca8	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+23:57:07 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+23:57:07 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+23:57:11 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+00:00:28 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:22:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:23:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78892	   3216	  56300	 138408	  21ca8	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+00:00:31 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+00:00:32 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.
+00:00:35 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+00:05:05 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+18:39:01 **** Clean-only build of configuration Debug for project edma1_fr ****
+make clean 
+rm -rf  ./src/edma.o ./src/edma_main.o  ./src/edma.d ./src/edma_main.d  edma1_fr.elf.size  edma1_fr.elf
+ 
+18:39:01 **** Clean-only build of configuration Debug for project hello3_fr ****
+make clean 
+rm -rf  ./src/freertos_hello_world.o  ./src/freertos_hello_world.d  hello3_fr.elf.size  hello3_fr.elf
+ 
+18:39:01 **** Clean-only build of project freertos821_xilinx_bsp_0 ****
+make -k clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+18:39:01 **** Build of project freertos821_xilinx_bsp_0 ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_1/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_3/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_5/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/freertos821_xilinx_v1_0/src
+make -C ps7_cortexa9_0/libsrc/freertos821_xilinx_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+include
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_1/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/bram_v4_0/src
+make -C ps7_cortexa9_0/libsrc/bram_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_0/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/emaclite_v4_1/src
+make -C ps7_cortexa9_0/libsrc/emaclite_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling ddrps
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_1/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_3/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_5/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/freertos821_xilinx_v1_0/src
+make -C ps7_cortexa9_0/libsrc/freertos821_xilinx_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+Compiling FreeRTOS
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_1/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_0/src
+make -C ps7_cortexa9_0/libsrc/bram_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling bram
+Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_0/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpio
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/emaclite_v4_1/src
+make -C ps7_cortexa9_0/libsrc/emaclite_v4_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling emaclite
+Finished building libraries
+18:39:16 **** Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma.d" -MT"src/edma.d" -o "src/edma.o" "../src/edma.c"
+Finished building: ../src/edma.c
+ 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:22:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:23:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81060	   3216	  60412	 144688	  23530	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+18:39:16 **** Build of configuration Debug for project hello3_fr ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.d" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+../src/freertos_hello_world.c: In function 'prvRxTask':
+../src/freertos_hello_world.c:167:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+../src/freertos_hello_world.c:165:7: warning: unused variable 'Recdstring' [-Wunused-variable]
+  char Recdstring[15] = "";
+       ^
+Finished building: ../src/freertos_hello_world.c
+ 
+Building target: hello3_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "hello3_fr.elf"  ./src/freertos_hello_world.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: hello3_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hello3_fr.elf  |tee "hello3_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  83076	   3196	  58988	 145260	  2376c	hello3_fr.elf
+Finished building: hello3_fr.elf.size
+ 
+18:39:46 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+18:43:27 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c: In function 'prvTxEth100Task':
+../src/edma_main.c:343:21: warning: implicit declaration of function 'print_txslots_state' [-Wimplicit-function-declaration]
+                     print_txslots_state();
+                     ^
+../src/edma_main.c: At top level:
+../src/edma_main.c:352:6: warning: conflicting types for 'print_txslots_state'
+ void print_txslots_state()
+      ^
+../src/edma_main.c:343:21: note: previous implicit declaration of 'print_txslots_state' was here
+                     print_txslots_state();
+                     ^
+../src/edma_main.c:22:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:23:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81068	   3216	  60412	 144696	  23538	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+18:43:43 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:22:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:23:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81068	   3216	  60412	 144696	  23538	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+18:44:09 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:22:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:23:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81100	   3216	  60412	 144728	  23558	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+18:44:11 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+18:48:40 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c: In function 'prvTxEth100Task':
+../src/edma_main.c:304:60: error: unknown type name 's'
+                 xil_printf("  txslots after the frame = ");s
+                                                            ^
+../src/edma_main.c:305:17: error: conflicting types for 'print_txslots_state'
+                 print_txslots_state();
+                 ^
+../src/edma_main.c:30:6: note: previous declaration of 'print_txslots_state' was here
+src/subdir.mk:24: recipe for target 'src/edma_main.o' failed
+ void print_txslots_state();
+      ^
+../src/edma_main.c: At top level:
+../src/edma_main.c:357:6: error: conflicting types for 'print_txslots_state'
+ void print_txslots_state()
+      ^
+../src/edma_main.c:305:17: note: previous declaration of 'print_txslots_state' was here
+                 print_txslots_state();
+                 ^
+../src/edma_main.c:22:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:23:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+make: *** [src/edma_main.o] Error 1
+18:48:54 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:22:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:23:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81100	   3216	  60412	 144728	  23558	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+18:48:57 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+18:50:19 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:22:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:23:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81196	   3216	  60412	 144824	  235b8	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+18:50:22 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+18:52:12 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+18:57:18 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+19:09:48 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c: In function 'prvTxEth100Task':
+../src/edma_main.c:260:25: error: 'emda' undeclared (first use in this function)
+                         emda.next_output_seqnum, edma.acked_output_seqnum, edma.acked_input_seqnum);
+                         ^
+../src/edma_main.c:260:25: note: each undeclared identifier is reported only once for each function it appears in
+../src/edma_main.c: At top level:
+../src/edma_main.c:22:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:23:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+src/subdir.mk:24: recipe for target 'src/edma_main.o' failed
+make: *** [src/edma_main.o] Error 1
+19:10:00 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c: In function 'prvTxEth100Task':
+../src/edma_main.c:320:25: error: 'emda' undeclared (first use in this function)
+src/subdir.mk:24: recipe for target 'src/edma_main.o' failed
+                         emda.next_output_seqnum, edma.acked_output_seqnum, edma.acked_input_seqnum);
+                         ^
+../src/edma_main.c:320:25: note: each undeclared identifier is reported only once for each function it appears in
+../src/edma_main.c: At top level:
+../src/edma_main.c:22:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:23:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+make: *** [src/edma_main.o] Error 1
+19:10:04 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c: In function 'prvTxEth100Task':
+../src/edma_main.c:355:29: error: 'emda' undeclared (first use in this function)
+                             emda.next_output_seqnum, edma.acked_output_seqnum, edma.acked_input_seqnum);
+                             ^
+../src/edma_main.c:355:29: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:24: recipe for target 'src/edma_main.o' failed
+../src/edma_main.c: At top level:
+../src/edma_main.c:22:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:23:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+make: *** [src/edma_main.o] Error 1
+19:10:12 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:22:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:23:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81460	   3216	  60412	 145088	  236c0	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+19:10:17 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+19:20:31 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+19:22:49 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+19:57:46 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:29:23: error: unknown type name 'TimerHandle_t'
+ void TickCntCallback( TimerHandle_t pxTimer );
+                       ^
+../src/edma_main.c: In function 'main':
+../src/edma_main.c:101:5: error: unknown type name 'TimerHandle_t'
+     TimerHandle_t TickCntTimer = xTimerCreate("TickCntTimer",     // Just a text name, not used by the kernel.
+     ^
+../src/edma_main.c:101:5: warning: implicit declaration of function 'xTimerCreate' [-Wimplicit-function-declaration]
+../src/edma_main.c:105:21: error: 'TickCntCallback' undeclared (first use in this function)
+                     TickCntCallback // Each timer calls the same callback when it expires.
+                     ^
+../src/edma_main.c:105:21: note: each undeclared identifier is reported only once for each function it appears in
+../src/edma_main.c:107:5: warning: implicit declaration of function 'xTimerStart' [-Wimplicit-function-declaration]
+     xTimerStart( TickCntTimer, 0 );
+     ^
+../src/edma_main.c: At top level:
+../src/edma_main.c:134:23: error: unknown type name 'TimerHandle_t'
+ void TickCntCallback( TimerHandle_t pxTimer )
+                       ^
+../src/edma_main.c:22:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+src/subdir.mk:24: recipe for target 'src/edma_main.o' failed
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:23:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+make: *** [src/edma_main.o] Error 1
+19:58:02 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:23:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:24:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81604	   3216	  60428	 145248	  23760	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+20:01:20 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:23:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:24:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81604	   3216	  60428	 145248	  23760	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+20:07:18 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma.d" -MT"src/edma.d" -o "src/edma.o" "../src/edma.c"
+Finished building: ../src/edma.c
+ 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:23:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:24:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81852	   3216	  60428	 145496	  23858	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+20:09:38 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+20:11:01 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:23:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:24:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81916	   3216	  60428	 145560	  23898	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+20:11:03 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+20:21:53 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+20:23:36 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+20:41:10 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:23:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:24:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81916	   3216	  60428	 145560	  23898	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+20:41:12 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+20:50:30 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:23:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:24:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82036	   3216	  60428	 145680	  23910	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+20:50:34 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+21:07:21 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+21:11:11 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+21:12:06 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+21:13:50 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+21:28:58 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+21:32:51 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:23:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:24:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82036	   3216	  60428	 145680	  23910	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+21:33:02 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+21:47:50 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+21:47:57 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+21:51:57 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+21:56:44 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+21:59:21 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+22:20:31 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma.d" -MT"src/edma.d" -o "src/edma.o" "../src/edma.c"
+Finished building: ../src/edma.c
+ 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:23:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:24:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82036	   3216	  60428	 145680	  23910	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+22:20:37 **** Incremental Build of configuration Debug for project edma1_fr ****
+make all 
+make: Nothing to be done for 'all'.
+22:20:37 **** Incremental Build of configuration Debug for project hello3_fr ****
+make all 
+make: Nothing to be done for 'all'.

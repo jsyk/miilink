@@ -1,0 +1,362 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_arb_wr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_arb_wr
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_arb_rd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_arb_rd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_arb_wr_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_arb_wr_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_arb_rd_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_arb_rd_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_arb_hp2_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_arb_hp2_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_arb_hp0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_arb_hp0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_ssw_hp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_ssw_hp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_sparse_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_sparse_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_reg_map.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_reg_map
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_ocm_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_ocm_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_intr_wr_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_intr_wr_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_intr_rd_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_intr_rd_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_fmsw_gp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_fmsw_gp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_regc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_regc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_ocmc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_ocmc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_interconnect_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_interconnect_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_gen_reset.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_gen_reset
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_gen_clock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_gen_clock
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_ddrc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_ddrc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_axi_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_axi_slave
+INFO: [VRFC 10-2458] undeclared symbol read_fifo_empty, assumed default net type wire [/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_axi_slave.v:707]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_axi_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_axi_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_afi_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_afi_slave
+INFO: [VRFC 10-2458] undeclared symbol bresp_fifo_full, assumed default net type wire [/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_afi_slave.v:438]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_processing_system7_bfm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_processing_system7_bfm
+INFO: [VRFC 10-2458] undeclared symbol DMA0_RSTN, assumed default net type wire [../../../zed3_eth.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_5_unused_ports.v:284]
+INFO: [VRFC 10-2458] undeclared symbol DMA1_RSTN, assumed default net type wire [../../../zed3_eth.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_5_unused_ports.v:294]
+INFO: [VRFC 10-2458] undeclared symbol DMA2_RSTN, assumed default net type wire [../../../zed3_eth.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_5_unused_ports.v:304]
+INFO: [VRFC 10-2458] undeclared symbol DMA3_RSTN, assumed default net type wire [../../../zed3_eth.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_5_unused_ports.v:314]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.ip_user_files/bd/ZynqDesign/ip/ZynqDesign_processing_system7_0_0/sim/ZynqDesign_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZynqDesign_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.ip_user_files/bd/ZynqDesign/hdl/ZynqDesign.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZynqDesign
+INFO: [VRFC 10-311] analyzing module ZynqDesign_processing_system7_0_axi_periph_0
+INFO: [VRFC 10-311] analyzing module m00_couplers_imp_1A6VVBN
+INFO: [VRFC 10-311] analyzing module m01_couplers_imp_1I504R9
+INFO: [VRFC 10-311] analyzing module m02_couplers_imp_U5Y1GF
+INFO: [VRFC 10-311] analyzing module m03_couplers_imp_2Q1EVT
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_1IG5VV6
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_and.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_latch_and.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_latch_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_latch_or.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_latch_or
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_or.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_or
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_command_fifo.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_command_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_mask_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_mask_static
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_mask.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_mask
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_mask_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel_mask_static
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_mask.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel_mask
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel_static
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_sel.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_static
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_mux_enc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_nto1_mux.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_nto1_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v" into library axi_infrastructure_v1_1_0
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_axi2vector
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axic_srl_fifo.v" into library axi_infrastructure_v1_1_0
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_axic_srl_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v" into library axi_infrastructure_v1_1_0
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_vector2axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v" into library axi_register_slice_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_6_axic_register_slice
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v" into library axi_register_slice_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_6_axi_register_slice
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v" into library axi_data_fifo_v2_1_5
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_5_axic_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v" into library axi_data_fifo_v2_1_5
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_5_fifo_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v" into library axi_data_fifo_v2_1_5
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_5_axic_srl_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v" into library axi_data_fifo_v2_1_5
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_5_axic_reg_srl_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_ndeep_srl.v" into library axi_data_fifo_v2_1_5
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_5_ndeep_srl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axi_data_fifo.v" into library axi_data_fifo_v2_1_5
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_5_axi_data_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_arbiter_sasd.v" into library axi_crossbar_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_7_addr_arbiter_sasd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_arbiter.v" into library axi_crossbar_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_7_addr_arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_decoder.v" into library axi_crossbar_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_7_addr_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_arbiter_resp.v" into library axi_crossbar_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_7_arbiter_resp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_crossbar_sasd.v" into library axi_crossbar_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_7_crossbar_sasd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_crossbar.v" into library axi_crossbar_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_7_crossbar
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_decerr_slave.v" into library axi_crossbar_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_7_decerr_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_si_transactor.v" into library axi_crossbar_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_7_si_transactor
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_splitter.v" into library axi_crossbar_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_7_splitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_wdata_mux.v" into library axi_crossbar_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_7_wdata_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_wdata_router.v" into library axi_crossbar_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_7_wdata_router
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_axi_crossbar.v" into library axi_crossbar_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_7_axi_crossbar
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.ip_user_files/bd/ZynqDesign/ip/ZynqDesign_xbar_0/sim/ZynqDesign_xbar_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZynqDesign_xbar_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.ip_user_files/bd/ZynqDesign/ipshared/xilinx.com/xlconstant_v1_1/xlconstant.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xlconstant
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.ip_user_files/bd/ZynqDesign/ip/ZynqDesign_xlconstant_0_0/sim/ZynqDesign_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZynqDesign_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.ip_user_files/bd/ZynqDesign/ip/ZynqDesign_clk_wiz_0_0/ZynqDesign_clk_wiz_0_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZynqDesign_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-2458] undeclared symbol clk_in1_ZynqDesign_clk_wiz_0_0, assumed default net type wire [/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.ip_user_files/bd/ZynqDesign/ip/ZynqDesign_clk_wiz_0_0/ZynqDesign_clk_wiz_0_0_clk_wiz.v:80]
+INFO: [VRFC 10-2458] undeclared symbol clk_out1_ZynqDesign_clk_wiz_0_0, assumed default net type wire [/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.ip_user_files/bd/ZynqDesign/ip/ZynqDesign_clk_wiz_0_0/ZynqDesign_clk_wiz_0_0_clk_wiz.v:131]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.ip_user_files/bd/ZynqDesign/ip/ZynqDesign_clk_wiz_0_0/ZynqDesign_clk_wiz_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZynqDesign_clk_wiz_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v" into library axi_protocol_converter_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_6_a_axi3_conv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi3_conv.v" into library axi_protocol_converter_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_6_axi3_conv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axilite_conv.v" into library axi_protocol_converter_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_6_axilite_conv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_r_axi3_conv.v" into library axi_protocol_converter_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_6_r_axi3_conv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_w_axi3_conv.v" into library axi_protocol_converter_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_6_w_axi3_conv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b_downsizer.v" into library axi_protocol_converter_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_6_b_downsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_decerr_slave.v" into library axi_protocol_converter_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_6_decerr_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v" into library axi_protocol_converter_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_6_b2s_simple_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v" into library axi_protocol_converter_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_6_b2s_wrap_cmd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v" into library axi_protocol_converter_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_6_b2s_incr_cmd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v" into library axi_protocol_converter_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_6_b2s_wr_cmd_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v" into library axi_protocol_converter_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_6_b2s_rd_cmd_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v" into library axi_protocol_converter_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_6_b2s_cmd_translator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v" into library axi_protocol_converter_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_6_b2s_b_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v" into library axi_protocol_converter_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_6_b2s_r_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v" into library axi_protocol_converter_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_6_b2s_aw_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v" into library axi_protocol_converter_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_6_b2s_ar_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s.v" into library axi_protocol_converter_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_6_b2s
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v" into library axi_protocol_converter_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_6_axi_protocol_converter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.ip_user_files/bd/ZynqDesign/ip/ZynqDesign_auto_pc_0/sim/ZynqDesign_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZynqDesign_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/hdl/ZynqDesign_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZynqDesign_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_lite_ipif_v3_0/hdl/src/vhdl/ipif_pkg.vhd" into library axi_lite_ipif_v3_0_3
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_lite_ipif_v3_0/hdl/src/vhdl/pselect_f.vhd" into library axi_lite_ipif_v3_0_3
+INFO: [VRFC 10-307] analyzing entity pselect_f
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_lite_ipif_v3_0/hdl/src/vhdl/address_decoder.vhd" into library axi_lite_ipif_v3_0_3
+INFO: [VRFC 10-307] analyzing entity address_decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_lite_ipif_v3_0/hdl/src/vhdl/slave_attachment.vhd" into library axi_lite_ipif_v3_0_3
+INFO: [VRFC 10-307] analyzing entity slave_attachment
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_lite_ipif_v3_0/hdl/src/vhdl/axi_lite_ipif.vhd" into library axi_lite_ipif_v3_0_3
+INFO: [VRFC 10-307] analyzing entity axi_lite_ipif
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd" into library lib_cdc_v1_0_2
+INFO: [VRFC 10-307] analyzing entity cdc_sync
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/interrupt_control_v3_1/hdl/src/vhdl/interrupt_control.vhd" into library interrupt_control_v3_1_2
+INFO: [VRFC 10-307] analyzing entity interrupt_control
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_gpio_v2_0/hdl/src/vhdl/gpio_core.vhd" into library axi_gpio_v2_0_8
+INFO: [VRFC 10-307] analyzing entity GPIO_Core
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_gpio_v2_0/hdl/src/vhdl/axi_gpio.vhd" into library axi_gpio_v2_0_8
+INFO: [VRFC 10-307] analyzing entity axi_gpio
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.ip_user_files/bd/ZynqDesign/ip/ZynqDesign_axi_gpio_0_0/sim/ZynqDesign_axi_gpio_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ZynqDesign_axi_gpio_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/upcnt_n.vhd" into library proc_sys_reset_v5_0_8
+INFO: [VRFC 10-307] analyzing entity upcnt_n
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/sequence_psr.vhd" into library proc_sys_reset_v5_0_8
+INFO: [VRFC 10-307] analyzing entity sequence_psr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/lpf.vhd" into library proc_sys_reset_v5_0_8
+INFO: [VRFC 10-307] analyzing entity lpf
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/proc_sys_reset.vhd" into library proc_sys_reset_v5_0_8
+INFO: [VRFC 10-307] analyzing entity proc_sys_reset
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.ip_user_files/bd/ZynqDesign/ip/ZynqDesign_rst_processing_system7_0_100M_0/sim/ZynqDesign_rst_processing_system7_0_100M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ZynqDesign_rst_processing_system7_0_100M_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.ip_user_files/bd/ZynqDesign/ip/ZynqDesign_axi_gpio_0_1/sim/ZynqDesign_axi_gpio_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ZynqDesign_axi_gpio_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/fifo_generator_v13_0/simulation/fifo_generator_vhdl_beh.vhd" into library fifo_generator_v13_0_0
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_0_0_bhv_as
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_0_0_bhv_ss
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_0_0_bhv_preload0
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_0_0_conv
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_0_0_axic_reg_slice
+INFO: [VRFC 10-307] analyzing entity fifo_generator_vhdl_beh
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/fifo_generator_v13_0/hdl/fifo_generator_v13_0_rfs.vhd" into library fifo_generator_v13_0_0
+INFO: [VRFC 10-307] analyzing entity input_blk
+INFO: [VRFC 10-307] analyzing entity output_blk
+INFO: [VRFC 10-307] analyzing entity shft_wrapper
+INFO: [VRFC 10-307] analyzing entity shft_ram
+INFO: [VRFC 10-307] analyzing entity wr_pf_as
+INFO: [VRFC 10-307] analyzing entity wr_pf_ss
+INFO: [VRFC 10-307] analyzing entity rd_pe_as
+INFO: [VRFC 10-307] analyzing entity rd_pe_ss
+INFO: [VRFC 10-307] analyzing entity synchronizer_ff
+INFO: [VRFC 10-307] analyzing entity delay
+INFO: [VRFC 10-307] analyzing entity bin_cntr
+INFO: [VRFC 10-307] analyzing entity clk_x_pntrs_builtin
+INFO: [VRFC 10-307] analyzing entity logic_builtin
+INFO: [VRFC 10-307] analyzing entity builtin_prim
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth
+INFO: [VRFC 10-307] analyzing entity builtin_top
+INFO: [VRFC 10-307] analyzing entity reset_builtin
+INFO: [VRFC 10-307] analyzing entity builtin_prim_v6
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth_v6
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth_low_latency
+INFO: [VRFC 10-307] analyzing entity builtin_top_v6
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_0_0_builtin
+INFO: [VRFC 10-307] analyzing entity bram_sync_reg
+INFO: [VRFC 10-307] analyzing entity bram_fifo_rstlogic
+INFO: [VRFC 10-307] analyzing entity reset_blk_ramfifo
+INFO: [VRFC 10-307] analyzing entity axi_reg_slice
+INFO: [VRFC 10-307] analyzing entity fifo_generator_top
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_0_0_synth
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.ip_user_files/bd/ZynqDesign/ip/ZynqDesign_axi_gpio_0_2/sim/ZynqDesign_axi_gpio_0_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ZynqDesign_axi_gpio_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.vhd" into library blk_mem_gen_v8_3_0
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_regs_fwd_v8_3
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_write_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity write_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_read_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity read_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_0_output_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_0_softecc_output_reg_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_0_mem_module
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_0
+INFO: [VRFC 10-307] analyzing entity beh_ff_clr
+INFO: [VRFC 10-307] analyzing entity beh_ff_ce
+INFO: [VRFC 10-307] analyzing entity beh_ff_pre
+INFO: [VRFC 10-307] analyzing entity beh_muxf7
+INFO: [VRFC 10-307] analyzing entity STATE_LOGIC
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/lib_bmg_v1_0/hdl/src/vhdl/blk_mem_gen_wrapper.vhd" into library lib_bmg_v1_0_2
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/lib_fifo_v1_0/hdl/src/vhdl/async_fifo_fg.vhd" into library lib_fifo_v1_0_3
+INFO: [VRFC 10-307] analyzing entity async_fifo_fg
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/lib_fifo_v1_0/hdl/src/vhdl/sync_fifo_fg.vhd" into library lib_fifo_v1_0_3
+INFO: [VRFC 10-307] analyzing entity sync_fifo_fg
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/ld_arith_reg.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-307] analyzing entity ld_arith_reg
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/mux_onehot_f.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-307] analyzing entity mux_onehot_f
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/mac_pkg.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/lfsr16.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-307] analyzing entity lfsr16
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/defer_state.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-307] analyzing entity defer_state
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/crcnibshiftreg.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-307] analyzing entity crcnibshiftreg
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/cntr5bit.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-307] analyzing entity cntr5bit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/tx_statemachine.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-307] analyzing entity tx_statemachine
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/tx_intrfce.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-307] analyzing entity tx_intrfce
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/rx_statemachine.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-307] analyzing entity rx_statemachine
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/rx_intrfce.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-307] analyzing entity rx_intrfce
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/ram16x4.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-307] analyzing entity ram16x4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/msh_cnt.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-307] analyzing entity msh_cnt
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/deferral.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-307] analyzing entity deferral
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/crcgentx.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-307] analyzing entity crcgentx
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/crcgenrx.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-307] analyzing entity crcgenrx
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/bocntr.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-307] analyzing entity bocntr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/transmit.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-307] analyzing entity transmit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/receive.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-307] analyzing entity receive
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/macaddrram.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-307] analyzing entity MacAddrRAM
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/mdio_if.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-307] analyzing entity mdio_if
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/emac_dpram.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-307] analyzing entity emac_dpram
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/emac.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-307] analyzing entity emac
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/xemac.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xemac
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/axi_interface.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-307] analyzing entity axi_interface
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/axi_ethernetlite_v3_0/hdl/src/vhdl/axi_ethernetlite.vhd" into library axi_ethernetlite_v3_0_4
+INFO: [VRFC 10-307] analyzing entity axi_ethernetlite
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.ip_user_files/bd/ZynqDesign/ip/ZynqDesign_axi_ethernetlite_0_0/sim/ZynqDesign_axi_ethernetlite_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ZynqDesign_axi_ethernetlite_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/mii_to_rmii_v2_0/hdl/src/vhdl/rx_fifo_loader.vhd" into library mii_to_rmii_v2_0_8
+INFO: [VRFC 10-307] analyzing entity rx_fifo_loader
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/mii_to_rmii_v2_0/hdl/src/vhdl/rx_fifo_disposer.vhd" into library mii_to_rmii_v2_0_8
+INFO: [VRFC 10-307] analyzing entity rx_fifo_disposer
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/mii_to_rmii_v2_0/hdl/src/vhdl/rx_fifo.vhd" into library mii_to_rmii_v2_0_8
+INFO: [VRFC 10-307] analyzing entity rx_fifo
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/mii_to_rmii_v2_0/hdl/src/vhdl/srl_fifo.vhd" into library mii_to_rmii_v2_0_8
+INFO: [VRFC 10-307] analyzing entity SRL_FIFO
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/mii_to_rmii_v2_0/hdl/src/vhdl/rmii_tx_fixed.vhd" into library mii_to_rmii_v2_0_8
+INFO: [VRFC 10-307] analyzing entity rmii_tx_fixed
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/mii_to_rmii_v2_0/hdl/src/vhdl/rmii_tx_agile.vhd" into library mii_to_rmii_v2_0_8
+INFO: [VRFC 10-307] analyzing entity rmii_tx_agile
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/mii_to_rmii_v2_0/hdl/src/vhdl/rmii_rx_fixed.vhd" into library mii_to_rmii_v2_0_8
+INFO: [VRFC 10-307] analyzing entity rmii_rx_fixed
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/mii_to_rmii_v2_0/hdl/src/vhdl/rmii_rx_agile.vhd" into library mii_to_rmii_v2_0_8
+INFO: [VRFC 10-307] analyzing entity rmii_rx_agile
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.srcs/sources_1/bd/ZynqDesign/ipshared/xilinx.com/mii_to_rmii_v2_0/hdl/src/vhdl/mii_to_rmii.vhd" into library mii_to_rmii_v2_0_8
+INFO: [VRFC 10-307] analyzing entity mii_to_rmii
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jara/ownCloud-pluto/elektronika/zed3_eth/zed3_eth.ip_user_files/bd/ZynqDesign/ip/ZynqDesign_mii_to_rmii_0_0/sim/ZynqDesign_mii_to_rmii_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ZynqDesign_mii_to_rmii_0_0

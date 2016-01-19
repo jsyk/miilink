@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Fri Dec 25 12:52:04 2015
+# Process ID: 10344
+# Current directory: /home/jara/ownCloud-pluto/elektronika/zed6_eth100_link/zed6_eth100_link.runs/synth_1
+# Command line: vivado -log ZynqDesign_wrapper.vds -mode batch -messageDb vivado.pb -notrace -source ZynqDesign_wrapper.tcl
+# Log file: /home/jara/ownCloud-pluto/elektronika/zed6_eth100_link/zed6_eth100_link.runs/synth_1/ZynqDesign_wrapper.vds
+# Journal file: /home/jara/ownCloud-pluto/elektronika/zed6_eth100_link/zed6_eth100_link.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source ZynqDesign_wrapper.tcl -notrace

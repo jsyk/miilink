@@ -1,0 +1,1922 @@
+20:28:44 INFO  : Launching XSDB server: xsdb -n /home/jara/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+20:28:52 INFO  : XSDB server has started successfully.
+20:28:55 INFO  : Processing command line option -hwspec /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper.hdf.
+20:32:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+20:32:12 INFO  : 'fpga -state' command is executed.
+20:32:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:32:13 INFO  : Sourcing of '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:32:13 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+20:32:13 INFO  : Hardware design information is loaded from '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+20:32:13 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+20:32:15 INFO  : 'ps7_init' command is executed.
+20:32:15 INFO  : 'ps7_post_config' command is executed.
+20:32:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:32:15 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:32:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:32:16 INFO  : The application '/home/jara/hdl/zed2/zed2.sdk/hello1_sa/Debug/hello1_sa.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:32:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow /home/jara/hdl/zed2/zed2.sdk/hello1_sa/Debug/hello1_sa.elf
+----------------End of Script----------------
+
+20:32:16 INFO  : Memory regions updated for context APU
+20:32:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:32:16 INFO  : 'con' command is executed.
+20:32:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+20:33:18 INFO  : Disconnected from the channel tcfchan#1.
+20:33:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+20:33:18 INFO  : 'fpga -state' command is executed.
+20:33:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:33:19 INFO  : Sourcing of '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:33:19 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+20:33:19 INFO  : Hardware design information is loaded from '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+20:33:19 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+20:33:20 ERROR : AP transaction timeout
+20:33:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+----------------End of Script----------------
+
+20:33:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+20:33:51 INFO  : 'fpga -state' command is executed.
+20:33:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:33:51 INFO  : Sourcing of '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:33:51 ERROR : no targets found with "name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"". available targets:
+  1  APU (JTAG port open error. AP transaction error, DAP status f0000021)
+     2  ARM Cortex-A9 MPCore #0 (DEVICEEN is '0')
+     3  ARM Cortex-A9 MPCore #1 (DEVICEEN is '0')
+  4* xc7z020
+20:33:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+----------------End of Script----------------
+
+20:40:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:40:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+20:40:10 ERROR : Error occured during Prog B register check
+20:40:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+20:40:24 INFO  : 'fpga -state' command is executed.
+20:40:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:40:24 INFO  : Sourcing of '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:40:24 ERROR : no targets found with "name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"". available targets:
+  1  APU (JTAG port open error. AP transaction error, DAP status f0000021)
+     2  ARM Cortex-A9 MPCore #0 (DEVICEEN is '0')
+     3  ARM Cortex-A9 MPCore #1 (DEVICEEN is '0')
+  4* xc7z020
+20:40:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+----------------End of Script----------------
+
+20:49:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:49:50 INFO  : Sourcing of '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:49:50 ERROR : no targets found with "name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"". available targets:
+  1  APU (JTAG port open error. AP transaction error, DAP status f0000021)
+     2  ARM Cortex-A9 MPCore #0 (DEVICEEN is '0')
+     3  ARM Cortex-A9 MPCore #1 (DEVICEEN is '0')
+  4* xc7z020
+20:49:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+----------------End of Script----------------
+
+20:53:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+20:53:30 INFO  : 'fpga -state' command is executed.
+20:53:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:53:30 INFO  : Sourcing of '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:53:31 ERROR : no targets found with "name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"". available targets:
+  1  APU (JTAG port open error. AP transaction error, DAP status f0000021)
+     2  ARM Cortex-A9 MPCore #0 (DEVICEEN is '0')
+     3  ARM Cortex-A9 MPCore #1 (DEVICEEN is '0')
+  4* xc7z020
+20:53:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+----------------End of Script----------------
+
+20:56:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB 00000000000000" && level==0} -index 1' command is executed.
+20:56:25 INFO  : 'fpga -state' command is executed.
+20:56:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:56:25 INFO  : Sourcing of '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:56:25 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0' command is executed.
+20:56:25 INFO  : Hardware design information is loaded from '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+20:56:26 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0' command is executed.
+20:56:27 INFO  : 'ps7_init' command is executed.
+20:56:28 INFO  : 'ps7_post_config' command is executed.
+20:56:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:56:28 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:56:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:56:29 INFO  : The application '/home/jara/hdl/zed2/zed2.sdk/hello1_sa/Debug/hello1_sa.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:56:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0
+loadhw /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0
+dow /home/jara/hdl/zed2/zed2.sdk/hello1_sa/Debug/hello1_sa.elf
+----------------End of Script----------------
+
+20:56:29 INFO  : Memory regions updated for context APU
+20:56:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:56:29 INFO  : 'con' command is executed.
+20:56:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0
+con
+----------------End of Script----------------
+
+20:56:38 INFO  : Disconnected from the channel tcfchan#2.
+20:56:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB 00000000000000" && level==0} -index 1' command is executed.
+20:56:38 INFO  : 'fpga -state' command is executed.
+20:56:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:56:38 INFO  : Sourcing of '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:56:39 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0' command is executed.
+20:56:39 INFO  : Hardware design information is loaded from '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+20:56:39 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0' command is executed.
+20:56:40 ERROR : Cannot halt processor core, timeout
+20:56:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0
+loadhw /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0
+ps7_init
+----------------End of Script----------------
+
+20:59:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB 00000000000000" && level==0} -index 1' command is executed.
+20:59:22 INFO  : 'fpga -state' command is executed.
+20:59:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:59:24 INFO  : Sourcing of '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:59:24 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0' command is executed.
+20:59:24 INFO  : Hardware design information is loaded from '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+20:59:24 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0' command is executed.
+20:59:25 INFO  : 'ps7_init' command is executed.
+20:59:25 INFO  : 'ps7_post_config' command is executed.
+20:59:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:59:26 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:59:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:59:27 INFO  : The application '/home/jara/hdl/zed2/zed2.sdk/hello1_sa/Debug/hello1_sa.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:59:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0
+loadhw /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0
+dow /home/jara/hdl/zed2/zed2.sdk/hello1_sa/Debug/hello1_sa.elf
+----------------End of Script----------------
+
+20:59:27 INFO  : Memory regions updated for context APU
+20:59:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:59:27 INFO  : 'con' command is executed.
+20:59:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0
+con
+----------------End of Script----------------
+
+20:59:37 INFO  : Disconnected from the channel tcfchan#3.
+20:59:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB 00000000000000" && level==0} -index 1' command is executed.
+20:59:37 INFO  : 'fpga -state' command is executed.
+20:59:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:59:47 INFO  : Sourcing of '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:59:47 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0' command is executed.
+20:59:47 INFO  : Hardware design information is loaded from '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+20:59:48 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0' command is executed.
+20:59:49 ERROR : AP transaction timeout
+20:59:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0
+loadhw /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0
+ps7_init
+----------------End of Script----------------
+
+21:01:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB 00000000000000" && level==0} -index 1' command is executed.
+21:01:01 INFO  : 'fpga -state' command is executed.
+21:01:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:01:02 INFO  : Sourcing of '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:01:02 ERROR : no targets found with "name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"". available targets:
+  1  APU (JTAG port open error. AP transaction error, DAP status f0000021)
+     2  ARM Cortex-A9 MPCore #0 (DEVICEEN is '0')
+     3  ARM Cortex-A9 MPCore #1 (DEVICEEN is '0')
+  4* xc7z020
+21:01:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0
+----------------End of Script----------------
+
+21:02:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB 00000000000000" && level==0} -index 1' command is executed.
+21:02:51 INFO  : 'fpga -state' command is executed.
+21:02:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:02:51 INFO  : Sourcing of '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:02:51 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0' command is executed.
+21:02:51 INFO  : Hardware design information is loaded from '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+21:02:52 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0' command is executed.
+21:02:53 INFO  : 'ps7_init' command is executed.
+21:02:53 INFO  : 'ps7_post_config' command is executed.
+21:02:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:02:54 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:02:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:02:55 INFO  : The application '/home/jara/hdl/zed2/zed2.sdk/hello1_sa/Debug/hello1_sa.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:02:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0
+loadhw /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0
+dow /home/jara/hdl/zed2/zed2.sdk/hello1_sa/Debug/hello1_sa.elf
+----------------End of Script----------------
+
+21:02:55 INFO  : Memory regions updated for context APU
+21:02:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:02:55 INFO  : 'con' command is executed.
+21:02:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0
+con
+----------------End of Script----------------
+
+21:04:41 INFO  : Disconnected from the channel tcfchan#4.
+21:04:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB 00000000000000" && level==0} -index 1' command is executed.
+21:04:41 INFO  : 'fpga -state' command is executed.
+21:04:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:04:41 INFO  : Sourcing of '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:04:42 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0' command is executed.
+21:04:42 INFO  : Hardware design information is loaded from '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+21:04:42 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0' command is executed.
+21:04:43 INFO  : 'ps7_init' command is executed.
+21:04:43 INFO  : 'ps7_post_config' command is executed.
+21:04:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:04:44 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:04:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:04:45 INFO  : The application '/home/jara/hdl/zed2/zed2.sdk/hello1_sa/Debug/hello1_sa.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:04:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0
+loadhw /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0
+dow /home/jara/hdl/zed2/zed2.sdk/hello1_sa/Debug/hello1_sa.elf
+----------------End of Script----------------
+
+21:04:45 INFO  : Memory regions updated for context APU
+21:04:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:04:45 INFO  : 'con' command is executed.
+21:04:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Platform Cable USB 00000000000000"} -index 0
+con
+----------------End of Script----------------
+
+21:06:11 INFO  : Disconnected from the channel tcfchan#5.
+21:06:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+21:06:12 INFO  : 'fpga -state' command is executed.
+21:06:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:06:12 INFO  : Sourcing of '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:06:12 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+21:06:13 INFO  : Hardware design information is loaded from '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+21:06:13 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+21:06:14 INFO  : 'ps7_init' command is executed.
+21:06:14 INFO  : 'ps7_post_config' command is executed.
+21:06:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:06:15 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:06:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:06:15 INFO  : The application '/home/jara/hdl/zed2/zed2.sdk/hello1_sa/Debug/hello1_sa.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:06:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow /home/jara/hdl/zed2/zed2.sdk/hello1_sa/Debug/hello1_sa.elf
+----------------End of Script----------------
+
+21:06:15 INFO  : Memory regions updated for context APU
+21:06:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:06:16 INFO  : 'con' command is executed.
+21:06:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+21:09:09 INFO  : Disconnected from the channel tcfchan#6.
+21:09:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+21:09:10 INFO  : 'fpga -state' command is executed.
+21:09:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:09:11 INFO  : Sourcing of '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:09:11 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+21:09:11 INFO  : Hardware design information is loaded from '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+21:09:11 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+21:09:12 INFO  : 'ps7_init' command is executed.
+21:09:12 INFO  : 'ps7_post_config' command is executed.
+21:09:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:09:13 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:09:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:09:13 INFO  : The application '/home/jara/hdl/zed2/zed2.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:09:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow /home/jara/hdl/zed2/zed2.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+21:09:13 INFO  : Memory regions updated for context APU
+21:09:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:09:13 INFO  : 'con' command is executed.
+21:09:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+21:33:54 INFO  : Launching XSDB server: xsdb -n /home/jara/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+21:48:27 INFO  : Launching XSDB server: xsdb -n /home/jara/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+21:48:29 INFO  : XSDB server has started successfully.
+21:48:29 INFO  : Processing command line option -hwspec /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper.hdf.
+21:48:29 INFO  : Checking for hwspec changes in the project ZynqDesign_wrapper_hw_platform_0.
+21:48:34 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1446497236000,  Project:1446492334000
+21:48:34 INFO  : The hardware specification for project 'ZynqDesign_wrapper_hw_platform_0' is different from /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper.hdf.
+21:48:34 INFO  : Copied contents of /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper.hdf into /ZynqDesign_wrapper_hw_platform_0/system.hdf.
+21:48:52 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+21:48:54 INFO  : 
+21:48:55 INFO  : Updating hardware inferred compiler options for hello2_fr.
+21:48:55 INFO  : Clearing existing target manager status.
+21:48:58 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+21:48:59 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+21:56:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+21:56:51 INFO  : 'fpga -state' command is executed.
+21:56:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:56:51 INFO  : Sourcing of '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:56:51 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+21:56:51 INFO  : Hardware design information is loaded from '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+21:56:52 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+21:56:53 INFO  : 'ps7_init' command is executed.
+21:56:53 INFO  : 'ps7_post_config' command is executed.
+21:56:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:56:54 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:56:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:56:54 INFO  : The application '/home/jara/hdl/zed2/zed2.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:56:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow /home/jara/hdl/zed2/zed2.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+21:56:54 INFO  : Memory regions updated for context APU
+21:56:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:56:55 INFO  : 'con' command is executed.
+21:56:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+22:33:19 INFO  : Disconnected from the channel tcfchan#1.
+22:33:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+22:33:20 INFO  : 'fpga -state' command is executed.
+22:33:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:33:20 INFO  : Sourcing of '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:33:20 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+22:33:25 INFO  : Hardware design information is loaded from '/home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+22:33:25 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+22:33:26 INFO  : 'ps7_init' command is executed.
+22:33:26 INFO  : 'ps7_post_config' command is executed.
+22:33:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:33:26 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:33:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:33:27 INFO  : The application '/home/jara/hdl/zed2/zed2.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:33:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow /home/jara/hdl/zed2/zed2.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+22:33:27 INFO  : Memory regions updated for context APU
+22:33:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:33:27 INFO  : 'con' command is executed.
+22:33:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+22:48:56 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+22:48:56 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 988 xsdb eval "disconnect tcfchan#2"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Communication channel is closed by remote peer
+	at org.eclipse.tcf.core.AbstractChannel$1$2.run(AbstractChannel.java:305)
+	... 2 more
+22:49:56 INFO  : Launching XSDB server: xsdb -n /home/jara/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+22:49:57 INFO  : XSDB server has started successfully.
+22:50:02 INFO  : Processing command line option -hwspec /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper.hdf.
+22:50:03 INFO  : Checking for hwspec changes in the project ZynqDesign_wrapper_hw_platform_0.
+22:50:07 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1446500921000,  Project:1446497236000
+22:50:07 INFO  : The hardware specification for project 'ZynqDesign_wrapper_hw_platform_0' is different from /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper.hdf.
+22:50:07 INFO  : Copied contents of /home/jara/hdl/zed2/zed2.sdk/ZynqDesign_wrapper.hdf into /ZynqDesign_wrapper_hw_platform_0/system.hdf.
+22:50:15 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+22:50:19 INFO  : 
+22:50:20 INFO  : Updating hardware inferred compiler options for hello2_fr.
+22:50:20 INFO  : Clearing existing target manager status.
+22:56:54 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+22:16:34 INFO  : Launching XSDB server: xsdb -n /home/jara/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+22:16:36 INFO  : XSDB server has started successfully.
+22:16:39 INFO  : Processing command line option -hwspec /home/jara/hdl/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper.hdf.
+22:19:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+22:19:55 INFO  : 'fpga -state' command is executed.
+22:19:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:19:55 INFO  : Sourcing of '/home/jara/hdl/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:19:56 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+22:19:56 INFO  : Hardware design information is loaded from '/home/jara/hdl/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+22:19:56 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+22:19:57 INFO  : 'ps7_init' command is executed.
+22:19:57 INFO  : 'ps7_post_config' command is executed.
+22:19:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:19:58 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:19:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:19:59 INFO  : The application '/home/jara/hdl/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:19:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/hdl/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw /home/jara/hdl/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow /home/jara/hdl/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+22:19:59 INFO  : Memory regions updated for context APU
+22:19:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:19:59 INFO  : 'con' command is executed.
+22:19:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+22:36:08 INFO  : Disconnected from the channel tcfchan#1.
+22:36:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+22:36:09 INFO  : 'fpga -state' command is executed.
+22:36:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:36:09 INFO  : Sourcing of '/home/jara/hdl/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:36:09 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+22:36:14 INFO  : Hardware design information is loaded from '/home/jara/hdl/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+22:36:14 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+22:36:16 INFO  : 'ps7_init' command is executed.
+22:36:16 INFO  : 'ps7_post_config' command is executed.
+22:36:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:36:16 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:36:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:36:17 INFO  : The application '/home/jara/hdl/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:36:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/hdl/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw /home/jara/hdl/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow /home/jara/hdl/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+22:36:17 INFO  : Memory regions updated for context APU
+22:36:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:36:17 INFO  : 'con' command is executed.
+22:36:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+11:45:17 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+11:45:21 INFO  : XSDB server has started successfully.
+11:45:23 INFO  : Processing command line option -hwspec D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper.hdf.
+11:46:05 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+11:46:08 INFO  : XSDB server has started successfully.
+11:46:14 INFO  : Processing command line option -hwspec D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper.hdf.
+11:46:15 INFO  : Checking for hwspec changes in the project ZynqDesign_wrapper_hw_platform_0.
+12:08:44 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+12:08:47 INFO  : XSDB server has started successfully.
+12:08:52 INFO  : Processing command line option -hwspec D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper.hdf.
+12:08:53 INFO  : Checking for hwspec changes in the project ZynqDesign_wrapper_hw_platform_0.
+12:10:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+12:10:28 INFO  : 'fpga -state' command is executed.
+12:10:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:10:28 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:10:28 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+12:10:28 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+12:10:29 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+12:10:30 INFO  : 'ps7_init' command is executed.
+12:10:30 INFO  : 'ps7_post_config' command is executed.
+12:10:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:10:31 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:10:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:10:32 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:10:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+12:10:32 INFO  : Memory regions updated for context APU
+12:10:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:10:32 INFO  : 'con' command is executed.
+12:10:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+12:13:31 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 81 xsdb eval "disconnect tcfchan#1"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
+12:26:51 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+12:26:54 INFO  : XSDB server has started successfully.
+12:27:00 INFO  : Processing command line option -hwspec D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper.hdf.
+12:27:01 INFO  : Checking for hwspec changes in the project ZynqDesign_wrapper_hw_platform_0.
+12:27:01 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1447241159759,  Project:1447238332766
+12:27:01 INFO  : The hardware specification for project 'ZynqDesign_wrapper_hw_platform_0' is different from D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper.hdf.
+12:27:01 INFO  : Copied contents of D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper.hdf into \ZynqDesign_wrapper_hw_platform_0\system.hdf.
+12:27:06 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+12:27:12 INFO  : 
+12:27:15 INFO  : 
+12:27:16 INFO  : Updating hardware inferred compiler options for hello2_fr.
+12:27:17 INFO  : Updating hardware inferred compiler options for hello1_sa.
+12:27:17 INFO  : Clearing existing target manager status.
+12:27:19 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+12:27:23 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+12:28:19 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+12:42:01 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+12:42:05 INFO  : XSDB server has started successfully.
+12:42:06 INFO  : Processing command line option -hwspec D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper.hdf.
+12:42:06 INFO  : Checking for hwspec changes in the project ZynqDesign_wrapper_hw_platform_0.
+12:42:09 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1447241857584,  Project:1447241159759
+12:42:09 INFO  : The hardware specification for project 'ZynqDesign_wrapper_hw_platform_0' is different from D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper.hdf.
+12:42:09 INFO  : Copied contents of D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper.hdf into \ZynqDesign_wrapper_hw_platform_0\system.hdf.
+12:42:39 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+12:42:44 INFO  : 
+12:42:48 INFO  : 
+12:42:48 INFO  : Updating hardware inferred compiler options for hello2_fr.
+12:42:49 INFO  : Updating hardware inferred compiler options for hello1_sa.
+12:42:49 INFO  : Clearing existing target manager status.
+12:42:51 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+12:42:53 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+12:44:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+12:44:19 INFO  : 'fpga -state' command is executed.
+12:44:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:44:19 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:44:19 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+12:44:19 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+12:44:20 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+12:44:20 INFO  : 'ps7_init' command is executed.
+12:44:20 INFO  : 'ps7_post_config' command is executed.
+12:44:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:44:21 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:44:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:44:21 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:44:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+12:44:21 INFO  : Memory regions updated for context APU
+12:44:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:44:21 INFO  : 'con' command is executed.
+12:44:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+16:15:24 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 120 xsdb eval "disconnect tcfchan#1"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
+16:15:25 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+12:30:06 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+12:30:10 INFO  : XSDB server has started successfully.
+12:30:11 INFO  : Processing command line option -hwspec D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper.hdf.
+12:30:15 INFO  : Checking for hwspec changes in the project ZynqDesign_wrapper_hw_platform_0.
+12:30:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:30:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+12:30:24 INFO  : FPGA configured successfully with bitstream "D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ZynqDesign_wrapper.bit"
+12:30:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+12:30:33 INFO  : 'fpga -state' command is executed.
+12:30:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:30:33 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:30:34 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+12:30:34 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+12:30:34 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+12:30:36 INFO  : 'ps7_init' command is executed.
+12:30:36 INFO  : 'ps7_post_config' command is executed.
+12:30:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:30:37 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:30:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:30:38 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:30:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+12:30:38 INFO  : Memory regions updated for context APU
+12:30:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:30:38 INFO  : 'con' command is executed.
+12:30:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+12:36:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:36:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+12:36:51 INFO  : FPGA configured successfully with bitstream "D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ZynqDesign_wrapper.bit"
+12:37:31 INFO  : Disconnected from the channel tcfchan#1.
+12:37:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+12:37:31 INFO  : 'fpga -state' command is executed.
+12:37:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:37:32 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:37:32 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+12:37:32 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+12:37:32 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+12:37:34 INFO  : 'ps7_init' command is executed.
+12:37:34 INFO  : 'ps7_post_config' command is executed.
+12:37:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:37:34 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:37:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:37:35 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:37:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+12:37:35 INFO  : Memory regions updated for context APU
+12:37:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:37:35 INFO  : 'con' command is executed.
+12:37:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+12:46:20 INFO  : Disconnected from the channel tcfchan#2.
+12:46:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+12:46:21 INFO  : 'fpga -state' command is executed.
+12:46:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:46:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+12:46:32 INFO  : FPGA configured successfully with bitstream "D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ZynqDesign_wrapper.bit"
+12:46:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+12:46:35 INFO  : 'fpga -state' command is executed.
+12:46:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:46:35 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:46:36 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+12:46:36 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+12:46:36 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+12:46:37 INFO  : 'ps7_init' command is executed.
+12:46:37 INFO  : 'ps7_post_config' command is executed.
+12:46:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:46:38 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:46:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:46:38 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:46:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+12:46:38 INFO  : Memory regions updated for context APU
+12:46:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:46:39 INFO  : 'con' command is executed.
+12:46:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+12:58:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:58:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+12:58:37 INFO  : FPGA configured successfully with bitstream "D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ZynqDesign_wrapper.bit"
+12:58:45 INFO  : Disconnected from the channel tcfchan#3.
+12:58:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+12:58:46 INFO  : 'fpga -state' command is executed.
+12:58:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:58:46 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:58:46 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+12:58:46 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+12:58:47 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+12:58:48 INFO  : 'ps7_init' command is executed.
+12:58:48 INFO  : 'ps7_post_config' command is executed.
+12:58:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:58:49 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:58:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:58:49 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:58:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+12:58:50 INFO  : Memory regions updated for context APU
+12:58:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:58:50 INFO  : 'con' command is executed.
+12:58:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+12:59:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:59:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+12:59:38 INFO  : FPGA configured successfully with bitstream "D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ZynqDesign_wrapper.bit"
+12:59:46 INFO  : Disconnected from the channel tcfchan#4.
+12:59:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+12:59:47 INFO  : 'fpga -state' command is executed.
+12:59:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:59:47 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:59:47 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+12:59:48 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+12:59:48 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+12:59:49 INFO  : 'ps7_init' command is executed.
+12:59:49 INFO  : 'ps7_post_config' command is executed.
+12:59:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:59:49 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:59:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:59:50 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:59:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+12:59:50 INFO  : Memory regions updated for context APU
+12:59:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:59:50 INFO  : 'con' command is executed.
+12:59:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+13:32:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:32:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+13:32:26 INFO  : FPGA configured successfully with bitstream "D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ZynqDesign_wrapper.bit"
+13:32:45 INFO  : Disconnected from the channel tcfchan#5.
+13:32:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+13:32:45 INFO  : 'fpga -state' command is executed.
+13:32:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:32:45 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:32:46 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+13:32:46 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+13:32:46 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+13:32:47 INFO  : 'ps7_init' command is executed.
+13:32:47 INFO  : 'ps7_post_config' command is executed.
+13:32:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:32:48 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:32:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:32:48 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:32:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+13:32:48 INFO  : Memory regions updated for context APU
+13:32:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:32:49 INFO  : 'con' command is executed.
+13:32:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+13:55:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:55:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+13:55:38 INFO  : FPGA configured successfully with bitstream "D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ZynqDesign_wrapper.bit"
+13:55:45 INFO  : Disconnected from the channel tcfchan#6.
+13:55:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+13:55:46 INFO  : 'fpga -state' command is executed.
+13:55:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:55:46 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:55:47 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+13:55:47 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+13:55:47 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+13:55:50 INFO  : 'ps7_init' command is executed.
+13:55:50 INFO  : 'ps7_post_config' command is executed.
+13:55:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:55:51 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:55:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:55:52 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:55:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+13:55:53 INFO  : Memory regions updated for context APU
+13:55:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:55:53 INFO  : 'con' command is executed.
+13:55:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+15:03:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:03:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+15:03:42 INFO  : FPGA configured successfully with bitstream "D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ZynqDesign_wrapper.bit"
+15:03:50 INFO  : Disconnected from the channel tcfchan#7.
+15:03:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+15:03:51 INFO  : 'fpga -state' command is executed.
+15:03:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:03:51 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:03:51 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+15:03:51 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+15:03:51 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+15:03:53 INFO  : 'ps7_init' command is executed.
+15:03:53 INFO  : 'ps7_post_config' command is executed.
+15:03:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:03:53 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:03:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:03:54 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:03:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+15:03:54 INFO  : Memory regions updated for context APU
+15:03:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:03:54 INFO  : 'con' command is executed.
+15:03:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+15:54:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:54:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+15:54:08 INFO  : FPGA configured successfully with bitstream "D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ZynqDesign_wrapper.bit"
+15:54:15 INFO  : Disconnected from the channel tcfchan#8.
+15:54:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+15:54:16 INFO  : 'fpga -state' command is executed.
+15:54:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:54:16 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:54:16 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+15:54:16 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+15:54:17 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+15:54:17 INFO  : 'ps7_init' command is executed.
+15:54:17 INFO  : 'ps7_post_config' command is executed.
+15:54:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:54:18 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:54:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:54:19 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:54:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+15:54:19 INFO  : Memory regions updated for context APU
+15:54:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:54:19 INFO  : 'con' command is executed.
+15:54:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+16:09:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:09:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+16:09:49 INFO  : FPGA configured successfully with bitstream "D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ZynqDesign_wrapper.bit"
+16:09:55 INFO  : Disconnected from the channel tcfchan#9.
+16:09:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+16:09:56 INFO  : 'fpga -state' command is executed.
+16:09:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:09:56 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:09:56 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+16:09:56 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+16:09:57 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+16:09:57 INFO  : 'ps7_init' command is executed.
+16:09:57 INFO  : 'ps7_post_config' command is executed.
+16:09:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:09:58 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:09:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:09:58 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:09:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+16:09:58 INFO  : Memory regions updated for context APU
+16:09:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:09:59 INFO  : 'con' command is executed.
+16:09:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+16:23:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:23:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+16:23:13 INFO  : FPGA configured successfully with bitstream "D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ZynqDesign_wrapper.bit"
+16:23:19 INFO  : Disconnected from the channel tcfchan#10.
+16:23:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+16:23:20 INFO  : 'fpga -state' command is executed.
+16:23:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:23:20 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:23:20 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+16:23:20 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+16:23:21 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+16:23:21 INFO  : 'ps7_init' command is executed.
+16:23:21 INFO  : 'ps7_post_config' command is executed.
+16:23:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:23:22 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:23:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:23:22 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:23:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+16:23:23 INFO  : Memory regions updated for context APU
+16:23:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:23:23 INFO  : 'con' command is executed.
+16:23:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+16:54:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:54:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+16:54:07 INFO  : FPGA configured successfully with bitstream "D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ZynqDesign_wrapper.bit"
+16:54:14 INFO  : Disconnected from the channel tcfchan#11.
+16:54:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+16:54:14 INFO  : 'fpga -state' command is executed.
+16:54:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:54:14 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:54:15 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+16:54:15 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+16:54:15 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+16:54:18 INFO  : 'ps7_init' command is executed.
+16:54:19 INFO  : 'ps7_post_config' command is executed.
+16:54:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:54:19 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:54:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:54:20 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:54:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+16:54:20 INFO  : Memory regions updated for context APU
+16:54:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:54:20 INFO  : 'con' command is executed.
+16:54:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+17:38:48 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 1026 xsdb eval "disconnect tcfchan#12"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
+09:22:11 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+09:22:16 INFO  : XSDB server has started successfully.
+10:15:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:15:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+10:15:10 INFO  : FPGA configured successfully with bitstream "D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ZynqDesign_wrapper.bit"
+10:15:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+10:15:20 INFO  : 'fpga -state' command is executed.
+10:15:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:15:20 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:15:20 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+10:15:20 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+10:15:21 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+10:15:21 INFO  : 'ps7_init' command is executed.
+10:15:22 INFO  : 'ps7_post_config' command is executed.
+10:15:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:15:22 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:15:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:15:23 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:15:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+10:15:24 INFO  : Memory regions updated for context APU
+10:15:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:15:25 INFO  : 'con' command is executed.
+10:15:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+10:18:49 INFO  : Disconnected from the channel tcfchan#1.
+10:18:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+10:18:51 INFO  : 'fpga -state' command is executed.
+10:18:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:18:51 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:18:51 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+10:18:51 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+10:18:52 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+10:18:53 INFO  : 'ps7_init' command is executed.
+10:18:53 INFO  : 'ps7_post_config' command is executed.
+10:18:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:18:54 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:18:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:18:55 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:18:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+10:18:55 INFO  : Memory regions updated for context APU
+10:18:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:18:55 INFO  : 'con' command is executed.
+10:18:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+10:48:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:48:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+10:48:45 INFO  : FPGA configured successfully with bitstream "D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ZynqDesign_wrapper.bit"
+10:49:14 INFO  : Disconnected from the channel tcfchan#2.
+10:49:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+10:49:14 INFO  : 'fpga -state' command is executed.
+10:49:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:49:15 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:49:15 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+10:49:15 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+10:49:15 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+10:49:16 INFO  : 'ps7_init' command is executed.
+10:49:16 INFO  : 'ps7_post_config' command is executed.
+10:49:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:49:16 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:49:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:49:17 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:49:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+10:49:17 INFO  : Memory regions updated for context APU
+10:49:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:49:18 INFO  : 'con' command is executed.
+10:49:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+10:58:03 INFO  : Disconnected from the channel tcfchan#3.
+10:58:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+10:58:04 INFO  : 'fpga -state' command is executed.
+10:58:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:58:04 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:58:04 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+10:58:04 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+10:58:05 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+10:58:05 INFO  : 'ps7_init' command is executed.
+10:58:05 INFO  : 'ps7_post_config' command is executed.
+10:58:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:58:06 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:58:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:58:07 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:58:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+10:58:07 INFO  : Memory regions updated for context APU
+10:58:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:58:07 INFO  : 'con' command is executed.
+10:58:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+11:04:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:04:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+11:04:47 INFO  : FPGA configured successfully with bitstream "D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ZynqDesign_wrapper.bit"
+11:31:50 INFO  : Disconnected from the channel tcfchan#4.
+11:31:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+11:31:51 INFO  : 'fpga -state' command is executed.
+11:31:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:31:51 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:31:51 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+11:31:51 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+11:31:52 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+11:31:52 INFO  : 'ps7_init' command is executed.
+11:31:52 INFO  : 'ps7_post_config' command is executed.
+11:31:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:31:53 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:31:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:31:54 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:31:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+11:31:54 INFO  : Memory regions updated for context APU
+11:31:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:31:54 INFO  : 'con' command is executed.
+11:31:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+11:32:51 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 304 xsdb eval "disconnect tcfchan#5"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
+11:33:28 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+11:33:32 INFO  : XSDB server has started successfully.
+11:33:33 INFO  : Processing command line option -hwspec D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper.hdf.
+11:33:33 INFO  : Checking for hwspec changes in the project ZynqDesign_wrapper_hw_platform_0.
+11:33:36 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1447408832656,  Project:1447241857584
+11:33:36 INFO  : The hardware specification for project 'ZynqDesign_wrapper_hw_platform_0' is different from D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper.hdf.
+11:33:36 INFO  : Copied contents of D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper.hdf into \ZynqDesign_wrapper_hw_platform_0\system.hdf.
+11:33:41 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+11:33:46 INFO  : 
+11:33:47 INFO  : Updating hardware inferred compiler options for hello2_fr.
+11:33:47 INFO  : Clearing existing target manager status.
+11:37:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:37:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+11:37:11 INFO  : FPGA configured successfully with bitstream "D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ZynqDesign_wrapper.bit"
+11:37:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+11:37:19 INFO  : 'fpga -state' command is executed.
+11:37:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:37:19 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:37:19 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+11:37:19 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+11:37:20 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+11:37:21 INFO  : 'ps7_init' command is executed.
+11:37:21 INFO  : 'ps7_post_config' command is executed.
+11:37:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:37:21 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:37:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:37:22 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:37:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+11:37:22 INFO  : Memory regions updated for context APU
+11:37:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:37:22 INFO  : 'con' command is executed.
+11:37:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+11:48:10 INFO  : Disconnected from the channel tcfchan#1.
+11:48:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+11:48:11 INFO  : 'fpga -state' command is executed.
+11:48:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:48:11 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:48:11 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+11:48:11 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+11:48:12 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+11:48:12 INFO  : 'ps7_init' command is executed.
+11:48:12 INFO  : 'ps7_post_config' command is executed.
+11:48:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:48:13 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:48:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:48:14 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:48:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+11:48:14 INFO  : Memory regions updated for context APU
+11:48:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:48:14 INFO  : 'con' command is executed.
+11:48:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+12:33:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:33:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+12:34:00 INFO  : FPGA configured successfully with bitstream "D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ZynqDesign_wrapper.bit"
+12:34:06 INFO  : Disconnected from the channel tcfchan#2.
+12:34:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+12:34:07 INFO  : 'fpga -state' command is executed.
+12:34:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:34:07 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:34:07 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+12:34:08 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+12:34:08 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+12:34:08 INFO  : 'ps7_init' command is executed.
+12:34:09 INFO  : 'ps7_post_config' command is executed.
+12:34:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:34:09 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:34:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:34:10 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:34:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+12:34:10 INFO  : Memory regions updated for context APU
+12:34:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:34:10 INFO  : 'con' command is executed.
+12:34:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+12:40:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:40:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+12:40:03 INFO  : FPGA configured successfully with bitstream "D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ZynqDesign_wrapper.bit"
+12:40:07 INFO  : Disconnected from the channel tcfchan#3.
+12:40:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+12:40:08 INFO  : 'fpga -state' command is executed.
+12:40:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:40:08 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:40:08 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+12:40:09 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+12:40:09 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+12:40:10 INFO  : 'ps7_init' command is executed.
+12:40:10 INFO  : 'ps7_post_config' command is executed.
+12:40:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:40:11 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:40:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:40:11 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:40:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+12:40:12 INFO  : Memory regions updated for context APU
+12:40:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:40:12 INFO  : 'con' command is executed.
+12:40:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+12:46:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:46:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+12:46:52 INFO  : FPGA configured successfully with bitstream "D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ZynqDesign_wrapper.bit"
+12:47:03 INFO  : Disconnected from the channel tcfchan#4.
+12:47:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+12:47:03 INFO  : 'fpga -state' command is executed.
+12:47:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:47:04 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:47:04 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+12:47:04 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+12:47:04 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+12:47:05 INFO  : 'ps7_init' command is executed.
+12:47:06 INFO  : 'ps7_post_config' command is executed.
+12:47:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:47:06 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:47:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:47:07 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:47:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+12:47:07 INFO  : Memory regions updated for context APU
+12:47:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:47:07 INFO  : 'con' command is executed.
+12:47:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+13:17:33 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 363 xsdb eval "disconnect tcfchan#5"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
+13:17:34 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+13:19:21 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+13:19:24 INFO  : XSDB server has started successfully.
+13:19:25 INFO  : Processing command line option -hwspec D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper.hdf.
+13:19:26 INFO  : Checking for hwspec changes in the project ZynqDesign_wrapper_hw_platform_0.
+13:19:28 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1447417038288,  Project:1447408832656
+13:19:28 INFO  : The hardware specification for project 'ZynqDesign_wrapper_hw_platform_0' is different from D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper.hdf.
+13:19:29 INFO  : Copied contents of D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper.hdf into \ZynqDesign_wrapper_hw_platform_0\system.hdf.
+13:19:34 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+13:19:39 INFO  : 
+13:19:40 INFO  : Updating hardware inferred compiler options for hello2_fr.
+13:19:40 INFO  : Clearing existing target manager status.
+13:20:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:20:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+13:20:45 INFO  : FPGA configured successfully with bitstream "D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ZynqDesign_wrapper.bit"
+13:20:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+13:20:53 INFO  : 'fpga -state' command is executed.
+13:20:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:20:53 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:20:54 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+13:20:54 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+13:20:54 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+13:20:55 INFO  : 'ps7_init' command is executed.
+13:20:55 INFO  : 'ps7_post_config' command is executed.
+13:20:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:20:56 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:20:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:20:56 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:20:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+13:20:56 INFO  : Memory regions updated for context APU
+13:20:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:20:57 INFO  : 'con' command is executed.
+13:20:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+14:06:14 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:06:14 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+14:09:00 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+14:09:04 INFO  : XSDB server has started successfully.
+14:09:05 INFO  : Processing command line option -hwspec D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper.hdf.
+14:09:06 INFO  : Checking for hwspec changes in the project ZynqDesign_wrapper_hw_platform_0.
+14:09:08 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1447419928633,  Project:1447417038288
+14:09:08 INFO  : The hardware specification for project 'ZynqDesign_wrapper_hw_platform_0' is different from D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper.hdf.
+14:09:08 INFO  : Copied contents of D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper.hdf into \ZynqDesign_wrapper_hw_platform_0\system.hdf.
+14:09:14 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+14:09:16 ERROR : Timed out. 180 seconds have elapsed while waiting for XSDB server to launch.
+14:09:16 WARN  : Unexpected exception occurred.
+java.lang.Exception: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.Command.<init>(Command.java:83)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$8.<init>(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueTcfCmd(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.access$4(XSDBCommandManager.java:381)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$7.run(XSDBCommandManager.java:376)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.AbstractChannel.sendCommand(AbstractChannel.java:874)
+	at org.eclipse.tcf.core.Command.<init>(Command.java:79)
+	... 6 more
+14:09:20 INFO  : 
+14:09:21 INFO  : Updating hardware inferred compiler options for hello2_fr.
+14:09:21 INFO  : Clearing existing target manager status.
+14:11:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:11:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+14:11:42 INFO  : FPGA configured successfully with bitstream "D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ZynqDesign_wrapper.bit"
+14:11:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+14:11:52 INFO  : 'fpga -state' command is executed.
+14:11:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:11:52 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:11:52 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+14:11:53 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+14:11:53 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+14:11:54 INFO  : 'ps7_init' command is executed.
+14:11:54 INFO  : 'ps7_post_config' command is executed.
+14:11:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:11:55 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:11:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:11:55 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:11:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+14:11:55 INFO  : Memory regions updated for context APU
+14:11:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:11:56 INFO  : 'con' command is executed.
+14:11:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+14:14:32 INFO  : Disconnected from the channel tcfchan#1.
+14:14:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+14:14:32 INFO  : 'fpga -state' command is executed.
+14:14:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:14:32 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:14:33 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+14:14:33 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+14:14:33 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+14:14:34 INFO  : 'ps7_init' command is executed.
+14:14:34 INFO  : 'ps7_post_config' command is executed.
+14:14:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:14:35 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:14:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:14:35 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:14:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+14:14:35 INFO  : Memory regions updated for context APU
+14:14:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:14:36 INFO  : 'con' command is executed.
+14:14:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+14:35:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:35:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+14:35:37 INFO  : FPGA configured successfully with bitstream "D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ZynqDesign_wrapper.bit"
+14:36:10 INFO  : Disconnected from the channel tcfchan#2.
+14:36:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+14:36:11 INFO  : 'fpga -state' command is executed.
+14:36:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:36:11 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:36:11 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+14:36:11 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+14:36:12 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+14:36:12 INFO  : 'ps7_init' command is executed.
+14:36:12 INFO  : 'ps7_post_config' command is executed.
+14:36:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:36:13 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:36:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:36:13 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:36:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+14:36:13 INFO  : Memory regions updated for context APU
+14:36:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:36:14 INFO  : 'con' command is executed.
+14:36:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+14:36:52 INFO  : Disconnected from the channel tcfchan#3.
+14:36:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+14:36:53 INFO  : 'fpga -state' command is executed.
+14:36:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:36:53 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:36:53 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+14:36:53 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+14:36:54 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+14:36:54 INFO  : 'ps7_init' command is executed.
+14:36:54 INFO  : 'ps7_post_config' command is executed.
+14:36:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:36:55 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:36:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:36:56 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:36:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+14:36:56 INFO  : Memory regions updated for context APU
+14:36:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:36:56 INFO  : 'con' command is executed.
+14:36:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+14:43:47 INFO  : Disconnected from the channel tcfchan#4.
+14:43:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+14:43:47 INFO  : 'fpga -state' command is executed.
+14:43:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:43:48 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:43:48 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+14:43:48 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+14:43:48 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+14:43:49 INFO  : 'ps7_init' command is executed.
+14:43:49 INFO  : 'ps7_post_config' command is executed.
+14:43:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:43:50 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:43:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:43:51 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:43:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+14:43:51 INFO  : Memory regions updated for context APU
+14:43:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:43:51 INFO  : 'con' command is executed.
+14:43:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+14:44:50 INFO  : Disconnected from the channel tcfchan#5.
+14:44:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+14:44:50 INFO  : 'fpga -state' command is executed.
+14:44:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:44:51 INFO  : Sourcing of 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:44:51 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+14:44:51 INFO  : Hardware design information is loaded from 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf'.
+14:44:52 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+14:44:52 INFO  : 'ps7_init' command is executed.
+14:44:52 INFO  : 'ps7_post_config' command is executed.
+14:44:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:44:53 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:44:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:44:53 INFO  : The application 'D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:44:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/ZynqDesign_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow D:/HOME/elektronika/zed3_eth/zed3_eth.sdk/hello2_fr/Debug/hello2_fr.elf
+----------------End of Script----------------
+
+14:44:53 INFO  : Memory regions updated for context APU
+14:44:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:44:54 INFO  : 'con' command is executed.
+14:44:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+14:47:46 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 347 xsdb eval "disconnect tcfchan#6"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
+14:47:47 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

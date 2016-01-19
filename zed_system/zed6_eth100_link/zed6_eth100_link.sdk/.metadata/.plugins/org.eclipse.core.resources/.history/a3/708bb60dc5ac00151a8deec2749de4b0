@@ -1,0 +1,378 @@
+
+/* FreeRTOS includes. */
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+
+/* Xilinx includes. */
+#include "xil_printf.h"
+#include "xgpio.h"
+#include "xparameters.h"
+#include "edma.h"
+
+
+/*-----------------------------------------------------------*/
+
+static XGpio gpio_leds;
+static XGpio gpio_btns;
+
+/*-----------------------------------------------------------*/
+
+/* The Tx and Rx tasks as described at the top of this file. */
+static void prvTxTask( void *pvParameters );
+static void prvRxTask( void *pvParameters );
+
+void prvTxEth100Task( void *pvParameters );
+void prvRxEth100Task( void *pvParameters );
+
+static void prvLEDCount( void *pvParameters );
+
+void print_txslots_state();
+
+/*-----------------------------------------------------------*/
+
+// edma_txlink_t edma.txlink;
+edma_t edma;
+
+#define XEL_MAC_ADDR_SIZE       6
+
+static u8 LocalAddress[XEL_MAC_ADDR_SIZE] = {
+    0x00, 0x01, 0x02, 0x03, 0x04, 0x05
+};
+
+static u8 RemoteAddress[XEL_MAC_ADDR_SIZE] = {
+    0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF
+};
+
+
+#define MAX_FRAME_SIZE_W            512
+
+uint32_t rxbuf[MAX_FRAME_SIZE_W];
+uint32_t txbuf[MAX_FRAME_SIZE_W];
+
+
+/*-----------------------------------------------------------*/
+
+/* The queue used by the Tx and Rx tasks, as described at the top of this
+file. */
+//static QueueHandle_t xQueue = NULL;
+
+// char HWstring[15] = "Hello World";
+
+int main( void )
+{
+	xil_printf( "Hello from Freertos // EDMA\r\n" );
+
+	if (XGpio_Initialize(&gpio_leds, XPAR_GPIO_LEDS_DEVICE_ID) != XST_SUCCESS) {
+		xil_printf( "ERR: Xgpio Leds init failed\r\n" );
+	} else {
+		XGpio_SetDataDirection(&gpio_leds, 1, 0xFFFFFF00);
+	}
+
+	if (XGpio_Initialize(&gpio_btns, XPAR_GPIO_BTNS_DEVICE_ID) != XST_SUCCESS) {
+		xil_printf( "ERR: Xgpio Btns init failed\r\n" );
+	} else {
+		XGpio_SetDataDirection(&gpio_btns, 1, 0xFFFFFFFF);
+	}
+
+    memset(&edma.txlink, sizeof(edma.txlink), 0);
+    // edma.txlink.hwbottom_tag = TXNTAGS - 1;
+    edma.txlink.frm_ntag = 1;
+    edma.next_output_seqnum = 0x81;
+    edma.acked_output_seqnum = 0x80;
+    edma.acked_input_seqnum = 0x00;
+
+	/* Create the two tasks.  The Tx task is given a lower priority than the
+	Rx task, so the Rx task will leave the Blocked state and pre-empt the Tx
+	task as soon as the Tx task places an item in the queue. */
+	xTaskCreate( 	prvLEDCount, 					/* The function that implements the task. */
+					( const char * ) "LED", 		/* Text name for the task, provided to assist debugging only. */
+					configMINIMAL_STACK_SIZE, 	/* The stack allocated to the task. */
+					NULL, 						/* The task parameter is not used, so set to NULL. */
+					tskIDLE_PRIORITY,			/* The task runs at the idle priority. */
+					NULL );
+
+    xTaskCreate( prvTxEth100Task, ( const char * ) "Eth100Tx",
+        4*configMINIMAL_STACK_SIZE, NULL,   tskIDLE_PRIORITY + 1, NULL );
+
+    // xTaskCreate( prvRxEth100Task, ( const char * ) "Eth100Rx",
+    //     4*configMINIMAL_STACK_SIZE, NULL,   tskIDLE_PRIORITY + 1, NULL );
+
+	/* Create the queue used by the tasks.  The Rx task has a higher priority
+	than the Tx task, so will preempt the Tx task and remove values from the
+	queue as soon as the Tx task writes to the queue - therefore the queue can
+	never have more than one item in it. */
+//	xQueue = xQueueCreate( 	1,						/* There is only one space in the queue. */
+//							sizeof( HWstring ) );	/* Each space in the queue is large enough to hold a uint32_t. */
+
+	/* Check the queue was created. */
+//	configASSERT( xQueue );
+
+	/* Start the tasks and timer running. */
+	vTaskStartScheduler();
+
+	/* If all is well, the scheduler will now be running, and the following line
+	will never be reached.  If the following line does execute, then there was
+	insufficient FreeRTOS heap memory available for the idle and/or timer tasks
+	to be created.  See the memory management section on the FreeRTOS web site
+	for more details. */
+	for( ;; );
+}
+
+/*-----------------------------------------------------------*/
+static void prvLEDCount( void *pvParameters )
+{
+	int cnt = 0;
+	const TickType_t x1second = pdMS_TO_TICKS( 1000UL );
+
+	for( ;; )
+	{
+		/* Delay for 1 second. */
+		vTaskDelay( x1second );
+
+		XGpio_DiscreteWrite(&gpio_leds, 1, ++cnt);
+	}
+}
+
+#if 0
+/*-----------------------------------------------------------*/
+static void prvTxTask( void *pvParameters )
+{
+const TickType_t x1second = pdMS_TO_TICKS( 1000UL );
+
+	for( ;; )
+	{
+		/* Delay for 1 second. */
+		vTaskDelay( x1second );
+
+		/* Send the next value on the queue.  The queue should always be
+		empty at this point so a block time of 0 is used. */
+		xQueueSend( xQueue,			/* The queue being written to. */
+					HWstring, /* The address of the data being sent. */
+					0UL );			/* The block time. */
+	}
+}
+
+/*-----------------------------------------------------------*/
+static void prvRxTask( void *pvParameters )
+{
+char Recdstring[15] = "";
+
+	for( ;; )
+	{
+		/* Block to wait for data arriving on the queue. */
+		xQueueReceive( 	xQueue,				/* The queue being read. */
+						Recdstring,	/* Data is read into this address. */
+						portMAX_DELAY );	/* Wait without a timeout for data. */
+
+		/* Print the received data. */
+		xil_printf( "Rx task received string from Tx task: %s\r\n", Recdstring );
+	}
+}
+
+#endif
+
+uint32_t FillTestFrame(uint8_t *FramePtr, int PayloadSize, uint8_t myseqnum, uint8_t ackseqnum)
+{
+    /*
+     * Fill in the valid Destination MAC address if
+     * the Loopback is not enabled.
+     */
+    *FramePtr++ = RemoteAddress[0];
+    *FramePtr++ = RemoteAddress[1];
+    *FramePtr++ = RemoteAddress[2];
+    *FramePtr++ = RemoteAddress[3];
+    *FramePtr++ = RemoteAddress[4];
+    *FramePtr++ = RemoteAddress[5];
+
+    /*
+     * Fill in the source MAC address.
+     */
+    *FramePtr++ = LocalAddress[0];
+    *FramePtr++ = LocalAddress[1];
+    *FramePtr++ = LocalAddress[2];
+    *FramePtr++ = LocalAddress[3];
+    *FramePtr++ = LocalAddress[4];
+    *FramePtr++ = LocalAddress[5];
+
+    /*
+     * Set up the type/length field - be sure its in network order.
+     */
+    *((u16 *)FramePtr) = Xil_Htons(PayloadSize);
+    FramePtr++;
+    FramePtr++;
+
+    *FramePtr++ = myseqnum;
+    *FramePtr++ = ackseqnum;
+
+    /*
+     * Now fill in the data field with known values so we can verify them
+     * on receive.
+     */
+    int Index;
+    for (Index = 0; Index < PayloadSize-2; Index++) {
+        *FramePtr++ = (uint8_t)Index;
+    }
+
+    return PayloadSize + 12 + 2;
+}
+
+void prvTxEth100Task( void *pvParameters )
+{
+    const uint32_t test_frame_len_bytes = 18*4;
+    uint32_t prev_btns = 0;
+
+    xil_printf( "Eth100_Tx: started\r\n");
+
+    /* reset hw */
+    *ETH100TX_REG_STAT = ETH100TX_RSTAT_RESET;
+
+    for (;;) {
+        vTaskDelay( 1 );
+
+        EdmaTx_UpdateSlotsByHw(&edma.txlink);
+
+        uint32_t rxframe_len = EdmaRx_CheckHw(&edma.rxlink);
+
+        if (rxframe_len > 0) {
+            if (rxframe_len > MAX_FRAME_SIZE_W) {
+                xil_printf("Eth100_Rx: frame size %d is bigger than buffer!\r\n", rxframe_len);
+            } else {
+                /* extract frame from the hw buffer */
+                EdmaRx_CopyFromHwBuffer(&edma.rxlink, rxbuf);
+                /* finish frame in the input hw buffer */
+                EdmaRx_ReleaseFrameInHwBuffer(&edma.rxlink);
+
+                /* debug print frame contents */
+                xil_printf("Eth100_Rx: frame of size %d = [", rxframe_len);
+                int i;
+                for (i = 0; i < rxframe_len; ++i) {
+                    xil_printf("%08X, ", rxbuf[i]);
+                }
+                xil_printf("\r\n");
+
+                /* extract input seqnum of the frame */
+                uint8_t rx_seqnum = (rxbuf[3] >> 16) & 0xFF;
+                uint8_t rx_acknum = (rxbuf[3] >> 24) & 0xFF;
+
+                xil_printf("Eth100_Rx: rx_seqnum=%d, rx_acknum=%d\r\n", rx_seqnum, rx_acknum);
+                xil_printf("  next_output_seqnum=%d, acked_output_seqnum=%d, acked_input_seqnum=%d\r\n",
+                        edma.next_output_seqnum, edma.acked_output_seqnum, edma.acked_input_seqnum);
+                xil_printf("  txslots before the frame = ");
+                print_txslots_state();
+
+                /* if rx_acknum is > acked_output_seqnum and < next_output_seqnum, then a new frame has been acked */
+                if ((edma.acked_output_seqnum < edma.next_output_seqnum) 
+                        && (rx_acknum > edma.acked_output_seqnum) && (rx_acknum < edma.next_output_seqnum)) {
+                    /* ack output frames from edma.acked_output_seqnum+1 to rx_acknum */
+                    /* edma.acked_output_seqnum ... rx_acknum ... edma.next_output_seqnum */
+                    int i;
+                    for (i = 0; i < TXNTAGS; ++i) {
+                        if ((edma.txlink.txslots[i].seqnum > edma.acked_output_seqnum)
+                                && (edma.txlink.txslots[i].seqnum <= rx_acknum)) {
+                            /* the frame is (potentially) acked */
+                            if ((edma.txlink.txslots[i].state == ETXSTATE_SENDING)) {
+                                /* ack frame even as it is being sent */
+                                edma.txlink.txslots[i].state = ETXSTATE_SENDING_BUT_ACKED;
+                            }
+                            if (edma.txlink.txslots[i].state == ETXSTATE_WAIT_FOR_ACK) {
+                                /* ack frame */
+                                EdmaTx_DoMarkSlotUnused(&edma.txlink, i);
+                            }
+                        }
+                    }
+                } else if ((edma.acked_output_seqnum > edma.next_output_seqnum) 
+                        && ((rx_acknum > edma.acked_output_seqnum) || (rx_acknum < edma.next_output_seqnum))) {
+                    /* ack output frames from edma.acked_output_seqnum+1 to rx_acknum, which wraps around */
+                    /* edma.acked_output_seqnum ... rx_acknum ... 0xFF 0x00 ... edma.next_output_seqnum */
+                    /* edma.acked_output_seqnum ... 0xFF 0x00 ... rx_acknum ...  edma.next_output_seqnum */
+                    int i;
+                    for (i = 0; i < TXNTAGS; ++i) {
+                        if (((edma.txlink.txslots[i].seqnum > edma.acked_output_seqnum)
+                                        && (edma.txlink.txslots[i].seqnum <= rx_acknum))
+                                || ((edma.txlink.txslots[i].seqnum < edma.next_output_seqnum)
+                                    && (edma.txlink.txslots[i].seqnum < rx_acknum))) {
+                            /* the frame is (potentially) acked */
+                            if ((edma.txlink.txslots[i].state == ETXSTATE_SENDING)) {
+                                /* ack frame even as it is being sent */
+                                edma.txlink.txslots[i].state = ETXSTATE_SENDING_BUT_ACKED;
+                            }
+                            if (edma.txlink.txslots[i].state == ETXSTATE_WAIT_FOR_ACK) {
+                                /* ack frame */
+                                EdmaTx_DoMarkSlotUnused(&edma.txlink, i);
+                            }
+                        }
+                    }
+                }
+
+                xil_printf("  txslots after the frame = ");
+                print_txslots_state();
+
+                /* if rx_seqnum is the next in the sequence then act on the frame */
+                if (rx_seqnum == ((edma.acked_input_seqnum+1) & 0xFF)) {
+                    /* input seqnum is valid */
+                    edma.acked_input_seqnum = rx_seqnum;
+
+
+                }
+
+                xil_printf("  next_output_seqnum=%d, acked_output_seqnum=%d, acked_input_seqnum=%d\r\n",
+                        emda.next_output_seqnum, edma.acked_output_seqnum, edma.acked_input_seqnum);
+                xil_printf("\r\n");
+            }
+        }
+
+        /* Check button press, send a test frame */
+        uint32_t btns = XGpio_DiscreteRead(&gpio_btns, 1);
+
+        if (btns != prev_btns) {
+            xil_printf("btns=%d\r\n", btns);
+
+            if (btns == 1) {
+                /* send a frame */
+                uint32_t space = EdmaTx_CalcFreeBufferSpace(&edma.txlink);
+                xil_printf( "Eth100_Tx: sending a frame #%d, space=%d\r\n", edma.txlink.frm_num, space);
+
+                if ((test_frame_len_bytes/4 < space)
+                        && (edma.txlink.txslots[edma.txlink.frm_ntag].state == ETXSTATE_UNUSED)) {
+                    /* we have free resources to send new frame */
+                    uint8_t tmpbuf[test_frame_len_bytes+32];
+                    
+                    /* prepare 64B frame (including two MAC addresses and the type field) */
+                    uint32_t frame_len = FillTestFrame(tmpbuf, (test_frame_len_bytes - 12 - 2), /* in bytes */
+                                            edma.next_output_seqnum, edma.acked_input_seqnum);
+                    uint32_t tag = EdmaTx_CopyToHwBuffer(&edma.txlink, (void*)tmpbuf, frame_len/4, edma.next_output_seqnum);
+                    EdmaTx_EnqueueFrameToHw(&edma.txlink, tag, 000);
+                    
+                    xil_printf("Eth100_Tx: sending oseqnum=%d, ackseqnum=%d\r\n", 
+                                edma.next_output_seqnum, edma.acked_input_seqnum);
+
+                    edma.next_output_seqnum++;
+
+                    xil_printf("Eth100_Tx: sent tag=%d, bottom=%d, top=%d, frm_ntag=%d, hwbottom_tag=%d\r\n", 
+                        tag, edma.txlink.bottom, edma.txlink.top, edma.txlink.frm_ntag, edma.txlink.hwbottom_tag);
+                    xil_printf("  next_output_seqnum=%d, acked_output_seqnum=%d, acked_input_seqnum=%d\r\n",
+                            emda.next_output_seqnum, edma.acked_output_seqnum, edma.acked_input_seqnum);
+                } else {
+                    xil_printf("Eth100_Tx: no space in hw buffer or slots for new frame: space=%d, \r\n   ", space);
+                    print_txslots_state();
+                }
+                xil_printf("\r\n");
+            }
+
+            vTaskDelay( 10 );
+        }
+
+        prev_btns = btns;
+    }
+}
+
+void print_txslots_state()
+{
+	xil_printf("[");
+    int i;
+    for (i = 0; i < TXNTAGS; ++i) {
+        xil_printf("%d, ", edma.txlink.txslots[i].state);
+    }
+    xil_printf("]\r\n");
+}

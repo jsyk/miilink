@@ -1,0 +1,32 @@
+21:42:36 **** Auto Build of configuration Debug for project edma1_fr ****
+make all 
+Building file: ../src/edma.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma.d" -MT"src/edma.d" -o "src/edma.o" "../src/edma.c"
+Finished building: ../src/edma.c
+ 
+Building file: ../src/edma_main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/edma_main.o" -I../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/edma_main.d" -MT"src/edma_main.d" -o "src/edma_main.o" "../src/edma_main.c"
+../src/edma_main.c:23:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvTxTask( void *pvParameters );
+             ^
+../src/edma_main.c:24:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+ static void prvRxTask( void *pvParameters );
+             ^
+Finished building: ../src/edma_main.c
+ 
+Building target: edma1_fr.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos821_xilinx_bsp_0/ps7_cortexa9_0/lib -o "edma1_fr.elf"  ./src/edma.o ./src/edma_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: edma1_fr.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size edma1_fr.elf  |tee "edma1_fr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82036	   3216	  60428	 145680	  23910	edma1_fr.elf
+Finished building: edma1_fr.elf.size
+ 
+
+21:42:36 Build Finished (took 384ms)
+

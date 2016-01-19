@@ -1,0 +1,498 @@
+
+/* FreeRTOS includes. */
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+
+/* Xilinx includes. */
+#include "xil_printf.h"
+#include "xgpio.h"
+#include "xemaclite.h"
+#include "xparameters.h"
+
+/*-----------------------------------------------------------*/
+
+/* The Tx and Rx tasks as described at the top of this file. */
+static void prvLEDCount( void *pvParameters );
+static void prvRxTask( void *pvParameters );
+void prvRxEth100Task( void *pvParameters );
+
+int EmacLiteRecvFrame(u32 PayloadSize);
+int EmacLiteSendFrame(XEmacLite *InstancePtr, u32 PayloadSize);
+
+
+#define FRBUF_MASK				1023
+
+/*-----------------------------------------------------------*/
+
+/* The queue used by the Tx and Rx tasks, as described at the top of this
+file. */
+static QueueHandle_t xQueue = NULL;
+char HWstring[15] = "Hello World";
+
+
+/*
+ * The Size of the Test Frame.
+ */
+#define EMACLITE_TEST_FRAME_SIZE	1000
+
+static u8 LocalAddress[XEL_MAC_ADDR_SIZE] =
+{
+	0x00, 0x01, 0x02, 0x03, 0x04, 0x05
+};
+
+static u8 RemoteAddress[XEL_MAC_ADDR_SIZE] =
+{
+	0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF
+};
+
+static XGpio gpio_leds;
+static XGpio gpio_btns;
+static XEmacLite emac;
+
+/*
+ * Buffers used for Transmission and Reception of Packets. These are declared
+ * as global so that they are not a part of the stack.
+ */
+u8 TxFrame[XEL_MAX_FRAME_SIZE];
+u8 RxFrame[XEL_MAX_FRAME_SIZE];
+
+volatile u32 RecvFrameLength;	/* Indicates the length of the Received packet
+				 */
+volatile int TransmitComplete;	/* Flag to indicate that the Transmission
+				 * is complete
+				 */
+
+
+
+int main( void )
+{
+	xil_printf( "Hello from Freertos\r\n" );
+
+	if (XGpio_Initialize(&gpio_leds, XPAR_GPIO_LEDS_DEVICE_ID) != XST_SUCCESS) {
+		xil_printf( "ERR: Xgpio Leds init failed\r\n" );
+	} else {
+		XGpio_SetDataDirection(&gpio_leds, 1, 0xFFFFFF00);
+	}
+
+	if (XGpio_Initialize(&gpio_btns, XPAR_GPIO_BTNS_DEVICE_ID) != XST_SUCCESS) {
+		xil_printf( "ERR: Xgpio Btns init failed\r\n" );
+	} else {
+		XGpio_SetDataDirection(&gpio_btns, 1, 0xFFFFFFFF);
+	}
+
+	if (XEmacLite_Initialize(&emac, XPAR_EMACLITE_0_DEVICE_ID) != XST_SUCCESS) {
+		xil_printf( "ERR: emacline init failed\r\n" );
+	}
+
+	XEmacLite_SetMacAddress(&emac, LocalAddress);
+
+	XEmacLite_FlushReceive(&emac);
+
+	RecvFrameLength = 0;
+
+	if (XEmacLite_TxBufferAvailable(&emac) != TRUE) {
+		xil_printf( "ERR: Xemac TxBuffer not available\r\n" );
+	}
+
+//	XEmacLite_EnableLoopBack(&emac);
+	XEmacLite_DisableLoopBack(&emac);
+
+
+
+	/* Create the two tasks.  The Tx task is given a lower priority than the
+	Rx task, so the Rx task will leave the Blocked state and pre-empt the Tx
+	task as soon as the Tx task places an item in the queue. */
+	xTaskCreate( 	prvLEDCount, 					/* The function that implements the task. */
+					( const char * ) "LED", 		/* Text name for the task, provided to assist debugging only. */
+					configMINIMAL_STACK_SIZE, 	/* The stack allocated to the task. */
+					NULL, 						/* The task parameter is not used, so set to NULL. */
+					tskIDLE_PRIORITY,			/* The task runs at the idle priority. */
+					NULL );
+
+	xTaskCreate( prvRxTask, ( const char * ) "Rx",	configMINIMAL_STACK_SIZE, NULL,	tskIDLE_PRIORITY + 1, NULL );
+
+	xTaskCreate( prvRxEth100Task, ( const char * ) "Eth100Rx",	configMINIMAL_STACK_SIZE, NULL,	tskIDLE_PRIORITY + 1, NULL );
+
+	/* Create the queue used by the tasks.  The Rx task has a higher priority
+	than the Tx task, so will preempt the Tx task and remove values from the
+	queue as soon as the Tx task writes to the queue - therefore the queue can
+	never have more than one item in it. */
+	xQueue = xQueueCreate( 	1,						/* There is only one space in the queue. */
+							sizeof( HWstring ) );	/* Each space in the queue is large enough to hold a uint32_t. */
+
+	/* Check the queue was created. */
+	configASSERT( xQueue );
+
+	/* Start the tasks and timer running. */
+	vTaskStartScheduler();
+
+	/* If all is well, the scheduler will now be running, and the following line
+	will never be reached.  If the following line does execute, then there was
+	insufficient FreeRTOS heap memory available for the idle and/or timer tasks
+	to be created.  See the memory management section on the FreeRTOS web site
+	for more details. */
+	for( ;; );
+}
+
+
+/*-----------------------------------------------------------*/
+static void prvRxTask( void *pvParameters )
+{
+	char Recdstring[15] = "";
+	int i;
+	int Status;
+	u32 prev_btns = 0;
+
+	/* Print the received data. */
+	xil_printf( "Rx task starting.\r\n");
+
+	for( ;; )
+	{
+		RecvFrameLength = 0;
+
+		/*
+		 * Poll for receive packet.
+		 */
+		while ((volatile u32)RecvFrameLength == 0)  {
+
+			vTaskDelay(1);
+
+#if 0
+			/* Check button press, send a test frame */
+			u32 btns = XGpio_DiscreteRead(&gpio_btns, 1);
+			if (btns != prev_btns) {
+				xil_printf("btns=%d\r\n", btns);
+				if (btns == 1) {
+					/* send a frame */
+					xil_printf( "Rx emac: sending a frame\r\n");
+					Status = EmacLiteSendFrame(&emac, 128);
+					if (Status != XST_SUCCESS) {
+						xil_printf( "Rx emac: send frame fail\r\n");
+					}
+
+					LocalAddress[1]++;
+				}
+				prev_btns = btns;
+			}
+#endif
+
+			RecvFrameLength = XEmacLite_Recv(&emac,	(u8 *)RxFrame);
+		}
+
+		xil_printf( "Rx emac: frame recv, len=%d\r\n", RecvFrameLength);
+
+		/*
+		 * Check the received frame.
+		 */
+#if 0
+		Status = EmacLiteRecvFrame(128);
+		if ((Status != XST_SUCCESS) && (Status != XST_NO_DATA)) {
+			xil_printf( "Rx emac: frame rx check no success\r\n");
+		}
+#endif
+		for (i = 0; i < RecvFrameLength; ++i) {
+			xil_printf("%02x:", RxFrame[i]);
+		}
+		xil_printf("\r\n");
+	}
+}
+
+/******************************************************************************/
+/**
+*
+* This function receives a frame of given size. This function assumes interrupt
+* mode, receives the frame and verifies its contents.
+*
+* @param	PayloadSize is the size of the frame to receive.
+*		The size only reflects the payload size, it does not include the
+*		Ethernet header size (14 bytes) nor the Ethernet CRC size (4
+*		bytes).
+*
+* @return	XST_SUCCESS if successful, a driver-specific return code if not.
+*
+* @note		None.
+*
+******************************************************************************/
+#if 0
+int EmacLiteRecvFrame(u32 PayloadSize)
+{
+	u8 *FramePtr;
+
+	/*
+	 * This assumes MAC does not strip padding or CRC.
+	 */
+	if (RecvFrameLength != 0) {
+		int Index;
+
+		/*
+		 * Verify length, which should be the payload size.
+		 */
+		if ((RecvFrameLength- (XEL_HEADER_SIZE + XEL_FCS_SIZE)) !=
+				PayloadSize) {
+			return XST_LOOPBACK_ERROR;
+		}
+
+		/*
+		 * Verify the contents of the Received Frame.
+		 */
+		FramePtr = (u8 *)RxFrame;
+		FramePtr += XEL_HEADER_SIZE;	/* Get past the header */
+
+		for (Index = 0; Index < PayloadSize; Index++) {
+			if (*FramePtr++ != (u8)Index) {
+				return XST_LOOPBACK_ERROR;
+			}
+		}
+	}
+
+	return XST_SUCCESS;
+}
+#endif
+
+/******************************************************************************/
+/**
+*
+* This function sends a frame of given size.
+*
+* @param	XEmacInstancePtr is a pointer to the XEmacLite instance.
+* @param	PayloadSize is the size of the frame to create. The size only
+*		reflects the payload size, it does not include the Ethernet
+*		header size (14 bytes) nor the Ethernet CRC size (4 bytes).
+*
+* @return	XST_SUCCESS if successful, else a driver-specific return code.
+*
+* @note		None.
+*
+******************************************************************************/
+#if 0
+int EmacLiteSendFrame(XEmacLite *InstancePtr, u32 PayloadSize)
+{
+	u8 *FramePtr;
+	int Index;
+	FramePtr = (u8 *)TxFrame;
+
+	/*
+	 * Set up the destination address as the local address for
+	 * Phy Loopback.
+	 */
+	/*
+	 * Fill in the valid Destination MAC address if
+	 * the Loopback is not enabled.
+	 */
+	*FramePtr++ = RemoteAddress[0];
+	*FramePtr++ = RemoteAddress[1];
+	*FramePtr++ = RemoteAddress[2];
+	*FramePtr++ = RemoteAddress[3];
+	*FramePtr++ = RemoteAddress[4];
+	*FramePtr++ = RemoteAddress[5];
+
+	/*
+	 * Fill in the source MAC address.
+	 */
+	*FramePtr++ = LocalAddress[0];
+	*FramePtr++ = LocalAddress[1];
+	*FramePtr++ = LocalAddress[2];
+	*FramePtr++ = LocalAddress[3];
+	*FramePtr++ = LocalAddress[4];
+	*FramePtr++ = LocalAddress[5];
+
+	/*
+	 * Set up the type/length field - be sure its in network order.
+	 */
+    *((u16 *)FramePtr) = Xil_Htons(PayloadSize);
+	FramePtr++;
+	FramePtr++;
+
+	/*
+	 * Now fill in the data field with known values so we can verify them
+	 * on receive.
+	 */
+	for (Index = 0; Index < PayloadSize; Index++) {
+		*FramePtr++ = (u8)Index;
+	}
+
+	/*
+	 * Now send the frame.
+	 */
+	return XEmacLite_Send(InstancePtr, (u8 *)TxFrame,
+				PayloadSize + XEL_HEADER_SIZE);
+
+}
+#endif
+
+/*-----------------------------------------------------------*/
+static void prvLEDCount( void *pvParameters )
+{
+	int cnt = 0;
+	const TickType_t x1second = pdMS_TO_TICKS( 1000UL );
+
+	for( ;; )
+	{
+		/* Delay for 1 second. */
+		vTaskDelay( x1second );
+
+		XGpio_DiscreteWrite(&gpio_leds, 1, ++cnt);
+
+#if 0
+		/* Send the next value on the queue.  The queue should always be
+		empty at this point so a block time of 0 is used. */
+		xQueueSend( xQueue,			/* The queue being written to. */
+					HWstring, /* The address of the data being sent. */
+					0UL );			/* The block time. */
+#endif
+	}
+}
+
+#if 0
+/*-----------------------------------------------------------*/
+static void prvRxTask( void *pvParameters )
+{
+	char Recdstring[15] = "";
+	int cnt = 0;
+
+	for( ;; )
+	{
+		/* Block to wait for data arriving on the queue. */
+		xQueueReceive( 	xQueue,				/* The queue being read. */
+						Recdstring,	/* Data is read into this address. */
+						portMAX_DELAY );	/* Wait without a timeout for data. */
+
+		/* Print the received data. */
+		xil_printf( "Rx task received string from Tx task: %s\r\n", Recdstring );
+
+		XGpio_DiscreteWrite(&gpio_leds, 1, ++cnt);
+	}
+}
+
+#endif
+
+
+uint32_t FillTestFrame(u8 *FramePtr)
+{
+	/*
+	 * Fill in the valid Destination MAC address if
+	 * the Loopback is not enabled.
+	 */
+	*FramePtr++ = RemoteAddress[0];
+	*FramePtr++ = RemoteAddress[1];
+	*FramePtr++ = RemoteAddress[2];
+	*FramePtr++ = RemoteAddress[3];
+	*FramePtr++ = RemoteAddress[4];
+	*FramePtr++ = RemoteAddress[5];
+
+	/*
+	 * Fill in the source MAC address.
+	 */
+	*FramePtr++ = LocalAddress[0];
+	*FramePtr++ = LocalAddress[1];
+	*FramePtr++ = LocalAddress[2];
+	*FramePtr++ = LocalAddress[3];
+	*FramePtr++ = LocalAddress[4];
+	*FramePtr++ = LocalAddress[5];
+
+	/*
+	 * Set up the type/length field - be sure its in network order.
+	 */
+    *((u16 *)FramePtr) = Xil_Htons(PayloadSize);
+	FramePtr++;
+	FramePtr++;
+
+	/*
+	 * Now fill in the data field with known values so we can verify them
+	 * on receive.
+	 */
+	for (Index = 0; Index < PayloadSize; Index++) {
+		*FramePtr++ = (u8)Index;
+	}
+
+}
+
+void prvTxEth100Task( void *pvParameters )
+{
+	volatile uint32_t *ETH100RX_REG_STAT = (void*)XPAR_AXI_ETH100_REGS_1_S_AXI_BASEADDR;
+	volatile uint32_t *ETH100RX_REG_RBOT_WFRLEN = (void*)(XPAR_AXI_ETH100_REGS_1_S_AXI_BASEADDR+4);
+	volatile uint32_t *ETH100RX_REG_INFO_TXFRAMES = (void*)(XPAR_AXI_ETH100_REGS_1_S_AXI_BASEADDR+0x10);
+	volatile uint32_t *ETH100RX_REG_INFO_TXBYTES = (void*)(XPAR_AXI_ETH100_REGS_1_S_AXI_BASEADDR+0x14);
+	volatile uint32_t *ETH100RX_FRBUF = (void*)XPAR_AXI_ETH100_TXBUF_0_S_AXI_BASEADDR;
+
+	uint32_t bottom = 0;
+	uint32_t top = 0;
+	uint32_t frame_len;
+	uint32_t frm_num = 0;
+
+	uint32_t tmp_info_txframes = 0;
+	uint32_t tmp_info_txbytes = 0;
+
+	int i;
+
+	xil_printf( "Eth100_Tx: started\r\n");
+
+	/* reset hw */
+	*ETH100RX_REG_STAT = 0x80000000;
+
+	for (;;) {
+		vTaskDelay( 1 );
+
+		/* Check button press, send a test frame */
+		u32 btns = XGpio_DiscreteRead(&gpio_btns, 1);
+
+		if (btns != prev_btns) {
+			xil_printf("btns=%d\r\n", btns);
+			if (btns == 1) {
+				/* send a frame */
+				xil_printf( "Eth100_Tx: sending a frame\r\n");
+
+				//Status = EmacLiteSendFrame(&emac, 128);
+				bottom = *ETH100RX_REG_RBOT_WFRLEN;
+
+				u8 *FramePtr = ((void*)ETH100RX_FRBUF) + top;
+				frame_len = FillTestFrame(FramePtr);
+
+				top = (top + frame_len) & FRBUF_MASK;
+
+				if (Status != XST_SUCCESS) {
+					xil_printf( "Eth100_Tx: send frame fail\r\n");
+				}
+
+				LocalAddress[1]++;
+				frm_num++;
+			}
+			prev_btns = btns;
+		}
+
+		while ((*ETH100RX_REG_STAT & 0x01) == 1) {
+			/* pf_empty = 1 */
+			vTaskDelay( 1 );
+			/* check if info regs changed -> display */
+			if (tmp_info_rxsofs != *ETH100RX_REG_INFO_RXSOFS || tmp_info_rxframes != *ETH100RX_REG_INFO_RXFRAMES
+					|| tmp_info_rxovf != *ETH100RX_REG_INFO_RXOVF) {
+				/* update current known value */
+				tmp_info_rxsofs = *ETH100RX_REG_INFO_RXSOFS;
+				tmp_info_rxframes = *ETH100RX_REG_INFO_RXFRAMES;
+				tmp_info_rxovf = *ETH100RX_REG_INFO_RXOVF;
+				/* display new value */
+				xil_printf("Eth100Rx: info_rxsofs=%d, info_rxframes=%d, info_rxovf=%d\r\n",
+						tmp_info_rxsofs, tmp_info_rxframes, tmp_info_rxovf);
+			}
+		}
+		frame_len = *ETH100RX_REG_CFRLEN;
+		xil_printf( "Eth100Rx: !pf_empty, frlen=%d, frm_num=%d\r\n", frame_len, ++frm_num);
+
+		/* read the frame words */
+		for (i = 0; i < frame_len; ++i) {
+			xil_printf( "Eth100Rx: rxbuf[%d] = 0x%x\r\n", (i+bottom)&1023, ETH100RX_FRBUF[(i+bottom)&1023]);
+		}
+
+		/* move bottom by frame length */
+		bottom = (bottom + frame_len) & 1023;
+
+		/* remove frame from the buffer */
+		*ETH100RX_REG_REMFR = frame_len;
+
+		/* deq frame from the queue */
+		*ETH100RX_REG_CFRLEN = 1;
+
+		vTaskDelay( pdMS_TO_TICKS( 100UL ) );
+	}
+}

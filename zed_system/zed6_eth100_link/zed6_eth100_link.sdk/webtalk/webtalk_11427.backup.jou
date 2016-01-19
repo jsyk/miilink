@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
+# 
+# Start of session at: Thu Dec 24 14:06:56 2015
+# Process ID: 11427
+# Current directory: /home/jara/ownCloud-pluto/elektronika/zed5_eth_loop_tx/zed5_eth_loop_tx.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/jara/ownCloud-pluto/elektronika/zed5_eth_loop_tx/zed5_eth_loop_tx.sdk/webtalk/webtalk.log
+# Journal file: /home/jara/ownCloud-pluto/elektronika/zed5_eth_loop_tx/zed5_eth_loop_tx.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
