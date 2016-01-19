@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1450960441">
+  <File Type="PHYSOPT-TIMING" Name="iptop_eth100_link_tx_timing_summary_physopted.rpt"/>
+  <File Type="OPT-DRC" Name="iptop_eth100_link_tx_drc_opted.rpt"/>
+  <File Type="RDI-RDI" Name="iptop_eth100_link_tx.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="iptop_eth100_link_tx_timing_summary_postroute_physopted.rpx"/>
+  <File Type="PWROPT-DRC" Name="iptop_eth100_link_tx_drc_pwropted.rpt"/>
+  <File Type="BITSTR-BMM" Name="iptop_eth100_link_tx_bd.bmm"/>
+  <File Type="PWROPT-DCP" Name="iptop_eth100_link_tx_pwropt.dcp"/>
+  <File Type="BITSTR-RBT" Name="iptop_eth100_link_tx.rbt"/>
+  <File Type="BG-BGN" Name="iptop_eth100_link_tx.bgn"/>
+  <File Type="ROUTE-CLK" Name="iptop_eth100_link_tx_clock_utilization_routed.rpt"/>
+  <File Type="PLACE-DCP" Name="iptop_eth100_link_tx_placed.dcp"/>
+  <File Type="BITSTR-MSK" Name="iptop_eth100_link_tx.msk"/>
+  <File Type="OPT-DCP" Name="iptop_eth100_link_tx_opt.dcp"/>
+  <File Type="BG-BIN" Name="iptop_eth100_link_tx.bin"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="iptop_eth100_link_tx_timing_summary_postroute_physopted.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="iptop_eth100_link_tx_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="iptop_eth100_link_tx_control_sets_placed.rpt"/>
+  <File Type="BITSTR-MMI" Name="iptop_eth100_link_tx.mmi"/>
+  <File Type="PHYSOPT-DCP" Name="iptop_eth100_link_tx_physopt.dcp"/>
+  <File Type="BITSTR-SYSDEF" Name="iptop_eth100_link_tx.sysdef"/>
+  <File Type="PHYSOPT-DRC" Name="iptop_eth100_link_tx_drc_physopted.rpt"/>
+  <File Type="PLACE-CLK" Name="iptop_eth100_link_tx_clock_utilization_placed.rpt"/>
+  <File Type="OPT-HWDEF" Name="iptop_eth100_link_tx.hwdef"/>
+  <File Type="PWROPT-TIMING" Name="iptop_eth100_link_tx_timing_summary_pwropted.rpt"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="INIT-TIMING" Name="iptop_eth100_link_tx_timing_summary_init.rpt"/>
+  <File Type="PLACE-UTIL" Name="iptop_eth100_link_tx_utilization_placed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="iptop_eth100_link_tx_incremental_reuse_routed.rpt"/>
+  <File Type="BG-DRC" Name="iptop_eth100_link_tx.drc"/>
+  <File Type="PLACE-IO" Name="iptop_eth100_link_tx_io_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="iptop_eth100_link_tx_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-TIMING" Name="iptop_eth100_link_tx_timing_summary_opted.rpt"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="PA-TCL" Name="iptop_eth100_link_tx.tcl"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="iptop_eth100_link_tx_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="iptop_eth100_link_tx_postroute_physopt.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="iptop_eth100_link_tx_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="iptop_eth100_link_tx_incremental_reuse_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="iptop_eth100_link_tx_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-NKY" Name="iptop_eth100_link_tx.nky"/>
+  <File Type="ROUTE-DCP" Name="iptop_eth100_link_tx_routed.dcp"/>
+  <File Type="ROUTE-DRC" Name="iptop_eth100_link_tx_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="iptop_eth100_link_tx_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="iptop_eth100_link_tx_power_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="iptop_eth100_link_tx_timing_summary_routed.pb"/>
+  <File Type="PLACE-TIMING" Name="iptop_eth100_link_tx_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="iptop_eth100_link_tx_timing_summary_routed.rpx"/>
+  <File Type="BG-BIT" Name="iptop_eth100_link_tx.bit"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="iptop_eth100_link_tx_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="iptop_eth100_link_tx_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="iptop_eth100_link_tx_route_status.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="iptop_eth100_link_tx_power_summary_routed.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../src/crc.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/etherlink_pkg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/dp_dclk_ram_2rdwr.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/dclk_transport.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/bytestream_to_rmii.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/fifo_queue.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/txlink_fsm.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/eth100_link_tx.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/iptop_eth100_link_tx.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="iptop_eth100_link_tx"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

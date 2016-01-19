@@ -1,0 +1,8 @@
+
+****** Webtalk v2015.3 (64-bit)
+  **** SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
+  **** IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source /home/jara/ownCloud-pluto/elektronika/etherlink-hdl/vivado_ip/eth100_link_rx/eth100_link_rx.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Dec 24 17:09:46 2015...

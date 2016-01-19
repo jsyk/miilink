@@ -1,0 +1,88 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
+| Date         : Thu Dec 24 13:34:55 2015
+| Host         : megalit.local running 64-bit Fedora release 22 (Twenty Two)
+| Command      : report_control_sets -verbose -file iptop_eth100_link_tx_control_sets_placed.rpt
+| Design       : iptop_eth100_link_tx
+| Device       : xc7z020
+-------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    35 |
+| Minimum Number of register sites lost to control set restrictions |   182 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             117 |           33 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              64 |           23 |
+| Yes          | No                    | No                     |             193 |           52 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             156 |           56 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------+---------------------------------------------------+-------------------------+------------------+----------------+
+|    Clock Signal    |                   Enable Signal                   |     Set/Reset Signal    | Slice Load Count | Bel Load Count |
++--------------------+---------------------------------------------------+-------------------------+------------------+----------------+
+|  clk_IBUF_BUFG     | linktx/pfqueue/v[memory][0]1                      | rst                     |                1 |              4 |
+|  ref_clk_IBUF_BUFG | linktx/txlnkfsm/v[cnt]                            | linktx/rmii_rst_reg_n_0 |                4 |              4 |
+|  ref_clk_IBUF_BUFG | linktx/txlnkfsm/v[t_str_dt]                       |                         |                4 |              8 |
+|  ref_clk_IBUF_BUFG | linktx/txlnkfsm/E[0]                              | linktx/rmii_rst_reg_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG     | linktx/pfqueue/v[memory][4]_7                     |                         |                2 |              9 |
+|  clk_IBUF_BUFG     | linktx/pfqueue/v[memory][10]_9                    |                         |                2 |              9 |
+|  clk_IBUF_BUFG     | linktx/pfqueue/v[memory][11]_12                   |                         |                2 |              9 |
+|  clk_IBUF_BUFG     | linktx/pfqueue/v[memory][12]_5                    |                         |                2 |              9 |
+|  clk_IBUF_BUFG     | linktx/pfqueue/v[memory][13]_2                    |                         |                3 |              9 |
+|  clk_IBUF_BUFG     | linktx/pfqueue/v[memory][14]_8                    |                         |                3 |              9 |
+|  clk_IBUF_BUFG     | linktx/pfqueue/v[memory][15]_11                   |                         |                2 |              9 |
+|  clk_IBUF_BUFG     | linktx/pfqueue/v[memory][1]_1                     |                         |                2 |              9 |
+|  clk_IBUF_BUFG     | linktx/pfqueue/v[memory][2]_0                     |                         |                2 |              9 |
+|  clk_IBUF_BUFG     | linktx/pfqueue/r[memory][0][8]_i_1_n_0            |                         |                2 |              9 |
+|  clk_IBUF_BUFG     | linktx/pfqueue/v[memory][5]_4                     |                         |                2 |              9 |
+|  clk_IBUF_BUFG     | linktx/pfqueue/v[memory][6]_10                    |                         |                3 |              9 |
+|  clk_IBUF_BUFG     | linktx/pfqueue/v[memory][7]_13                    |                         |                2 |              9 |
+|  clk_IBUF_BUFG     | linktx/pfqueue/v[memory][8]_6                     |                         |                3 |              9 |
+|  clk_IBUF_BUFG     | linktx/pfqueue/v[memory][9]_3                     |                         |                3 |              9 |
+|  clk_IBUF_BUFG     | linktx/rf_dclk/E[0]                               | linktx/rf_dclk/SR[0]    |                3 |              9 |
+|  clk_IBUF_BUFG     | linktx/pfqueue/r[memory][3][8]_i_1_n_0            |                         |                2 |              9 |
+|  clk_IBUF_BUFG     | pf_frlen[8]_i_2_n_0                               | pf_frlen[8]_i_1_n_0     |                3 |              9 |
+|  clk_IBUF_BUFG     |                                                   | mr_rdt[8]_i_1_n_0       |                3 |              9 |
+|  ref_clk_IBUF_BUFG | linktx/txlnkfsm/dt_latch_reg[8][0]                |                         |                3 |              9 |
+|  ref_clk_IBUF_BUFG | linktx/txlnkfsm/v[rptr]                           | linktx/rmii_rst_reg_n_0 |                3 |              9 |
+|  ref_clk_IBUF_BUFG | linktx/txlnkfsm/v[frlen]                          | linktx/rmii_rst_reg_n_0 |                4 |              9 |
+|  ref_clk_IBUF_BUFG |                                                   | linktx/rmii_rst_reg_n_0 |                6 |             14 |
+|  clk_IBUF_BUFG     |                                                   | rst                     |                7 |             18 |
+|  clk_IBUF_BUFG     |                                                   | mr_rdt[31]_i_1_n_0      |                7 |             23 |
+|  ref_clk_IBUF_BUFG |                                                   |                         |                8 |             27 |
+|  clk_IBUF_BUFG     | m1_rdt_OBUF[31]_inst_i_2_n_0                      |                         |                8 |             32 |
+|  ref_clk_IBUF_BUFG | linktx/txlnkfsm/info2_tx_frames_reg[0]            | linktx/rmii_rst_reg_n_0 |                8 |             32 |
+|  ref_clk_IBUF_BUFG | linktx/txlnkfsm/fcs_checker/s_crc_reg[31]_i_1_n_0 | linktx/rmii_rst_reg_n_0 |               16 |             32 |
+|  ref_clk_IBUF_BUFG | linktx/txlnkfsm/t_str_dt                          | linktx/rmii_rst_reg_n_0 |               12 |             40 |
+|  clk_IBUF_BUFG     |                                                   |                         |               25 |             90 |
++--------------------+---------------------------------------------------+-------------------------+------------------+----------------+
+
+

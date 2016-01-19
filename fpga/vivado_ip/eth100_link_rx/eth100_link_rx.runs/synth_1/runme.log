@@ -1,0 +1,549 @@
+
+*** Running vivado
+    with args -log iptop_eth100_link_rx.vds -m64 -mode batch -messageDb vivado.pb -notrace -source iptop_eth100_link_rx.tcl
+
+
+****** Vivado v2015.3 (64-bit)
+  **** SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
+  **** IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source iptop_eth100_link_rx.tcl -notrace
+Command: synth_design -top iptop_eth100_link_rx -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14210 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1085.613 ; gain = 132.801 ; free physical = 410 ; free virtual = 4936
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'iptop_eth100_link_rx' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/iptop_eth100_link_rx.vhd:35]
+	Parameter FRBUF_MEMBYTE_ADDR_W bound to: 11 - type: integer 
+	Parameter RXFIFO_DEPTH_W bound to: 4 - type: integer 
+	Parameter FRBUF_MEM_ADDR_W bound to: 9 - type: integer 
+	Parameter M2_SUPPORT_WRITE bound to: 1 - type: bool 
+	Parameter M2_READ_DELAY bound to: 1 - type: integer 
+	Parameter RXFIFO_DEPTH_W bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'eth100_link_rx' declared at '/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_rx.vhd:9' bound to instance 'dut' of component 'eth100_link_rx' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/iptop_eth100_link_rx.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'eth100_link_rx' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_rx.vhd:43]
+	Parameter FRBUF_MEM_ADDR_W bound to: 9 - type: integer 
+	Parameter M2_SUPPORT_WRITE bound to: 1 - type: bool 
+	Parameter M2_READ_DELAY bound to: 1 - type: integer 
+	Parameter RXFIFO_DEPTH_W bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'rmii_to_bytestream' declared at '/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/rmii_to_bytestream.vhd:7' bound to instance 'rmii2bs' of component 'rmii_to_bytestream' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_rx.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'rmii_to_bytestream' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/rmii_to_bytestream.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'rmii_to_bytestream' (1#1) [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/rmii_to_bytestream.vhd:21]
+INFO: [Synth 8-3491] module 'rxlink_fsm' declared at '/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/rxlink_fsm.vhd:11' bound to instance 'rxfsm' of component 'rxlink_fsm' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_rx.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'rxlink_fsm' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/rxlink_fsm.vhd:30]
+INFO: [Synth 8-637] synthesizing blackbox instance 'fcs_checker' of component 'CRC' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/rxlink_fsm.vhd:59]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: report statement [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/rxlink_fsm.vhd:258]
+INFO: [Synth 8-256] done synthesizing module 'rxlink_fsm' (2#1) [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/rxlink_fsm.vhd:30]
+	Parameter MEM_ADDR_W bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'rxlink_cbuf_ctrl' declared at '/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/rxlink_cbuf_ctrl.vhd:11' bound to instance 'rxcbufctrl' of component 'rxlink_cbuf_ctrl' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_rx.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'rxlink_cbuf_ctrl' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/rxlink_cbuf_ctrl.vhd:42]
+	Parameter MEM_ADDR_W bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rxlink_cbuf_ctrl' (3#1) [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/rxlink_cbuf_ctrl.vhd:42]
+	Parameter MEM_ADDR_W bound to: 9 - type: integer 
+	Parameter MEM_DATA_W bound to: 32 - type: integer 
+	Parameter M2_SUPPORT_WRITE bound to: 1 - type: bool 
+	Parameter M2_READ_DELAY bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dp_dclk_ram_wr_rdwr' declared at '/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/dp_dclk_ram_wr_rdwr.vhd:10' bound to instance 'rxcbuf' of component 'dp_dclk_ram_wr_rdwr' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_rx.vhd:149]
+INFO: [Synth 8-638] synthesizing module 'dp_dclk_ram_wr_rdwr' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/dp_dclk_ram_wr_rdwr.vhd:33]
+	Parameter MEM_ADDR_W bound to: 9 - type: integer 
+	Parameter MEM_DATA_W bound to: 32 - type: integer 
+	Parameter M2_SUPPORT_WRITE bound to: 1 - type: bool 
+	Parameter M2_READ_DELAY bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dp_dclk_ram_wr_rdwr' (4#1) [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/dp_dclk_ram_wr_rdwr.vhd:33]
+	Parameter FIFO_DATA_W bound to: 9 - type: integer 
+	Parameter FIFO_DEPTH_W bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_queue' declared at '/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/fifo_queue.vhd:9' bound to instance 'pfqueue' of component 'fifo_queue' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_rx.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'fifo_queue' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/fifo_queue.vhd:28]
+	Parameter FIFO_DATA_W bound to: 9 - type: integer 
+	Parameter FIFO_DEPTH_W bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_queue' (5#1) [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/fifo_queue.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'eth100_link_rx' (6#1) [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_rx.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'iptop_eth100_link_rx' (7#1) [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/iptop_eth100_link_rx.vhd:35]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port m2_addr[1]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port m2_addr[0]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[30]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[29]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[28]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[27]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[26]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[25]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[24]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[23]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[22]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[21]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[20]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[19]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[18]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[17]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[16]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[15]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[14]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[13]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[12]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[11]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[10]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[9]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1124.996 ; gain = 172.184 ; free physical = 367 ; free virtual = 4895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1124.996 ; gain = 172.184 ; free physical = 367 ; free virtual = 4894
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1132.996 ; gain = 180.184 ; free physical = 367 ; free virtual = 4894
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-5544] ROM "v[str]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'r_reg[state]' in module 'rxlink_fsm'
+INFO: [Synth 8-5546] ROM "v[cnt]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[cnt]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[state]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[state]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[state]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[state]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "v[frlength]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v_reg[memory][0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v_reg[memory][1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v_reg[memory][2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v_reg[memory][3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v_reg[memory][4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v_reg[memory][5]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v_reg[memory][6]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v_reg[memory][7]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v_reg[memory][8]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v_reg[memory][9]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v_reg[memory][10]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v_reg[memory][11]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v_reg[memory][12]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v_reg[memory][13]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v_reg[memory][14]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v_reg[memory][15]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "v[fifo_empty]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_strobe" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_strobe" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pf_deq" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+              rxpreamble |                              001 |                              010
+                rxsfd_d5 |                              010 |                              011
+               rxmacaddr |                              011 |                              100
+               rxclidata |                              100 |                              101
+               verifyfcs |                              101 |                              110
+                 discard |                              110 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_reg[state]' using encoding 'sequential' in module 'rxlink_fsm'
+INFO: [Synth 8-3971] The signal memory_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1170.047 ; gain = 217.234 ; free physical = 333 ; free virtual = 4861
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 5     
+	   3 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 7     
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 24    
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 24    
++---RAMs : 
+	              16K Bit         RAMs := 1     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 2     
+	   7 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 6     
+	   2 Input      3 Bit        Muxes := 9     
+	   3 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 3     
+	  21 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 34    
+	   7 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module iptop_eth100_link_rx 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module rmii_to_bytestream 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module rxlink_fsm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   7 Input     11 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 9     
+	   3 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 3     
+	  21 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 4     
+Module rxlink_cbuf_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 5     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                9 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module dp_dclk_ram_wr_rdwr 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	              16K Bit         RAMs := 1     
+Module fifo_queue 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
++---Registers : 
+	                9 Bit    Registers := 17    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 16    
+Module eth100_link_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                9 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 1239.055 ; gain = 286.242 ; free physical = 258 ; free virtual = 4787
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "dut/rxfsm/v[cnt]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dut/rxfsm/v[cnt]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_strobe" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_strobe" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pf_deq" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port m2_addr[1]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port m2_addr[0]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[30]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[29]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[28]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[27]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[26]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[25]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[24]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[23]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[22]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[21]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[20]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[19]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[18]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[17]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[16]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[15]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[14]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[13]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[12]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[11]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[10]
+WARNING: [Synth 8-3331] design iptop_eth100_link_rx has unconnected port mr_wdt[9]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 1247.055 ; gain = 294.242 ; free physical = 252 ; free virtual = 4780
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 1247.055 ; gain = 294.242 ; free physical = 252 ; free virtual = 4780
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+INFO: [Synth 8-3971] The signal dut/rxcbuf/memory_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM dut/rxcbuf/memory_reg to conserve power
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM:
++---------------------+-----------------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+--------------------------------+
+|Module Name          | RTL Object            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | OUT_REG      | RAMB18 | RAMB36 | Hierarchical Name              | 
++---------------------+-----------------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+--------------------------------+
+|iptop_eth100_link_rx | dut/rxcbuf/memory_reg | 512 x 32(READ_FIRST)   | W | R | 512 x 32               | W |   | Port A and B | 0      | 1      | iptop_eth100_link_rx/extram__2 | 
++---------------------+-----------------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+--------------------------------+
+
+Note: The table above shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. "Hierarchical Name" reflects the Block RAM name as it appears in the hierarchical module and only part of it is displayed.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance '\dut/rmii2bs/r_reg[dt][0] ' (FD) to '\dut/rxfsm/r_reg[b_dt][2] '
+INFO: [Synth 8-3886] merging instance '\dut/rmii2bs/r_reg[dt][1] ' (FD) to '\dut/rxfsm/r_reg[b_dt][3] '
+INFO: [Synth 8-3886] merging instance '\dut/rmii2bs/r_reg[dt][2] ' (FD) to '\dut/rxfsm/r_reg[b_dt][4] '
+INFO: [Synth 8-3886] merging instance '\dut/rmii2bs/r_reg[dt][3] ' (FD) to '\dut/rxfsm/r_reg[b_dt][5] '
+INFO: [Synth 8-3886] merging instance '\dut/rmii2bs/r_reg[dt][4] ' (FD) to '\dut/rxfsm/r_reg[b_dt][6] '
+INFO: [Synth 8-3886] merging instance '\dut/rmii2bs/r_reg[dt][5] ' (FD) to '\dut/rxfsm/r_reg[b_dt][7] '
+INFO: [Synth 8-3886] merging instance '\dut/pfqueue/r_reg[fifo_level][4] ' (FDR) to '\dut/pfqueue/r_reg[fifo_full] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dut/info1_rx_sofs_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dut/info1_rx_frames_reg[31] )
+INFO: [Synth 8-3886] merging instance '\dut/info_rx_sofs_reg[31] ' (FD) to '\dut/info_rx_frames_reg[31] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dut/info_rx_frames_reg[31] )
+INFO: [Synth 8-3886] merging instance '\dut/info_rx_frames_reg[31] ' (FD) to '\mr_rdt_reg[31] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mr_rdt_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (\dut/info1_rx_frames_reg[31] ) is unused and will be removed from module iptop_eth100_link_rx.
+WARNING: [Synth 8-3332] Sequential element (\dut/info1_rx_sofs_reg[31] ) is unused and will be removed from module iptop_eth100_link_rx.
+WARNING: [Synth 8-3332] Sequential element (\dut/rmii2bs/r_reg[dt][0] ) is unused and will be removed from module iptop_eth100_link_rx.
+WARNING: [Synth 8-3332] Sequential element (\dut/rmii2bs/r_reg[dt][1] ) is unused and will be removed from module iptop_eth100_link_rx.
+WARNING: [Synth 8-3332] Sequential element (\dut/rmii2bs/r_reg[dt][2] ) is unused and will be removed from module iptop_eth100_link_rx.
+WARNING: [Synth 8-3332] Sequential element (\dut/rmii2bs/r_reg[dt][3] ) is unused and will be removed from module iptop_eth100_link_rx.
+WARNING: [Synth 8-3332] Sequential element (\dut/rmii2bs/r_reg[dt][4] ) is unused and will be removed from module iptop_eth100_link_rx.
+WARNING: [Synth 8-3332] Sequential element (\dut/rmii2bs/r_reg[dt][5] ) is unused and will be removed from module iptop_eth100_link_rx.
+WARNING: [Synth 8-3332] Sequential element (\dut/pfqueue/r_reg[fifo_level][4] ) is unused and will be removed from module iptop_eth100_link_rx.
+WARNING: [Synth 8-3332] Sequential element (\dut/info_rx_frames_reg[31] ) is unused and will be removed from module iptop_eth100_link_rx.
+WARNING: [Synth 8-3332] Sequential element (\dut/info_rx_sofs_reg[31] ) is unused and will be removed from module iptop_eth100_link_rx.
+WARNING: [Synth 8-3332] Sequential element (\mr_rdt_reg[31] ) is unused and will be removed from module iptop_eth100_link_rx.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1268.086 ; gain = 315.273 ; free physical = 195 ; free virtual = 4732
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1268.086 ; gain = 315.273 ; free physical = 195 ; free virtual = 4731
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1268.086 ; gain = 315.273 ; free physical = 195 ; free virtual = 4732
+---------------------------------------------------------------------------------
+Finished Parallel Timing Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1268.086 ; gain = 315.273 ; free physical = 195 ; free virtual = 4732
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1268.086 ; gain = 315.273 ; free physical = 195 ; free virtual = 4732
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance \dut/rxcbuf/memory_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 1276.094 ; gain = 323.281 ; free physical = 183 ; free virtual = 4720
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 1276.094 ; gain = 323.281 ; free physical = 162 ; free virtual = 4700
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 1276.094 ; gain = 323.281 ; free physical = 162 ; free virtual = 4700
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 1276.094 ; gain = 323.281 ; free physical = 162 ; free virtual = 4700
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 1276.094 ; gain = 323.281 ; free physical = 162 ; free virtual = 4700
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 1276.094 ; gain = 323.281 ; free physical = 162 ; free virtual = 4700
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 1276.094 ; gain = 323.281 ; free physical = 162 ; free virtual = 4700
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |CRC           |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CRC_bbox |     1|
+|2     |BUFG     |     2|
+|3     |CARRY4   |    20|
+|4     |LUT1     |    65|
+|5     |LUT2     |    30|
+|6     |LUT3     |    56|
+|7     |LUT4     |    47|
+|8     |LUT5     |    74|
+|9     |LUT6     |   137|
+|10    |MUXF7    |     2|
+|11    |RAMB36E1 |     1|
+|12    |FDRE     |   549|
+|13    |IBUF     |    69|
+|14    |OBUF     |    64|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------------+--------------------+------+
+|      |Instance       |Module              |Cells |
++------+---------------+--------------------+------+
+|1     |top            |                    |  1157|
+|2     |  dut          |eth100_link_rx      |   914|
+|3     |    pfqueue    |fifo_queue          |   298|
+|4     |    rmii2bs    |rmii_to_bytestream  |    11|
+|5     |    rxcbuf     |dp_dclk_ram_wr_rdwr |    75|
+|6     |    rxcbufctrl |rxlink_cbuf_ctrl    |   135|
+|7     |    rxfsm      |rxlink_fsm          |   145|
++------+---------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 1276.094 ; gain = 323.281 ; free physical = 162 ; free virtual = 4700
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 61 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 1276.094 ; gain = 231.480 ; free physical = 162 ; free virtual = 4700
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 1276.094 ; gain = 323.281 ; free physical = 162 ; free virtual = 4700
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 90 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+82 Infos, 61 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1361.105 ; gain = 337.074 ; free physical = 92 ; free virtual = 4630
+report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1393.125 ; gain = 0.000 ; free physical = 91 ; free virtual = 4629
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 30 22:15:37 2015...

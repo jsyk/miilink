@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Thu Dec 24 13:33:19 2015
+# Process ID: 5848
+# Current directory: /home/jara/ownCloud-pluto/elektronika/etherlink-hdl/vivado_ip/eth100_link_tx/eth100_link_tx/eth100_link_tx.runs/synth_1
+# Command line: vivado -log iptop_eth100_link_tx.vds -mode batch -messageDb vivado.pb -notrace -source iptop_eth100_link_tx.tcl
+# Log file: /home/jara/ownCloud-pluto/elektronika/etherlink-hdl/vivado_ip/eth100_link_tx/eth100_link_tx/eth100_link_tx.runs/synth_1/iptop_eth100_link_tx.vds
+# Journal file: /home/jara/ownCloud-pluto/elektronika/etherlink-hdl/vivado_ip/eth100_link_tx/eth100_link_tx/eth100_link_tx.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source iptop_eth100_link_tx.tcl -notrace
