@@ -1,0 +1,7 @@
+st-flash write stm32test_flash.bin 0x08000000
+
+openocd -f interface/stlink-v2.cfg -f target/stm32f1x_stlink.cfg
+
+openocd -f interface/stlink-v2.cfg -f target/stm32f1x_stlink.cfg -c "init" -c "halt" -c "reset halt"
+arm-none-eabi-gdb --eval-command="target remote localhost:3333" stm32test_flash.elf
+
