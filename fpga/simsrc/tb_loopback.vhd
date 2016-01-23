@@ -44,6 +44,7 @@ architecture behav of tb_loopback is
     signal tx_pf_tag_len_ptr :  std_logic_vector(FRTAG_W+2*FRBUF_MEM_ADDR_W-1 downto 0);      -- encodes (tag,len,ptr)
     signal tx_pf_full     :  std_logic;                                   -- full fifo indication (must not enqueue more)
     -- status info
+    signal frame_in_work : std_logic;                          -- frame is being processed
     signal info_rx_frames :  std_logic_vector(31 downto 0);         -- number of correctly received frames
     signal info_rx_sofs :  std_logic_vector(31 downto 0);            -- number of started frames
     signal info_rx_ovfs :  std_logic_vector(31 downto 0);            -- number of overflow frames
@@ -114,6 +115,7 @@ begin
         tx_pf_tag_len_ptr, -- : out std_logic_vector(FRTAG_W+2*FRBUF_MEM_ADDR_W-1 downto 0);      -- encodes (tag,len,ptr)
         tx_pf_full, --     : in std_logic;                                   -- full fifo indication (must not enqueue more)
         -- status info
+        frame_in_work,
         info_rx_frames, -- : in std_logic_vector(31 downto 0);         -- number of correctly received frames
         info_rx_sofs, -- : in std_logic_vector(31 downto 0);            -- number of started frames
         info_rx_ovfs, -- : in std_logic_vector(31 downto 0);            -- number of overflow frames

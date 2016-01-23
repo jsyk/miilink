@@ -80,6 +80,13 @@ uint32_t init_eth()
     ETH_InitStructure.ETH_MulticastFramesFilter = ETH_MulticastFramesFilter_Perfect;      
     ETH_InitStructure.ETH_UnicastFramesFilter = ETH_UnicastFramesFilter_Perfect;                        
 
+    ETH_InitStructure.ETH_ReceiveStoreForward = ETH_ReceiveStoreForward_Disable;
+    ETH_InitStructure.ETH_TransmitStoreForward = ETH_TransmitStoreForward_Disable;
+    ETH_InitStructure.ETH_TransmitThresholdControl = ETH_TransmitThresholdControl_16Bytes;
+    ETH_InitStructure.ETH_ReceiveThresholdControl = ETH_ReceiveThresholdControl_32Bytes;
+    ETH_InitStructure.ETH_SecondFrameOperate = ETH_SecondFrameOperate_Enable;
+    
+
     lSerialPutString(mainCOM0, "init_eth: waiting for ETH_Init...");
     /* Configure ETHERNET */
     uint32_t result = ETH_Init(&ETH_InitStructure, PHY_ADDRESS);

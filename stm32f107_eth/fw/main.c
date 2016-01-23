@@ -157,6 +157,7 @@ void print_u32(uint32_t x)
 static void prvUSARTEchoTask( void *pvParameters )
 {
     signed char cChar;
+    int pa15 = 0;
 
     int tx_frame_length = 128;
 
@@ -217,6 +218,9 @@ static void prvUSARTEchoTask( void *pvParameters )
             continue;
         }
 
+        // pa15 = ~pa15;
+        // GPIO_WriteBit(GPIOA, GPIO_Pin_15, pa15);
+
         /* Write the received character back to COM0. */
         xSerialPutChar( mainCOM0, '[', 0 );
         xSerialPutChar( mainCOM0, cChar, 0 );
@@ -271,7 +275,7 @@ static void prvUSARTEchoTask( void *pvParameters )
                 lSerialPutString(mainCOM0, "\r\n");
                 break;
             }
-            case 'p': {         /* performance test */
+            case 'b': {         /* bandwidth test */
                 int frames_sent = 0;
                 int frames_received = 0;
                 uint32_t start_tick = current_tick;
@@ -301,6 +305,61 @@ static void prvUSARTEchoTask( void *pvParameters )
                 lSerialPutString(mainCOM0, "\r\nReceived frames = "); print_u32(frames_received);
                 lSerialPutString(mainCOM0, "\r\nTicks = "); print_u32(end_tick - start_tick);
                 lSerialPutString(mainCOM0, "\r\nETH IRQs = "); print_u32(eth_irqs_handled - start_eth_irqs_handled);
+                lSerialPutString(mainCOM0, "\r\n");
+                break;
+            }
+            case 'l': {         /* latency test */
+                int frames_sent = 0;
+                int frames_received = 0;
+                uint32_t start_tick = current_tick;
+                uint32_t start_eth_irqs_handled = eth_irqs_handled;
+                int next_round = 1;
+                GPIO_ResetBits(GPIOA, GPIO_Pin_15);
+
+                while (next_round) {
+                    GPIO_SetBits(GPIOA, GPIO_Pin_15);
+                    
+                    /* send a frame - wait until it is done */
+                    while (ETH_HandleTxPkt(rxtmpbuf, tx_frame_length) != ETH_SUCCESS) {
+                        /* packet send no success */
+                        // if (xSerialGetChar( mainCOM0, &cChar, 0 ) != pdFAIL) {
+                        //     next_round = 0;
+                        //     break;
+                        // }
+                    }
+
+                    if (!next_round) break;
+
+                    ++frames_sent;
+
+                    /* receive a frame */
+                    while (ETH_GetRxPktSize() == 0) {
+                        /* no frame recieved yet */
+                        // if (xSerialGetChar( mainCOM0, &cChar, 0 ) != pdFAIL) {
+                        //     next_round = 0;
+                        //     break;
+                        // }
+                    }
+
+                    if (!next_round) break;
+
+                    /* eth frame received! */
+                    int32_t rxsize = ETH_HandleRxPkt(rxtmpbuf);
+                    GPIO_ResetBits(GPIOA, GPIO_Pin_15);
+
+                    if (xSerialGetChar( mainCOM0, &cChar, 0 ) != pdFAIL) {
+                        next_round = 0;
+                        break;
+                    }
+                    ++frames_received;
+                    vTaskDelay(1);
+                }
+                uint32_t end_tick = current_tick;
+                GPIO_ResetBits(GPIOA, GPIO_Pin_15);
+
+                lSerialPutString(mainCOM0, "Sent frames = "); print_u32(frames_sent);
+                lSerialPutString(mainCOM0, "\r\nReceived frames = "); print_u32(frames_received);
+                lSerialPutString(mainCOM0, "\r\nTicks = "); print_u32(end_tick - start_tick);
                 lSerialPutString(mainCOM0, "\r\n");
                 break;
             }
@@ -389,6 +448,8 @@ static void prvSetupHardware( void )
     /* enable clock to MAC */
     RCC_AHBPeriphClockCmd(RCC_AHBPeriph_ETH_MAC | RCC_AHBPeriph_ETH_MAC_Tx | RCC_AHBPeriph_ETH_MAC_Rx, ENABLE);
 
+    /* Disable JTAG, but leave SW-DP enabled */
+    GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable, ENABLE);
 
     /** ETH_RMII GPIO Configuration  
     XX PC1   ------> ETH_RMII_MDC
@@ -413,6 +474,13 @@ static void prvSetupHardware( void )
     GPIO_InitStruct.GPIO_Speed = GPIO_Speed_50MHz;
     GPIO_InitStruct.GPIO_Mode = GPIO_Mode_IPD;
     GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+    /*Configure GPIO pin : PA */
+    GPIO_InitStruct.GPIO_Pin = GPIO_Pin_15;
+    GPIO_InitStruct.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_InitStruct.GPIO_Mode = GPIO_Mode_Out_PP;
+    GPIO_Init(GPIOA, &GPIO_InitStruct);
+    GPIO_ResetBits(GPIOA, GPIO_Pin_15);
 
     /*Configure GPIO pin : PB */
     GPIO_InitStruct.GPIO_Pin = GPIO_Pin_11;

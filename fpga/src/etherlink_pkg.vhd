@@ -382,6 +382,7 @@ port (
     tx_pf_tag_len_ptr : out std_logic_vector(FRTAG_W+2*FRBUF_MEM_ADDR_W-1 downto 0);      -- encodes (tag,len,ptr)
     tx_pf_full     : in std_logic;                                   -- full fifo indication (must not enqueue more)
     -- status info
+    frame_in_work : out std_logic;                          -- frame is being processed
     info_rx_frames : in std_logic_vector(31 downto 0);         -- number of correctly received frames
     info_rx_sofs : in std_logic_vector(31 downto 0);            -- number of started frames
     info_rx_ovfs : in std_logic_vector(31 downto 0);            -- number of overflow frames
