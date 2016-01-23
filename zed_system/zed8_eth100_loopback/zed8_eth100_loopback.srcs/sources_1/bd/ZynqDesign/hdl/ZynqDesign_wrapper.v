@@ -1,7 +1,7 @@
 //Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
-//Date        : Fri Jan  8 22:37:49 2016
+//Date        : Wed Jan 20 22:18:29 2016
 //Host        : megalit.local running 64-bit Fedora release 22 (Twenty Two)
 //Command     : generate_target ZynqDesign_wrapper.bd
 //Design      : ZynqDesign_wrapper
@@ -32,6 +32,7 @@ module ZynqDesign_wrapper
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
     btns_5bits_tri_i,
+    frmwrk,
     leds_8bits_tri_o,
     ref_clk_i,
     ref_clk_o,
@@ -62,6 +63,7 @@ module ZynqDesign_wrapper
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
   input [4:0]btns_5bits_tri_i;
+  output frmwrk;
   output [7:0]leds_8bits_tri_o;
   input ref_clk_i;
   output ref_clk_o;
@@ -93,6 +95,7 @@ module ZynqDesign_wrapper
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
   wire [4:0]btns_5bits_tri_i;
+  wire frmwrk;
   wire [7:0]leds_8bits_tri_o;
   wire ref_clk_i;
   wire ref_clk_o;
@@ -125,6 +128,7 @@ module ZynqDesign_wrapper
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
         .btns_5bits_tri_i(btns_5bits_tri_i),
+        .frmwrk(frmwrk),
         .leds_8bits_tri_o(leds_8bits_tri_o),
         .ref_clk_i(ref_clk_i),
         .ref_clk_o(ref_clk_o),

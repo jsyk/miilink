@@ -151,6 +151,7 @@ proc create_root_design { parentCell } {
   set sws_8bits [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 sws_8bits ]
 
   # Create ports
+  set frmwrk [ create_bd_port -dir O -type data frmwrk ]
   set ref_clk_i [ create_bd_port -dir I -type clk ref_clk_i ]
   set_property -dict [ list \
 CONFIG.FREQ_HZ {50000000} \
@@ -173,7 +174,7 @@ CONFIG.MMCM_DIVCLK_DIVIDE {1} \
  ] $clk_wiz_0
 
   # Create instance: eth100_loopback_rxtx_0, and set properties
-  set eth100_loopback_rxtx_0 [ create_bd_cell -type ip -vlnv jsykora.info:user:eth100_loopback_rxtx:2.0 eth100_loopback_rxtx_0 ]
+  set eth100_loopback_rxtx_0 [ create_bd_cell -type ip -vlnv jsykora.info:user:eth100_loopback_rxtx:3.0 eth100_loopback_rxtx_0 ]
 
   # Create instance: ethernetlite_0, and set properties
   set ethernetlite_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_ethernetlite:3.0 ethernetlite_0 ]
@@ -251,6 +252,7 @@ CONFIG.CONST_VAL {0} \
   connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins eth100_loopback_rxtx_0/ref_clk] [get_bd_pins mii_to_rmii_0/ref_clk]
   connect_bd_net -net eth100_link_tx_0_rmii_txdt [get_bd_ports rmii_txd] [get_bd_pins eth100_loopback_rxtx_0/rmii_txdt] [get_bd_pins mii_to_rmii_0/phy2rmii_rxd]
   connect_bd_net -net eth100_link_tx_0_rmii_txen [get_bd_ports rmii_tx_en] [get_bd_pins eth100_loopback_rxtx_0/rmii_txen] [get_bd_pins mii_to_rmii_0/phy2rmii_crs_dv]
+  connect_bd_net -net eth100_loopback_rxtx_0_frame_in_work [get_bd_ports frmwrk] [get_bd_pins eth100_loopback_rxtx_0/frame_in_work]
   connect_bd_net -net ethernetlite_0_phy_rst_n [get_bd_pins ethernetlite_0/phy_rst_n] [get_bd_pins mii_to_rmii_0/rst_n]
   connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins eth100_loopback_rxtx_0/clk] [get_bd_pins ethernetlite_0/s_axi_aclk] [get_bd_pins gpio_btns/s_axi_aclk] [get_bd_pins gpio_leds/s_axi_aclk] [get_bd_pins gpio_sws/s_axi_aclk] [get_bd_pins ps7/FCLK_CLK0] [get_bd_pins ps7/M_AXI_GP0_ACLK] [get_bd_pins ps7_axi_periph/ACLK] [get_bd_pins ps7_axi_periph/M00_ACLK] [get_bd_pins ps7_axi_periph/M01_ACLK] [get_bd_pins ps7_axi_periph/M02_ACLK] [get_bd_pins ps7_axi_periph/M03_ACLK] [get_bd_pins ps7_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_100M/slowest_sync_clk]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins ps7/FCLK_RESET0_N] [get_bd_pins rst_ps7_100M/ext_reset_in]
@@ -280,45 +282,47 @@ preplace port btns_5bits -pg 1 -y 200 -defaultsOSRD
 preplace port rmii_tx_en -pg 1 -y 520 -defaultsOSRD
 preplace port ref_clk_i -pg 1 -y 700 -defaultsOSRD -right
 preplace port FIXED_IO -pg 1 -y -370 -defaultsOSRD
+preplace port frmwrk -pg 1 -y 880 -defaultsOSRD
 preplace port ref_clk_o -pg 1 -y 320 -defaultsOSRD
 preplace portBus rmii_rxd -pg 1 -y 490 -defaultsOSRD -right
 preplace portBus rmii_txd -pg 1 -y 540 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 6 -y 260 -defaultsOSRD
-preplace inst gpio_leds -pg 1 -lvl 5 -y 70 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 5 -y 260 -defaultsOSRD
+preplace inst gpio_leds -pg 1 -lvl 4 -y 70 -defaultsOSRD
 preplace inst ps7 -pg 1 -lvl 1 -y -250 -defaultsOSRD
 preplace inst rst_ps7_100M -pg 1 -lvl 2 -y -120 -defaultsOSRD
-preplace inst mii_to_rmii_0 -pg 1 -lvl 6 -y 450 -defaultsOSRD
-preplace inst ps7_axi_periph -pg 1 -lvl 4 -y -160 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 6 -y 700 -defaultsOSRD
-preplace inst ethernetlite_0 -pg 1 -lvl 5 -y 460 -defaultsOSRD
-preplace inst gpio_btns -pg 1 -lvl 5 -y 200 -defaultsOSRD
-preplace inst eth100_loopback_rxtx_0 -pg 1 -lvl 6 -y 880 -defaultsOSRD
-preplace inst gpio_sws -pg 1 -lvl 5 -y -160 -defaultsOSRD
-preplace netloc gpio_leds_GPIO 1 5 2 NJ 70 NJ
-preplace netloc processing_system7_0_DDR 1 1 6 NJ -410 NJ -410 NJ -410 NJ -410 NJ -410 NJ
-preplace netloc ps7_axi_periph_M02_AXI 1 4 1 1350
-preplace netloc processing_system7_0_axi_periph_M00_AXI 1 4 1 1390
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 3 NJ -280 N -280 N
-preplace netloc rmii_crs_dv_1 1 5 2 1770 360 NJ
+preplace inst mii_to_rmii_0 -pg 1 -lvl 5 -y 450 -defaultsOSRD
+preplace inst ps7_axi_periph -pg 1 -lvl 3 -y -160 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 5 -y 700 -defaultsOSRD
+preplace inst ethernetlite_0 -pg 1 -lvl 4 -y 460 -defaultsOSRD
+preplace inst gpio_btns -pg 1 -lvl 4 -y 200 -defaultsOSRD
+preplace inst eth100_loopback_rxtx_0 -pg 1 -lvl 5 -y 880 -defaultsOSRD
+preplace inst gpio_sws -pg 1 -lvl 4 -y -160 -defaultsOSRD
+preplace netloc gpio_leds_GPIO 1 4 2 NJ 70 NJ
+preplace netloc processing_system7_0_DDR 1 1 5 NJ -410 NJ -410 NJ -410 NJ -410 NJ
+preplace netloc ps7_axi_periph_M02_AXI 1 3 1 1350
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 3 1 1390
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 2 NJ -280 N
+preplace netloc rmii_crs_dv_1 1 4 2 1770 360 NJ
 preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 160
-preplace netloc ethernetlite_0_phy_rst_n 1 5 1 1750
-preplace netloc eth100_link_tx_0_rmii_txdt 1 6 1 2110
-preplace netloc ps7_FCLK_CLK1 1 1 6 NJ -390 NJ -390 NJ -390 NJ -390 NJ 320 NJ
-preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 2 4 N -80 830 -340 1360 390 NJ
-preplace netloc ps7_axi_periph_M01_AXI 1 4 1 1370
-preplace netloc xlconstant_0_dout 1 6 1 2110
-preplace netloc gpio_btns_GPIO 1 5 2 NJ 200 NJ
-preplace netloc processing_system7_0_FIXED_IO 1 1 6 NJ -370 NJ -370 NJ -370 NJ -370 NJ -370 NJ
-preplace netloc rmii_rxd_1 1 5 2 1780 370 NJ
-preplace netloc clk_wiz_0_clk_out1 1 5 2 1790 760 2100
-preplace netloc axi_gpio_0_GPIO 1 5 2 NJ -160 NJ
-preplace netloc ethernetlite_0_MII 1 5 1 1730
-preplace netloc rst_ps7_100M_bus_struct_reset 1 2 4 NJ -360 NJ -360 NJ -360 1740
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 -490 -390 170 -350 N -350 820 -350 1380 380 NJ
-preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 2 2 680 -240 N
-preplace netloc ps7_axi_periph_M03_AXI 1 4 1 1340
-preplace netloc eth100_link_tx_0_rmii_txen 1 6 1 2120
-levelinfo -pg 1 -510 -40 500 800 1190 1590 1970 2170 -top -450 -bot 2080
+preplace netloc ethernetlite_0_phy_rst_n 1 4 1 1750
+preplace netloc eth100_link_tx_0_rmii_txdt 1 5 1 2110
+preplace netloc ps7_FCLK_CLK1 1 1 5 NJ -390 NJ -390 NJ -390 NJ 320 NJ
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 2 3 700 -340 1360 390 NJ
+preplace netloc ps7_axi_periph_M01_AXI 1 3 1 1370
+preplace netloc xlconstant_0_dout 1 5 1 2110
+preplace netloc gpio_btns_GPIO 1 4 2 NJ 200 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 5 NJ -370 NJ -370 NJ -370 NJ -370 NJ
+preplace netloc rmii_rxd_1 1 4 2 1780 370 NJ
+preplace netloc clk_wiz_0_clk_out1 1 4 2 1790 760 2100
+preplace netloc axi_gpio_0_GPIO 1 4 2 NJ -160 NJ
+preplace netloc ethernetlite_0_MII 1 4 1 1730
+preplace netloc eth100_loopback_rxtx_0_frame_in_work 1 5 1 2120
+preplace netloc rst_ps7_100M_bus_struct_reset 1 2 3 NJ -360 NJ -360 1740
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 5 -490 -390 170 -350 690 -350 1380 380 NJ
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 2 1 680
+preplace netloc ps7_axi_periph_M03_AXI 1 3 1 1340
+preplace netloc eth100_link_tx_0_rmii_txen 1 5 1 2120
+levelinfo -pg 1 -510 -40 500 1190 1590 1970 2170 -top -450 -bot 2080
 ",
 }
 

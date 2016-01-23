@@ -139,7 +139,7 @@ set_property PACKAGE_PIN T4 [get_ports {ref_clk_o}]
 ##NET JD2_N         LOC = V4   | IOSTANDARD=LVCMOS33;  # "JD2_N"
 #set_property PACKAGE_PIN V5 [get_ports {JD2_P}]
 ##NET JD2_P         LOC = V5   | IOSTANDARD=LVCMOS33;  # "JD2_P"
-#set_property PACKAGE_PIN W5 [get_ports {JD3_N}]
+set_property PACKAGE_PIN W5 [get_ports {frmwrk}]
 ##NET JD3_N         LOC = W5   | IOSTANDARD=LVCMOS33;  # "JD3_N"
 #set_property PACKAGE_PIN W6 [get_ports {JD3_P}]
 ##NET JD3_P         LOC = W6   | IOSTANDARD=LVCMOS33;  # "JD3_P"

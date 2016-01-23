@@ -5357,3 +5357,390 @@ con
 ----------------End of Script----------------
 
 23:06:34 INFO  : Launching XSDB server: xsdb -n /home/jara/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+20:49:04 INFO  : Launching XSDB server: xsdb -n /home/jara/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+20:49:06 INFO  : XSDB server has started successfully.
+20:49:16 INFO  : Processing command line option -hwspec /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper.hdf.
+20:52:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:52:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+20:52:05 INFO  : FPGA configured successfully with bitstream "/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ZynqDesign_wrapper.bit"
+20:52:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+20:52:27 INFO  : 'fpga -state' command is executed.
+20:52:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:52:27 INFO  : Sourcing of '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ps7_init.tcl' is done.
+20:52:27 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+20:52:27 INFO  : Hardware design information is loaded from '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/system.hdf'.
+20:52:28 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+20:52:29 INFO  : 'ps7_init' command is executed.
+20:52:29 INFO  : 'ps7_post_config' command is executed.
+20:52:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:52:30 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:52:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:52:30 INFO  : The application '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/hello4/Debug/hello4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:52:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/hello4/Debug/hello4.elf
+----------------End of Script----------------
+
+20:52:30 INFO  : Memory regions updated for context APU
+20:52:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:52:31 INFO  : 'con' command is executed.
+20:52:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+21:23:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:23:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+21:23:12 INFO  : FPGA configured successfully with bitstream "/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ZynqDesign_wrapper.bit"
+21:23:25 INFO  : Disconnected from the channel tcfchan#1.
+21:23:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+21:23:26 INFO  : 'fpga -state' command is executed.
+21:23:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:23:26 INFO  : Sourcing of '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ps7_init.tcl' is done.
+21:23:26 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+21:23:26 INFO  : Hardware design information is loaded from '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/system.hdf'.
+21:23:27 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+21:23:28 INFO  : 'ps7_init' command is executed.
+21:23:28 INFO  : 'ps7_post_config' command is executed.
+21:23:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:23:29 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:23:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:23:29 INFO  : The application '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/hello4/Debug/hello4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:23:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/hello4/Debug/hello4.elf
+----------------End of Script----------------
+
+21:23:29 INFO  : Memory regions updated for context APU
+21:23:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:23:30 INFO  : 'con' command is executed.
+21:23:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+21:29:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:29:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+21:29:57 INFO  : FPGA configured successfully with bitstream "/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ZynqDesign_wrapper.bit"
+21:30:01 INFO  : Disconnected from the channel tcfchan#2.
+21:30:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+21:30:01 INFO  : 'fpga -state' command is executed.
+21:30:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:30:01 INFO  : Sourcing of '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ps7_init.tcl' is done.
+21:30:02 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+21:30:02 INFO  : Hardware design information is loaded from '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/system.hdf'.
+21:30:02 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+21:30:04 INFO  : 'ps7_init' command is executed.
+21:30:04 INFO  : 'ps7_post_config' command is executed.
+21:30:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:30:04 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:30:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:30:05 INFO  : The application '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/hello4/Debug/hello4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:30:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/hello4/Debug/hello4.elf
+----------------End of Script----------------
+
+21:30:05 INFO  : Memory regions updated for context APU
+21:30:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:30:05 INFO  : 'con' command is executed.
+21:30:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+21:58:43 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 252 xsdb eval "disconnect tcfchan#3"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Communication channel is closed by remote peer
+	at org.eclipse.tcf.core.AbstractChannel$1$2.run(AbstractChannel.java:305)
+	... 2 more
+22:29:26 INFO  : Launching XSDB server: xsdb -n /home/jara/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+22:29:28 INFO  : XSDB server has started successfully.
+22:29:30 INFO  : Processing command line option -hwspec /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper.hdf.
+22:29:30 INFO  : Checking for hwspec changes in the project ZynqDesign_wrapper_hw_platform_2.
+22:29:40 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1453325294000,  Project:1452289600000
+22:29:40 INFO  : The hardware specification for project 'ZynqDesign_wrapper_hw_platform_2' is different from /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper.hdf.
+22:29:40 INFO  : Copied contents of /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper.hdf into /ZynqDesign_wrapper_hw_platform_2/system.hdf.
+22:29:55 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+22:29:55 INFO  : Clearing existing target manager status.
+22:29:59 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+22:29:59 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+22:30:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:30:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+22:30:08 INFO  : FPGA configured successfully with bitstream "/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ZynqDesign_wrapper.bit"
+22:30:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+22:30:15 INFO  : 'fpga -state' command is executed.
+22:30:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:30:16 INFO  : Sourcing of '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ps7_init.tcl' is done.
+22:30:16 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+22:30:16 INFO  : Hardware design information is loaded from '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/system.hdf'.
+22:30:16 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+22:30:18 INFO  : 'ps7_init' command is executed.
+22:30:18 INFO  : 'ps7_post_config' command is executed.
+22:30:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:30:18 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:30:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:30:19 INFO  : The application '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/hello4/Debug/hello4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:30:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/hello4/Debug/hello4.elf
+----------------End of Script----------------
+
+22:30:19 INFO  : Memory regions updated for context APU
+22:30:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:30:19 INFO  : 'con' command is executed.
+22:30:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+22:55:50 INFO  : Launching XSDB server: xsdb -n /home/jara/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+19:13:36 INFO  : Launching XSDB server: xsdb -n /home/jara/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+19:13:38 INFO  : XSDB server has started successfully.
+19:13:43 INFO  : Processing command line option -hwspec /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper.hdf.
+19:13:43 INFO  : Checking for hwspec changes in the project ZynqDesign_wrapper_hw_platform_2.
+19:14:30 INFO  : Launching XSDB server: xsdb -n /home/jara/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+19:14:32 INFO  : XSDB server has started successfully.
+19:14:32 INFO  : Processing command line option -hwspec /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper.hdf.
+19:14:33 INFO  : Checking for hwspec changes in the project ZynqDesign_wrapper_hw_platform_2.
+19:16:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:16:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+19:16:18 INFO  : FPGA configured successfully with bitstream "/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ZynqDesign_wrapper.bit"
+19:18:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+19:18:19 INFO  : 'fpga -state' command is executed.
+19:18:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:18:19 INFO  : Sourcing of '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ps7_init.tcl' is done.
+19:18:19 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+19:18:19 INFO  : Hardware design information is loaded from '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/system.hdf'.
+19:18:20 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+19:18:21 INFO  : 'ps7_init' command is executed.
+19:18:21 INFO  : 'ps7_post_config' command is executed.
+19:18:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:18:22 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+19:18:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:18:22 INFO  : The application '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/hello4/Debug/hello4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:18:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/hello4/Debug/hello4.elf
+----------------End of Script----------------
+
+19:18:22 INFO  : Memory regions updated for context APU
+19:18:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:18:23 INFO  : 'con' command is executed.
+19:18:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+20:23:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:23:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+20:23:35 INFO  : FPGA configured successfully with bitstream "/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ZynqDesign_wrapper.bit"
+20:23:39 INFO  : Disconnected from the channel tcfchan#1.
+20:23:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+20:23:40 INFO  : 'fpga -state' command is executed.
+20:23:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:23:40 INFO  : Sourcing of '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ps7_init.tcl' is done.
+20:23:40 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+20:23:40 INFO  : Hardware design information is loaded from '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/system.hdf'.
+20:23:41 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+20:23:42 INFO  : 'ps7_init' command is executed.
+20:23:42 INFO  : 'ps7_post_config' command is executed.
+20:23:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:23:43 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:23:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:23:43 INFO  : The application '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/hello4/Debug/hello4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:23:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/hello4/Debug/hello4.elf
+----------------End of Script----------------
+
+20:23:43 INFO  : Memory regions updated for context APU
+20:23:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:23:44 INFO  : 'con' command is executed.
+20:23:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+22:21:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:21:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+22:21:44 INFO  : FPGA configured successfully with bitstream "/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ZynqDesign_wrapper.bit"
+22:21:50 INFO  : Disconnected from the channel tcfchan#2.
+22:21:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+22:21:51 INFO  : 'fpga -state' command is executed.
+22:21:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:21:51 INFO  : Sourcing of '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ps7_init.tcl' is done.
+22:21:52 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+22:21:52 INFO  : Hardware design information is loaded from '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/system.hdf'.
+22:21:52 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+22:21:53 INFO  : 'ps7_init' command is executed.
+22:21:54 INFO  : 'ps7_post_config' command is executed.
+22:21:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:21:54 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:21:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:21:55 INFO  : The application '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/hello4/Debug/hello4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:21:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/hello4/Debug/hello4.elf
+----------------End of Script----------------
+
+22:21:55 INFO  : Memory regions updated for context APU
+22:21:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:21:55 INFO  : 'con' command is executed.
+22:21:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+22:24:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:24:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+22:24:16 INFO  : FPGA configured successfully with bitstream "/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ZynqDesign_wrapper.bit"
+22:24:20 INFO  : Disconnected from the channel tcfchan#3.
+22:24:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+22:24:20 INFO  : 'fpga -state' command is executed.
+22:24:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:24:20 INFO  : Sourcing of '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ps7_init.tcl' is done.
+22:24:21 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+22:24:21 INFO  : Hardware design information is loaded from '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/system.hdf'.
+22:24:21 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+22:24:23 INFO  : 'ps7_init' command is executed.
+22:24:23 INFO  : 'ps7_post_config' command is executed.
+22:24:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:24:23 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:24:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:24:24 INFO  : The application '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/hello4/Debug/hello4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:24:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/hello4/Debug/hello4.elf
+----------------End of Script----------------
+
+22:24:24 INFO  : Memory regions updated for context APU
+22:24:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:24:24 INFO  : 'con' command is executed.
+22:24:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+22:27:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:27:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+22:27:22 INFO  : FPGA configured successfully with bitstream "/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ZynqDesign_wrapper.bit"
+22:27:25 INFO  : Disconnected from the channel tcfchan#4.
+22:27:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248496009" && level==0} -index 1' command is executed.
+22:27:26 INFO  : 'fpga -state' command is executed.
+22:27:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:27:26 INFO  : Sourcing of '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ps7_init.tcl' is done.
+22:27:26 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+22:27:26 INFO  : Hardware design information is loaded from '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/system.hdf'.
+22:27:27 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0' command is executed.
+22:27:28 INFO  : 'ps7_init' command is executed.
+22:27:28 INFO  : 'ps7_post_config' command is executed.
+22:27:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:27:29 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:27:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:27:29 INFO  : The application '/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/hello4/Debug/hello4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:27:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+loadhw /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/ZynqDesign_wrapper_hw_platform_1/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+dow /home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.sdk/hello4/Debug/hello4.elf
+----------------End of Script----------------
+
+22:27:29 INFO  : Memory regions updated for context APU
+22:27:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:27:30 INFO  : 'con' command is executed.
+22:27:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248496009"} -index 0
+con
+----------------End of Script----------------
+
+23:50:57 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 360 xsdb eval "disconnect tcfchan#5"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Communication channel is closed by remote peer
+	at org.eclipse.tcf.core.AbstractChannel$1$2.run(AbstractChannel.java:305)
+	... 2 more

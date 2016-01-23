@@ -117,7 +117,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>0e51176d</spirit:value>
+            <spirit:value>97993762</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -125,7 +125,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>ed671b40</spirit:value>
+            <spirit:value>19df70df</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -133,7 +133,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jan 08 21:38:28 UTC 2016</spirit:value>
+            <spirit:value>Wed Jan 20 21:19:19 UTC 2016</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -151,7 +151,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>0e51176d</spirit:value>
+            <spirit:value>97993762</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -159,7 +159,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>ed671b40</spirit:value>
+            <spirit:value>19df70df</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -167,7 +167,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jan 08 21:38:28 UTC 2016</spirit:value>
+            <spirit:value>Wed Jan 20 21:19:19 UTC 2016</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -186,7 +186,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>0e51176d</spirit:value>
+            <spirit:value>97993762</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -194,7 +194,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>ed671b40</spirit:value>
+            <spirit:value>19df70df</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -202,7 +202,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jan 08 21:38:28 UTC 2016</spirit:value>
+            <spirit:value>Wed Jan 20 21:19:19 UTC 2016</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -220,7 +220,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>03d871fc</spirit:value>
+            <spirit:value>d3a1ce50</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -228,7 +228,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>ed671b40</spirit:value>
+            <spirit:value>19df70df</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -236,7 +236,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jan 08 21:38:28 UTC 2016</spirit:value>
+            <spirit:value>Wed Jan 20 21:19:19 UTC 2016</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -255,7 +255,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>03d871fc</spirit:value>
+            <spirit:value>d3a1ce50</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -263,7 +263,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>ed671b40</spirit:value>
+            <spirit:value>19df70df</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -271,7 +271,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jan 08 21:38:28 UTC 2016</spirit:value>
+            <spirit:value>Wed Jan 20 21:19:19 UTC 2016</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -381,6 +381,19 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
+        <spirit:name>frame_in_work</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
         <spirit:name>status_leds_o</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
@@ -443,63 +456,63 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/crc.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/crc.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/etherlink_pkg.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/etherlink_pkg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/dclk_transport.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/dclk_transport.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/fifo_queue.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/fifo_queue.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/rxlink_fsm.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/rxlink_fsm.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/dp_dclk_ram_wr_rdwr.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/dp_dclk_ram_wr_rdwr.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/txlink_fsm.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/txlink_fsm.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/dp_dclk_ram_2rdwr.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/dp_dclk_ram_2rdwr.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/bytestream_to_rmii.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/bytestream_to_rmii.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/rxlink_cbuf_ctrl.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/rxlink_cbuf_ctrl.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/rmii_to_bytestream.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/rmii_to_bytestream.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/loopback.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/loopback.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/eth100_link_tx.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/eth100_link_tx.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/eth100_link_rx.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/eth100_link_rx.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/eth100_loopback_rxtx.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/eth100_loopback_rxtx.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -514,77 +527,77 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/crc.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/crc.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/etherlink_pkg.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/etherlink_pkg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/dclk_transport.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/dclk_transport.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/fifo_queue.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/fifo_queue.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/rxlink_fsm.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/rxlink_fsm.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/dp_dclk_ram_wr_rdwr.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/dp_dclk_ram_wr_rdwr.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/txlink_fsm.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/txlink_fsm.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/dp_dclk_ram_2rdwr.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/dp_dclk_ram_2rdwr.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/bytestream_to_rmii.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/bytestream_to_rmii.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/rxlink_cbuf_ctrl.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/rxlink_cbuf_ctrl.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/rmii_to_bytestream.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/rmii_to_bytestream.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/loopback.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/loopback.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/eth100_link_tx.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/eth100_link_tx.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/eth100_link_rx.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/eth100_link_rx.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v2_0/src/eth100_loopback_rxtx.vhd</spirit:name>
+        <spirit:name>../../ipshared/jsykora.info/eth100_loopback_rxtx_v3_0/src/eth100_loopback_rxtx.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -598,7 +611,7 @@
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
-  <spirit:description>eth100_loopback_rxtx_v2_0</spirit:description>
+  <spirit:description>eth100_loopback_rxtx_v3_0</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>FRBUF_MEM_ADDR_W</spirit:name>
@@ -627,12 +640,12 @@
   </spirit:parameters>
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
-      <xilinx:displayName>eth100_loopback_rxtx_v2_0</xilinx:displayName>
+      <xilinx:displayName>eth100_loopback_rxtx_v3_0</xilinx:displayName>
       <xilinx:coreRevision>1</xilinx:coreRevision>
       <xilinx:tags>
-        <xilinx:tag xilinx:name="user.org:user:eth100_loopback_rxtx:1.0_ARCHIVE_LOCATION">/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/ip_export/eth100_loopback_v2</xilinx:tag>
-        <xilinx:tag xilinx:name="jsykora.info:user:eth100_loopback_rxtx:1.0_ARCHIVE_LOCATION">/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/ip_export/eth100_loopback_v2</xilinx:tag>
-        <xilinx:tag xilinx:name="jsykora.info:user:eth100_loopback_rxtx:2.0_ARCHIVE_LOCATION">/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/ip_export/eth100_loopback_v2</xilinx:tag>
+        <xilinx:tag xilinx:name="user.org:user:eth100_loopback_rxtx:1.0_ARCHIVE_LOCATION">/home/jara/ownCloud-pluto/elektronika/miilink/fpga/ip_export/eth100_loopback_v3</xilinx:tag>
+        <xilinx:tag xilinx:name="jsykora.info:user:eth100_loopback_rxtx:1.0_ARCHIVE_LOCATION">/home/jara/ownCloud-pluto/elektronika/miilink/fpga/ip_export/eth100_loopback_v3</xilinx:tag>
+        <xilinx:tag xilinx:name="jsykora.info:user:eth100_loopback_rxtx:3.0_ARCHIVE_LOCATION">/home/jara/ownCloud-pluto/elektronika/miilink/fpga/ip_export/eth100_loopback_v3</xilinx:tag>
       </xilinx:tags>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.ARESETN.POLARITY" xilinx:valueSource="constant"/>
@@ -648,8 +661,8 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2015.3</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="1d80987d"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="00c42c52"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="93b445c9"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="566948c0"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="b19f35d3"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="d4881328"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="32add3bb"/>
     </xilinx:packagingInfo>

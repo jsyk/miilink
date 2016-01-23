@@ -238,6 +238,35 @@
           </spirit:parameter>
         </spirit:parameters>
       </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>DATA.FRMWRK</spirit:name>
+        <spirit:displayName>Data</spirit:displayName>
+        <spirit:description>Data</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="data" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="data_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>DATA</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>frmwrk</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>LAYERED_METADATA</spirit:name>
+            <spirit:value>undef</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:busInterface>
     </spirit:busInterfaces>
     <spirit:model>
       <spirit:views>
@@ -290,6 +319,12 @@
               <spirit:left>1</spirit:left>
               <spirit:right>0</spirit:right>
             </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>frmwrk</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
           </spirit:wire>
         </spirit:port>
       </spirit:ports>
@@ -396,7 +431,7 @@
       </spirit:componentInstance>
       <spirit:componentInstance>
         <spirit:instanceName>eth100_loopback_rxtx_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="eth100_loopback_rxtx" spirit:vendor="jsykora.info" spirit:version="2.0"/>
+        <spirit:componentRef spirit:library="user" spirit:name="eth100_loopback_rxtx" spirit:vendor="jsykora.info" spirit:version="3.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">ZynqDesign_eth100_loopback_rxtx_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
@@ -524,6 +559,11 @@
         <spirit:name>rmii_rxd_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="rmii_rxd"/>
         <spirit:internalPortReference spirit:componentRef="eth100_loopback_rxtx_0" spirit:portRef="rmii_rxdt"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>eth100_loopback_rxtx_0_frame_in_work</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="eth100_loopback_rxtx_0" spirit:portRef="frame_in_work"/>
+        <spirit:externalPortReference spirit:portRef="frmwrk"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>

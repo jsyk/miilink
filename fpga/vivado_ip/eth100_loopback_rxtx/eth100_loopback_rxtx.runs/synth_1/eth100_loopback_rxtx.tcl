@@ -8,28 +8,32 @@ create_project -in_memory -part xc7z020clg484-1
 
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/jara/ownCloud-pluto/elektronika/etherlink-hdl/vivado_ip/eth100_loopback_rxtx/eth100_loopback_rxtx.cache/wt [current_project]
-set_property parent.project_path /home/jara/ownCloud-pluto/elektronika/etherlink-hdl/vivado_ip/eth100_loopback_rxtx/eth100_loopback_rxtx.xpr [current_project]
+set_property webtalk.parent_dir /home/jara/ownCloud-pluto/elektronika/miilink/fpga/vivado_ip/eth100_loopback_rxtx/eth100_loopback_rxtx.cache/wt [current_project]
+set_property parent.project_path /home/jara/ownCloud-pluto/elektronika/miilink/fpga/vivado_ip/eth100_loopback_rxtx/eth100_loopback_rxtx.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
+set_property ip_repo_paths {
+  /home/jara/ownCloud-pluto/elektronika/miilink/fpga/ip_export/eth100_loopback_v2
+  /home/jara/ownCloud-pluto/elektronika/miilink/fpga/ip_export/eth100_loopback_v1
+} [current_project]
 set_property vhdl_version vhdl_2k [current_fileset]
 read_vhdl -library xil_defaultlib {
-  /home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/crc.vhd
-  /home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/etherlink_pkg.vhd
-  /home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/dclk_transport.vhd
-  /home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/fifo_queue.vhd
-  /home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/rxlink_fsm.vhd
-  /home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/dp_dclk_ram_wr_rdwr.vhd
-  /home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/txlink_fsm.vhd
-  /home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/dp_dclk_ram_2rdwr.vhd
-  /home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/bytestream_to_rmii.vhd
-  /home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/rxlink_cbuf_ctrl.vhd
-  /home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/rmii_to_bytestream.vhd
-  /home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/loopback.vhd
-  /home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_tx.vhd
-  /home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_rx.vhd
-  /home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_loopback_rxtx.vhd
+  /home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/crc.vhd
+  /home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/etherlink_pkg.vhd
+  /home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/dclk_transport.vhd
+  /home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/fifo_queue.vhd
+  /home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/rxlink_fsm.vhd
+  /home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/dp_dclk_ram_wr_rdwr.vhd
+  /home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/txlink_fsm.vhd
+  /home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/dp_dclk_ram_2rdwr.vhd
+  /home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/bytestream_to_rmii.vhd
+  /home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/rxlink_cbuf_ctrl.vhd
+  /home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/rmii_to_bytestream.vhd
+  /home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/loopback.vhd
+  /home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/eth100_link_tx.vhd
+  /home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/eth100_link_rx.vhd
+  /home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/eth100_loopback_rxtx.vhd
 }
 synth_design -top eth100_loopback_rxtx -part xc7z020clg484-1
 write_checkpoint -noxdef eth100_loopback_rxtx.dcp

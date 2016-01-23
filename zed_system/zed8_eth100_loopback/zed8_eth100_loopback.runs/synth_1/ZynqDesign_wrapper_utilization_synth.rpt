@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
-| Date         : Fri Jan  8 22:43:39 2016
+| Date         : Wed Jan 20 22:25:13 2016
 | Host         : megalit.local running 64-bit Fedora release 22 (Twenty Two)
 | Command      : report_utilization -file ZynqDesign_wrapper_utilization_synth.rpt -pb ZynqDesign_wrapper_utilization_synth.pb
 | Design       : ZynqDesign_wrapper
@@ -30,13 +30,13 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 2656 |     0 |     53200 |  4.99 |
-|   LUT as Logic             | 2570 |     0 |     53200 |  4.83 |
+| Slice LUTs*                | 2657 |     0 |     53200 |  4.99 |
+|   LUT as Logic             | 2571 |     0 |     53200 |  4.83 |
 |   LUT as Memory            |   86 |     0 |     17400 |  0.49 |
 |     LUT as Distributed RAM |   12 |     0 |           |       |
 |     LUT as Shift Register  |   74 |     0 |           |       |
-| Slice Registers            | 3076 |    11 |    106400 |  2.89 |
-|   Register as Flip Flop    | 3076 |    11 |    106400 |  2.89 |
+| Slice Registers            | 3077 |    11 |    106400 |  2.89 |
+|   Register as Flip Flop    | 3077 |    11 |    106400 |  2.89 |
 |   Register as Latch        |    0 |     0 |    106400 |  0.00 |
 | F7 Muxes                   |   51 |     0 |     26600 |  0.19 |
 | F8 Muxes                   |   18 |     0 |     13300 |  0.14 |
@@ -59,7 +59,7 @@ Table of Contents
 | 56    |          Yes |           - |          Set |
 | 110   |          Yes |           - |        Reset |
 | 161   |          Yes |         Set |            - |
-| 2749  |          Yes |       Reset |            - |
+| 2750  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -94,7 +94,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+--------+
 |          Site Type          | Used | Fixed | Available |  Util% |
 +-----------------------------+------+-------+-----------+--------+
-| Bonded IOB                  |   29 |     0 |       200 |  14.50 |
+| Bonded IOB                  |   30 |     0 |       200 |  15.00 |
 | Bonded IPADs                |    0 |     0 |         2 |   0.00 |
 | Bonded IOPADs               |  130 |     0 |       130 | 100.00 |
 | PHY_CONTROL                 |    0 |     0 |         4 |   0.00 |
@@ -150,8 +150,8 @@ Table of Contents
 +------------+------+----------------------+
 |  Ref Name  | Used |  Functional Category |
 +------------+------+----------------------+
-| FDRE       | 2749 |         Flop & Latch |
-| LUT6       |  912 |                  LUT |
+| FDRE       | 2750 |         Flop & Latch |
+| LUT6       |  913 |                  LUT |
 | LUT3       |  592 |                  LUT |
 | LUT5       |  456 |                  LUT |
 | LUT4       |  406 |                  LUT |
@@ -167,8 +167,8 @@ Table of Contents
 | SRL16E     |   27 |   Distributed Memory |
 | MUXF8      |   18 |                MuxFx |
 | IBUF       |   17 |                   IO |
+| OBUF       |   13 |                   IO |
 | RAMD32     |   12 |   Distributed Memory |
-| OBUF       |   12 |                   IO |
 | RAMS32     |    8 |   Distributed Memory |
 | BUFG       |    5 |                Clock |
 | RAMB36E1   |    4 |         Block Memory |

@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD=/home/jara/ownCloud-pluto/elektronika/zed8_eth100_loopback/zed8_eth100_loopback.runs/synth_1
+HD_PWD=/home/jara/ownCloud-pluto/elektronika/miilink/zed_system/zed8_eth100_loopback/zed8_eth100_loopback.runs/synth_1
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -1,7 +1,7 @@
 //Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
-//Date        : Fri Jan  8 22:37:48 2016
+//Date        : Wed Jan 20 22:18:29 2016
 //Host        : megalit.local running 64-bit Fedora release 22 (Twenty Two)
 //Command     : generate_target ZynqDesign.bd
 //Design      : ZynqDesign
@@ -33,6 +33,7 @@ module ZynqDesign
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
     btns_5bits_tri_i,
+    frmwrk,
     leds_8bits_tri_o,
     ref_clk_i,
     ref_clk_o,
@@ -63,6 +64,7 @@ module ZynqDesign
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
   input [4:0]btns_5bits_tri_i;
+  output frmwrk;
   output [7:0]leds_8bits_tri_o;
   input ref_clk_i;
   output ref_clk_o;
@@ -76,6 +78,7 @@ module ZynqDesign
   wire clk_wiz_0_clk_out1;
   wire [1:0]eth100_link_tx_0_rmii_txdt;
   wire eth100_link_tx_0_rmii_txen;
+  wire eth100_loopback_rxtx_0_frame_in_work;
   wire ethernetlite_0_MII_COL;
   wire ethernetlite_0_MII_CRS;
   wire [3:0]ethernetlite_0_MII_RXD;
@@ -226,6 +229,7 @@ module ZynqDesign
   wire [0:0]xlconstant_0_dout;
 
   assign axi_gpio_0_GPIO_TRI_I = sws_8bits_tri_i[7:0];
+  assign frmwrk = eth100_loopback_rxtx_0_frame_in_work;
   assign gpio_btns_GPIO_TRI_I = btns_5bits_tri_i[4:0];
   assign leds_8bits_tri_o[7:0] = gpio_leds_GPIO_TRI_O;
   assign ref_clk_o = ps7_FCLK_CLK1;
@@ -240,6 +244,7 @@ module ZynqDesign
   ZynqDesign_eth100_loopback_rxtx_0_0 eth100_loopback_rxtx_0
        (.aresetn(rst_processing_system7_0_100M_peripheral_aresetn),
         .clk(processing_system7_0_FCLK_CLK0),
+        .frame_in_work(eth100_loopback_rxtx_0_frame_in_work),
         .ref_clk(clk_wiz_0_clk_out1),
         .rmii_rxdt(rmii_rxd_1),
         .rmii_rxdv(rmii_crs_dv_1),

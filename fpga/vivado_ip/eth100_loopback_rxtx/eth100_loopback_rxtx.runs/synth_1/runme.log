@@ -14,11 +14,11 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 17485 
+INFO: Helper process launched with PID 17857 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1085.613 ; gain = 132.801 ; free physical = 47 ; free virtual = 4635
+Starting Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1085.613 ; gain = 132.801 ; free physical = 217 ; free virtual = 3963
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'eth100_loopback_rxtx' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_loopback_rxtx.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'eth100_loopback_rxtx' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/eth100_loopback_rxtx.vhd:29]
 	Parameter FRBUF_MEM_ADDR_W bound to: 9 - type: integer 
 	Parameter IGAP_LEN bound to: 6 - type: integer 
 	Parameter RXFIFO_DEPTH_W bound to: 4 - type: integer 
@@ -27,137 +27,137 @@ INFO: [Synth 8-638] synthesizing module 'eth100_loopback_rxtx' [/home/jara/ownCl
 	Parameter M2_SUPPORT_WRITE bound to: 0 - type: bool 
 	Parameter M2_READ_DELAY bound to: 1 - type: integer 
 	Parameter RXFIFO_DEPTH_W bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'eth100_link_rx' declared at '/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_rx.vhd:10' bound to instance 'rx' of component 'eth100_link_rx' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_loopback_rxtx.vhd:77]
-INFO: [Synth 8-638] synthesizing module 'eth100_link_rx' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_rx.vhd:46]
+INFO: [Synth 8-3491] module 'eth100_link_rx' declared at '/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/eth100_link_rx.vhd:10' bound to instance 'rx' of component 'eth100_link_rx' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/eth100_loopback_rxtx.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'eth100_link_rx' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/eth100_link_rx.vhd:46]
 	Parameter FRBUF_MEM_ADDR_W bound to: 9 - type: integer 
 	Parameter M2_SUPPORT_WRITE bound to: 0 - type: bool 
 	Parameter M2_READ_DELAY bound to: 1 - type: integer 
 	Parameter RXFIFO_DEPTH_W bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'rmii_to_bytestream' declared at '/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/rmii_to_bytestream.vhd:7' bound to instance 'rmii2bs' of component 'rmii_to_bytestream' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_rx.vhd:94]
-INFO: [Synth 8-638] synthesizing module 'rmii_to_bytestream' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/rmii_to_bytestream.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'rmii_to_bytestream' (1#1) [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/rmii_to_bytestream.vhd:21]
-INFO: [Synth 8-3491] module 'rxlink_fsm' declared at '/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/rxlink_fsm.vhd:11' bound to instance 'rxfsm' of component 'rxlink_fsm' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_rx.vhd:107]
-INFO: [Synth 8-638] synthesizing module 'rxlink_fsm' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/rxlink_fsm.vhd:30]
-INFO: [Synth 8-3491] module 'CRC' declared at '/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/crc.vhd:30' bound to instance 'fcs_checker' of component 'CRC' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/rxlink_fsm.vhd:52]
-INFO: [Synth 8-638] synthesizing module 'CRC' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/crc.vhd:43]
-INFO: [Synth 8-226] default block is never used [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/crc.vhd:185]
-INFO: [Synth 8-256] done synthesizing module 'CRC' (2#1) [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/crc.vhd:43]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: report statement [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/rxlink_fsm.vhd:251]
-INFO: [Synth 8-256] done synthesizing module 'rxlink_fsm' (3#1) [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/rxlink_fsm.vhd:30]
+INFO: [Synth 8-3491] module 'rmii_to_bytestream' declared at '/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/rmii_to_bytestream.vhd:7' bound to instance 'rmii2bs' of component 'rmii_to_bytestream' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/eth100_link_rx.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'rmii_to_bytestream' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/rmii_to_bytestream.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'rmii_to_bytestream' (1#1) [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/rmii_to_bytestream.vhd:21]
+INFO: [Synth 8-3491] module 'rxlink_fsm' declared at '/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/rxlink_fsm.vhd:11' bound to instance 'rxfsm' of component 'rxlink_fsm' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/eth100_link_rx.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'rxlink_fsm' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/rxlink_fsm.vhd:30]
+INFO: [Synth 8-3491] module 'CRC' declared at '/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/crc.vhd:30' bound to instance 'fcs_checker' of component 'CRC' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/rxlink_fsm.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'CRC' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/crc.vhd:43]
+INFO: [Synth 8-226] default block is never used [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/crc.vhd:185]
+INFO: [Synth 8-256] done synthesizing module 'CRC' (2#1) [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/crc.vhd:43]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: report statement [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/rxlink_fsm.vhd:251]
+INFO: [Synth 8-256] done synthesizing module 'rxlink_fsm' (3#1) [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/rxlink_fsm.vhd:30]
 	Parameter MEM_ADDR_W bound to: 9 - type: integer 
-INFO: [Synth 8-3491] module 'rxlink_cbuf_ctrl' declared at '/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/rxlink_cbuf_ctrl.vhd:11' bound to instance 'rxcbufctrl' of component 'rxlink_cbuf_ctrl' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_rx.vhd:125]
-INFO: [Synth 8-638] synthesizing module 'rxlink_cbuf_ctrl' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/rxlink_cbuf_ctrl.vhd:42]
+INFO: [Synth 8-3491] module 'rxlink_cbuf_ctrl' declared at '/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/rxlink_cbuf_ctrl.vhd:11' bound to instance 'rxcbufctrl' of component 'rxlink_cbuf_ctrl' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/eth100_link_rx.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'rxlink_cbuf_ctrl' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/rxlink_cbuf_ctrl.vhd:42]
 	Parameter MEM_ADDR_W bound to: 9 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'rxlink_cbuf_ctrl' (4#1) [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/rxlink_cbuf_ctrl.vhd:42]
-	Parameter MEM_ADDR_W bound to: 9 - type: integer 
-	Parameter MEM_DATA_W bound to: 32 - type: integer 
-	Parameter M2_SUPPORT_WRITE bound to: 0 - type: bool 
-	Parameter M2_READ_DELAY bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'dp_dclk_ram_wr_rdwr' declared at '/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/dp_dclk_ram_wr_rdwr.vhd:10' bound to instance 'rxcbuf' of component 'dp_dclk_ram_wr_rdwr' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_rx.vhd:156]
-INFO: [Synth 8-638] synthesizing module 'dp_dclk_ram_wr_rdwr' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/dp_dclk_ram_wr_rdwr.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'rxlink_cbuf_ctrl' (4#1) [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/rxlink_cbuf_ctrl.vhd:42]
 	Parameter MEM_ADDR_W bound to: 9 - type: integer 
 	Parameter MEM_DATA_W bound to: 32 - type: integer 
 	Parameter M2_SUPPORT_WRITE bound to: 0 - type: bool 
 	Parameter M2_READ_DELAY bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'dp_dclk_ram_wr_rdwr' (5#1) [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/dp_dclk_ram_wr_rdwr.vhd:33]
+INFO: [Synth 8-3491] module 'dp_dclk_ram_wr_rdwr' declared at '/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/dp_dclk_ram_wr_rdwr.vhd:10' bound to instance 'rxcbuf' of component 'dp_dclk_ram_wr_rdwr' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/eth100_link_rx.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'dp_dclk_ram_wr_rdwr' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/dp_dclk_ram_wr_rdwr.vhd:33]
+	Parameter MEM_ADDR_W bound to: 9 - type: integer 
+	Parameter MEM_DATA_W bound to: 32 - type: integer 
+	Parameter M2_SUPPORT_WRITE bound to: 0 - type: bool 
+	Parameter M2_READ_DELAY bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dp_dclk_ram_wr_rdwr' (5#1) [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/dp_dclk_ram_wr_rdwr.vhd:33]
 	Parameter FIFO_DATA_W bound to: 9 - type: integer 
 	Parameter FIFO_DEPTH_W bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'fifo_queue' declared at '/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/fifo_queue.vhd:9' bound to instance 'pfqueue' of component 'fifo_queue' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_rx.vhd:179]
-INFO: [Synth 8-638] synthesizing module 'fifo_queue' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/fifo_queue.vhd:28]
+INFO: [Synth 8-3491] module 'fifo_queue' declared at '/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/fifo_queue.vhd:9' bound to instance 'pfqueue' of component 'fifo_queue' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/eth100_link_rx.vhd:179]
+INFO: [Synth 8-638] synthesizing module 'fifo_queue' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/fifo_queue.vhd:28]
 	Parameter FIFO_DATA_W bound to: 9 - type: integer 
 	Parameter FIFO_DEPTH_W bound to: 4 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'fifo_queue' (6#1) [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/fifo_queue.vhd:28]
-INFO: [Synth 8-256] done synthesizing module 'eth100_link_rx' (7#1) [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_rx.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'fifo_queue' (6#1) [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/fifo_queue.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'eth100_link_rx' (7#1) [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/eth100_link_rx.vhd:46]
 	Parameter FRBUF_MEM_ADDR_W bound to: 9 - type: integer 
 	Parameter FRTAG_W bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'loopback' declared at '/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/loopback.vhd:13' bound to instance 'lb' of component 'loopback' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_loopback_rxtx.vhd:112]
-INFO: [Synth 8-638] synthesizing module 'loopback' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/loopback.vhd:59]
+INFO: [Synth 8-3491] module 'loopback' declared at '/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/loopback.vhd:13' bound to instance 'lb' of component 'loopback' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/eth100_loopback_rxtx.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'loopback' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/loopback.vhd:60]
 	Parameter FRBUF_MEM_ADDR_W bound to: 9 - type: integer 
 	Parameter FRTAG_W bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'loopback' (8#1) [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/loopback.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'loopback' (8#1) [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/loopback.vhd:60]
 	Parameter FRBUF_MEM_ADDR_W bound to: 9 - type: integer 
 	Parameter IGAP_LEN bound to: 6 - type: integer 
 	Parameter M1_SUPPORT_READ bound to: 0 - type: bool 
 	Parameter M1_DELAY bound to: 1 - type: integer 
 	Parameter TXFIFO_DEPTH_W bound to: 4 - type: integer 
 	Parameter FRTAG_W bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'eth100_link_tx' declared at '/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_tx.vhd:10' bound to instance 'tx' of component 'eth100_link_tx' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_loopback_rxtx.vhd:157]
-INFO: [Synth 8-638] synthesizing module 'eth100_link_tx' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_tx.vhd:47]
+INFO: [Synth 8-3491] module 'eth100_link_tx' declared at '/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/eth100_link_tx.vhd:10' bound to instance 'tx' of component 'eth100_link_tx' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/eth100_loopback_rxtx.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'eth100_link_tx' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/eth100_link_tx.vhd:47]
 	Parameter FRBUF_MEM_ADDR_W bound to: 9 - type: integer 
 	Parameter IGAP_LEN bound to: 6 - type: integer 
 	Parameter M1_SUPPORT_READ bound to: 0 - type: bool 
 	Parameter M1_DELAY bound to: 1 - type: integer 
 	Parameter TXFIFO_DEPTH_W bound to: 4 - type: integer 
 	Parameter FRTAG_W bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'bytestream_to_rmii' declared at '/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/bytestream_to_rmii.vhd:8' bound to instance 'bs2rmii' of component 'bytestream_to_rmii' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_tx.vhd:84]
-INFO: [Synth 8-638] synthesizing module 'bytestream_to_rmii' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/bytestream_to_rmii.vhd:23]
-INFO: [Synth 8-256] done synthesizing module 'bytestream_to_rmii' (9#1) [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/bytestream_to_rmii.vhd:23]
+INFO: [Synth 8-3491] module 'bytestream_to_rmii' declared at '/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/bytestream_to_rmii.vhd:8' bound to instance 'bs2rmii' of component 'bytestream_to_rmii' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/eth100_link_tx.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'bytestream_to_rmii' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/bytestream_to_rmii.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'bytestream_to_rmii' (9#1) [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/bytestream_to_rmii.vhd:23]
 	Parameter MEM_ADDR_W bound to: 9 - type: integer 
 	Parameter IGAP_LEN bound to: 6 - type: integer 
 	Parameter FRTAG_W bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'txlink_fsm' declared at '/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/txlink_fsm.vhd:10' bound to instance 'txlnkfsm' of component 'txlink_fsm' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_tx.vhd:97]
-INFO: [Synth 8-638] synthesizing module 'txlink_fsm' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/txlink_fsm.vhd:41]
+INFO: [Synth 8-3491] module 'txlink_fsm' declared at '/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/txlink_fsm.vhd:10' bound to instance 'txlnkfsm' of component 'txlink_fsm' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/eth100_link_tx.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'txlink_fsm' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/txlink_fsm.vhd:41]
 	Parameter MEM_ADDR_W bound to: 9 - type: integer 
 	Parameter IGAP_LEN bound to: 6 - type: integer 
 	Parameter FRTAG_W bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'CRC' declared at '/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/crc.vhd:30' bound to instance 'fcs_checker' of component 'CRC' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/txlink_fsm.vhd:74]
-INFO: [Synth 8-256] done synthesizing module 'txlink_fsm' (10#1) [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/txlink_fsm.vhd:41]
+INFO: [Synth 8-3491] module 'CRC' declared at '/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/crc.vhd:30' bound to instance 'fcs_checker' of component 'CRC' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/txlink_fsm.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'txlink_fsm' (10#1) [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/txlink_fsm.vhd:41]
 	Parameter MEM_ADDR_W bound to: 9 - type: integer 
 	Parameter MEM_DATA_W bound to: 32 - type: integer 
 	Parameter M1_SUPPORT_READ bound to: 0 - type: bool 
 	Parameter M1_DELAY bound to: 1 - type: integer 
 	Parameter M2_SUPPORT_WRITE bound to: 0 - type: bool 
 	Parameter M2_DELAY bound to: 2 - type: integer 
-INFO: [Synth 8-3491] module 'dp_dclk_ram_2rdwr' declared at '/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/dp_dclk_ram_2rdwr.vhd:10' bound to instance 'fbuf' of component 'dp_dclk_ram_2rdwr' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_tx.vhd:127]
-INFO: [Synth 8-638] synthesizing module 'dp_dclk_ram_2rdwr' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/dp_dclk_ram_2rdwr.vhd:37]
+INFO: [Synth 8-3491] module 'dp_dclk_ram_2rdwr' declared at '/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/dp_dclk_ram_2rdwr.vhd:10' bound to instance 'fbuf' of component 'dp_dclk_ram_2rdwr' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/eth100_link_tx.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'dp_dclk_ram_2rdwr' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/dp_dclk_ram_2rdwr.vhd:37]
 	Parameter MEM_ADDR_W bound to: 9 - type: integer 
 	Parameter MEM_DATA_W bound to: 32 - type: integer 
 	Parameter M1_SUPPORT_READ bound to: 0 - type: bool 
 	Parameter M1_DELAY bound to: 1 - type: integer 
 	Parameter M2_SUPPORT_WRITE bound to: 0 - type: bool 
 	Parameter M2_DELAY bound to: 2 - type: integer 
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/dp_dclk_ram_2rdwr.vhd:137]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/dp_dclk_ram_2rdwr.vhd:138]
-WARNING: [Synth 8-3848] Net rm1_rdt in module/entity dp_dclk_ram_2rdwr does not have driver. [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/dp_dclk_ram_2rdwr.vhd:49]
-INFO: [Synth 8-256] done synthesizing module 'dp_dclk_ram_2rdwr' (11#1) [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/dp_dclk_ram_2rdwr.vhd:37]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/dp_dclk_ram_2rdwr.vhd:137]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/dp_dclk_ram_2rdwr.vhd:138]
+WARNING: [Synth 8-3848] Net rm1_rdt in module/entity dp_dclk_ram_2rdwr does not have driver. [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/dp_dclk_ram_2rdwr.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'dp_dclk_ram_2rdwr' (11#1) [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/dp_dclk_ram_2rdwr.vhd:37]
 	Parameter FIFO_DATA_W bound to: 18 - type: integer 
 	Parameter FIFO_DEPTH_W bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'fifo_queue' declared at '/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/fifo_queue.vhd:9' bound to instance 'pfqueue' of component 'fifo_queue' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_tx.vhd:155]
-INFO: [Synth 8-638] synthesizing module 'fifo_queue__parameterized1' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/fifo_queue.vhd:28]
+INFO: [Synth 8-3491] module 'fifo_queue' declared at '/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/fifo_queue.vhd:9' bound to instance 'pfqueue' of component 'fifo_queue' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/eth100_link_tx.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'fifo_queue__parameterized1' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/fifo_queue.vhd:28]
 	Parameter FIFO_DATA_W bound to: 18 - type: integer 
 	Parameter FIFO_DEPTH_W bound to: 4 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'fifo_queue__parameterized1' (11#1) [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/fifo_queue.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'fifo_queue__parameterized1' (11#1) [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/fifo_queue.vhd:28]
 	Parameter DWIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'dclk_transport' declared at '/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/dclk_transport.vhd:9' bound to instance 'pfdeq_dclk' of component 'dclk_transport' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_tx.vhd:184]
-INFO: [Synth 8-638] synthesizing module 'dclk_transport' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/dclk_transport.vhd:26]
+INFO: [Synth 8-3491] module 'dclk_transport' declared at '/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/dclk_transport.vhd:9' bound to instance 'pfdeq_dclk' of component 'dclk_transport' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/eth100_link_tx.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'dclk_transport' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/dclk_transport.vhd:26]
 	Parameter DWIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'dclk_transport' (12#1) [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/dclk_transport.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'dclk_transport' (12#1) [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/dclk_transport.vhd:26]
 	Parameter DWIDTH bound to: 18 - type: integer 
-INFO: [Synth 8-3491] module 'dclk_transport' declared at '/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/dclk_transport.vhd:9' bound to instance 'rf_dclk' of component 'dclk_transport' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_tx.vhd:198]
-INFO: [Synth 8-638] synthesizing module 'dclk_transport__parameterized1' [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/dclk_transport.vhd:26]
+INFO: [Synth 8-3491] module 'dclk_transport' declared at '/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/dclk_transport.vhd:9' bound to instance 'rf_dclk' of component 'dclk_transport' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/eth100_link_tx.vhd:198]
+INFO: [Synth 8-638] synthesizing module 'dclk_transport__parameterized1' [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/dclk_transport.vhd:26]
 	Parameter DWIDTH bound to: 18 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'dclk_transport__parameterized1' (12#1) [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/dclk_transport.vhd:26]
-INFO: [Synth 8-256] done synthesizing module 'eth100_link_tx' (13#1) [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_link_tx.vhd:47]
-INFO: [Synth 8-256] done synthesizing module 'eth100_loopback_rxtx' (14#1) [/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/src/eth100_loopback_rxtx.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'dclk_transport__parameterized1' (12#1) [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/dclk_transport.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'eth100_link_tx' (13#1) [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/eth100_link_tx.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'eth100_loopback_rxtx' (14#1) [/home/jara/ownCloud-pluto/elektronika/miilink/fpga/src/eth100_loopback_rxtx.vhd:29]
 WARNING: [Synth 8-3917] design eth100_loopback_rxtx has port status_leds_o[5] driven by constant 0
 WARNING: [Synth 8-3917] design eth100_loopback_rxtx has port status_leds_o[4] driven by constant 0
 WARNING: [Synth 8-3917] design eth100_loopback_rxtx has port status_leds_o[3] driven by constant 0
 WARNING: [Synth 8-3917] design eth100_loopback_rxtx has port status_leds_o[2] driven by constant 0
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1126.996 ; gain = 174.184 ; free physical = 51 ; free virtual = 4593
+Finished Synthesize : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1126.996 ; gain = 174.184 ; free physical = 170 ; free virtual = 3920
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1126.996 ; gain = 174.184 ; free physical = 50 ; free virtual = 4593
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1126.996 ; gain = 174.184 ; free physical = 169 ; free virtual = 3920
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1134.996 ; gain = 182.184 ; free physical = 50 ; free virtual = 4593
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1134.996 ; gain = 182.184 ; free physical = 169 ; free virtual = 3920
 ---------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Synth 8-5544] ROM "v[str]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Synth 8-802] inferred FSM for state register 'r_reg[state]' in module 'rxlink_fsm'
 INFO: [Synth 8-5546] ROM "v[cnt]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "v[cnt]" won't be mapped to RAM because it is too sparse
@@ -253,7 +253,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'r_reg[state]' using encodi
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'r_reg[state]' using encoding 'sequential' in module 'txlink_fsm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1194.070 ; gain = 241.258 ; free physical = 51 ; free virtual = 4545
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1192.055 ; gain = 239.242 ; free physical = 110 ; free virtual = 3883
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -292,7 +292,7 @@ Detailed RTL Component Info :
 	                5 Bit    Registers := 2     
 	                4 Bit    Registers := 6     
 	                2 Bit    Registers := 3     
-	                1 Bit    Registers := 48    
+	                1 Bit    Registers := 49    
 +---RAMs : 
 	              16K Bit         RAMs := 2     
 +---Muxes : 
@@ -328,7 +328,7 @@ Detailed RTL Component Info :
 	   8 Input      1 Bit        Muxes := 2     
 	   7 Input      1 Bit        Muxes := 4     
 	   3 Input      1 Bit        Muxes := 2     
-	  15 Input      1 Bit        Muxes := 6     
+	  15 Input      1 Bit        Muxes := 7     
 	   4 Input      1 Bit        Muxes := 1     
 	   6 Input      1 Bit        Muxes := 10    
 ---------------------------------------------------------------------------------
@@ -443,6 +443,7 @@ Detailed RTL Component Info :
 +---Registers : 
 	               48 Bit    Registers := 2     
 	                9 Bit    Registers := 5     
+	                1 Bit    Registers := 1     
 +---Muxes : 
 	  15 Input     48 Bit        Muxes := 4     
 	   2 Input     32 Bit        Muxes := 1     
@@ -451,7 +452,7 @@ Detailed RTL Component Info :
 	   2 Input      9 Bit        Muxes := 8     
 	  15 Input      9 Bit        Muxes := 3     
 	  15 Input      4 Bit        Muxes := 1     
-	  15 Input      1 Bit        Muxes := 6     
+	  15 Input      1 Bit        Muxes := 7     
 Module bytestream_to_rmii 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -540,7 +541,7 @@ BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 1243.078 ; gain = 290.266 ; free physical = 53 ; free virtual = 4499
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1243.062 ; gain = 290.250 ; free physical = 51 ; free virtual = 3814
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -551,9 +552,9 @@ WARNING: [Synth 8-3917] design eth100_loopback_rxtx has port status_leds_o[4] dr
 WARNING: [Synth 8-3917] design eth100_loopback_rxtx has port status_leds_o[3] driven by constant 0
 WARNING: [Synth 8-3917] design eth100_loopback_rxtx has port status_leds_o[2] driven by constant 0
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 1251.078 ; gain = 298.266 ; free physical = 54 ; free virtual = 4491
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1251.062 ; gain = 298.250 ; free physical = 53 ; free virtual = 3808
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 1251.078 ; gain = 298.266 ; free physical = 54 ; free virtual = 4491
+Finished Parallel Reinference  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1251.062 ; gain = 298.250 ; free physical = 53 ; free virtual = 3808
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -592,7 +593,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rx/info1
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rx/info1_rx_sofs_reg[31] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rx/info1_rx_frames_reg[31] )
 INFO: [Synth 8-3886] merging instance '\tx/pfqueue/r_reg[fifo_level][4] ' (FDR) to '\tx/pfqueue/r_reg[fifo_full] '
-INFO: [Synth 8-3886] merging instance '\rx/info_rx_ovfs_reg[31] ' (FD) to '\rx/info_rx_sofs_reg[31] '
+INFO: [Synth 8-3886] merging instance '\rx/info_rx_ovfs_reg[31] ' (FD) to '\rx/info_rx_frames_reg[31] '
 INFO: [Synth 8-3886] merging instance '\rx/info_rx_sofs_reg[31] ' (FD) to '\rx/info_rx_frames_reg[31] '
 INFO: [Synth 8-3886] merging instance '\rx/pfqueue/r_reg[fifo_level][4] ' (FDR) to '\rx/pfqueue/r_reg[fifo_full] '
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rx/info_rx_frames_reg[31] )
@@ -605,9 +606,9 @@ WARNING: [Synth 8-3332] Sequential element (\rx/rxfsm/r_reg[b_dt][4] ) is unused
 WARNING: [Synth 8-3332] Sequential element (\rx/rxfsm/r_reg[b_dt][5] ) is unused and will be removed from module eth100_loopback_rxtx.
 WARNING: [Synth 8-3332] Sequential element (\rx/rxfsm/r_reg[b_dt][6] ) is unused and will be removed from module eth100_loopback_rxtx.
 WARNING: [Synth 8-3332] Sequential element (\rx/rxfsm/r_reg[b_dt][7] ) is unused and will be removed from module eth100_loopback_rxtx.
-WARNING: [Synth 8-3332] Sequential element (\rx/info_rx_sofs_reg[31] ) is unused and will be removed from module eth100_loopback_rxtx.
-WARNING: [Synth 8-3332] Sequential element (\rx/info_rx_ovfs_reg[31] ) is unused and will be removed from module eth100_loopback_rxtx.
 WARNING: [Synth 8-3332] Sequential element (\rx/info_rx_frames_reg[31] ) is unused and will be removed from module eth100_loopback_rxtx.
+WARNING: [Synth 8-3332] Sequential element (\rx/info_rx_ovfs_reg[31] ) is unused and will be removed from module eth100_loopback_rxtx.
+WARNING: [Synth 8-3332] Sequential element (\rx/info_rx_sofs_reg[31] ) is unused and will be removed from module eth100_loopback_rxtx.
 WARNING: [Synth 8-3332] Sequential element (\rx/pfqueue/r_reg[fifo_level][4] ) is unused and will be removed from module eth100_loopback_rxtx.
 WARNING: [Synth 8-3332] Sequential element (\tx/bs2rmii/r_reg[dv][0] ) is unused and will be removed from module eth100_loopback_rxtx.
 WARNING: [Synth 8-3332] Sequential element (\tx/rf_dclk/strobe_latch_reg ) is unused and will be removed from module eth100_loopback_rxtx.
@@ -653,9 +654,9 @@ WARNING: [Synth 8-3332] Sequential element (\tx/pfqueue/r_reg[fifo_level][4] ) i
 WARNING: [Synth 8-3332] Sequential element (\rx/rmii_rst_1_reg ) is unused and will be removed from module eth100_loopback_rxtx.
 WARNING: [Synth 8-3332] Sequential element (\rx/rmii_rst_reg ) is unused and will be removed from module eth100_loopback_rxtx.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 1298.117 ; gain = 345.305 ; free physical = 62 ; free virtual = 4460
+Finished Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1298.102 ; gain = 345.289 ; free physical = 62 ; free virtual = 3793
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 1298.117 ; gain = 345.305 ; free physical = 62 ; free virtual = 4460
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1298.102 ; gain = 345.289 ; free physical = 62 ; free virtual = 3793
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -667,23 +668,23 @@ Start Timing Optimization
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 1298.117 ; gain = 345.305 ; free physical = 62 ; free virtual = 4460
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1298.102 ; gain = 345.289 ; free physical = 62 ; free virtual = 3793
 ---------------------------------------------------------------------------------
-Finished Parallel Timing Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 1298.117 ; gain = 345.305 ; free physical = 62 ; free virtual = 4460
+Finished Parallel Timing Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1298.102 ; gain = 345.289 ; free physical = 62 ; free virtual = 3793
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 1298.117 ; gain = 345.305 ; free physical = 62 ; free virtual = 4460
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1298.102 ; gain = 345.289 ; free physical = 62 ; free virtual = 3793
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4480] The timing for the instance \rx/rxcbuf/memory_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-4480] The timing for the instance \tx/fbuf/memory_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:29 . Memory (MB): peak = 1298.117 ; gain = 345.305 ; free physical = 58 ; free virtual = 4449
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1298.102 ; gain = 345.289 ; free physical = 52 ; free virtual = 3784
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -707,7 +708,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:30 . Memory (MB): peak = 1298.117 ; gain = 345.305 ; free physical = 59 ; free virtual = 4451
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1298.102 ; gain = 345.289 ; free physical = 50 ; free virtual = 3782
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -720,7 +721,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:30 . Memory (MB): peak = 1298.117 ; gain = 345.305 ; free physical = 59 ; free virtual = 4451
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1298.102 ; gain = 345.289 ; free physical = 50 ; free virtual = 3782
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -732,25 +733,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:30 . Memory (MB): peak = 1298.117 ; gain = 345.305 ; free physical = 59 ; free virtual = 4451
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1298.102 ; gain = 345.289 ; free physical = 50 ; free virtual = 3782
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:30 . Memory (MB): peak = 1298.117 ; gain = 345.305 ; free physical = 59 ; free virtual = 4451
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1298.102 ; gain = 345.289 ; free physical = 50 ; free virtual = 3782
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:31 . Memory (MB): peak = 1298.117 ; gain = 345.305 ; free physical = 60 ; free virtual = 4451
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1298.102 ; gain = 345.289 ; free physical = 50 ; free virtual = 3782
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:31 . Memory (MB): peak = 1298.117 ; gain = 345.305 ; free physical = 60 ; free virtual = 4451
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1298.102 ; gain = 345.289 ; free physical = 50 ; free virtual = 3782
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -768,27 +769,27 @@ Report Cell Usage:
 +------+---------+------+
 |1     |BUFG     |     2|
 |2     |CARRY4   |    44|
-|3     |LUT1     |   162|
-|4     |LUT2     |    86|
-|5     |LUT3     |   171|
+|3     |LUT1     |   163|
+|4     |LUT2     |    88|
+|5     |LUT3     |   172|
 |6     |LUT4     |   111|
 |7     |LUT5     |   158|
-|8     |LUT6     |   475|
+|8     |LUT6     |   476|
 |9     |MUXF7    |    48|
 |10    |MUXF8    |    18|
 |11    |RAMB18E1 |     2|
-|12    |FDRE     |  1271|
+|12    |FDRE     |  1272|
 |13    |FDSE     |    20|
 |14    |IBUF     |     6|
-|15    |OBUF     |     9|
+|15    |OBUF     |    10|
 +------+---------+------+
 
 Report Instance Areas: 
 +------+------------------+---------------------------+------+
 |      |Instance          |Module                     |Cells |
 +------+------------------+---------------------------+------+
-|1     |top               |                           |  2583|
-|2     |  lb              |loopback                   |   498|
+|1     |top               |                           |  2590|
+|2     |  lb              |loopback                   |   504|
 |3     |  rx              |eth100_link_rx             |  1067|
 |4     |    pfqueue       |fifo_queue                 |   257|
 |5     |    rmii2bs       |rmii_to_bytestream         |    58|
@@ -805,11 +806,11 @@ Report Instance Areas:
 |16    |      fcs_checker |CRC                        |   130|
 +------+------------------+---------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:31 . Memory (MB): peak = 1298.117 ; gain = 345.305 ; free physical = 60 ; free virtual = 4451
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1298.102 ; gain = 345.289 ; free physical = 50 ; free virtual = 3782
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 68 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 1298.117 ; gain = 253.504 ; free physical = 60 ; free virtual = 4451
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:31 . Memory (MB): peak = 1298.117 ; gain = 345.305 ; free physical = 60 ; free virtual = 4451
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1298.102 ; gain = 253.488 ; free physical = 49 ; free virtual = 3781
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1298.102 ; gain = 345.289 ; free physical = 49 ; free virtual = 3781
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 52 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -821,6 +822,6 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 133 Infos, 68 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:31 . Memory (MB): peak = 1377.129 ; gain = 353.098 ; free physical = 50 ; free virtual = 4398
-report_utilization: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1409.148 ; gain = 0.000 ; free physical = 53 ; free virtual = 4396
-INFO: [Common 17-206] Exiting Vivado at Fri Jan  8 20:48:19 2016...
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1378.113 ; gain = 354.082 ; free physical = 48 ; free virtual = 3730
+report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1410.133 ; gain = 0.000 ; free physical = 51 ; free virtual = 3730
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 20 22:01:30 2016...

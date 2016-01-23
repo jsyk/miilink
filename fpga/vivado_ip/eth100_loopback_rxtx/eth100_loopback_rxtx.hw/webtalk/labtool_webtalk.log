@@ -4,5 +4,5 @@
   **** IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 
-source /home/jara/ownCloud-pluto/elektronika/etherlink-hdl/vivado_ip/eth100_loopback_rxtx/eth100_loopback_rxtx.hw/webtalk/labtool_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Fri Jan  8 22:36:16 2016...
+source /home/jara/ownCloud-pluto/elektronika/miilink/fpga/vivado_ip/eth100_loopback_rxtx/eth100_loopback_rxtx.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jan 20 22:03:29 2016...

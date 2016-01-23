@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1452282454">
-  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
-  <File Type="RDS-UTIL" Name="eth100_loopback_rxtx_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="eth100_loopback_rxtx_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="eth100_loopback_rxtx.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1453323638">
   <File Type="VDS-TIMING-PB" Name="eth100_loopback_rxtx_timing_summary_synth.pb"/>
-  <File Type="PA-TCL" Name="eth100_loopback_rxtx.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="eth100_loopback_rxtx_drc_synth.rpt"/>
-  <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
-  <File Type="RDS-RDS" Name="eth100_loopback_rxtx.vds"/>
-  <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
   <File Type="VDS-TIMINGSUMMARY" Name="eth100_loopback_rxtx_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="eth100_loopback_rxtx.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="eth100_loopback_rxtx_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="eth100_loopback_rxtx_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="eth100_loopback_rxtx_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="eth100_loopback_rxtx.vds"/>
+  <File Type="PA-TCL" Name="eth100_loopback_rxtx.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../../src/crc.vhd">

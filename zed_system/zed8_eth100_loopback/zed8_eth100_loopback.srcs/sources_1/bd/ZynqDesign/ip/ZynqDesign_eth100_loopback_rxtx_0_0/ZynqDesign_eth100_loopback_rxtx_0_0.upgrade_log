@@ -1,6 +1,37 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
+| Date         : Wed Jan 20 22:04:57 2016
+| Host         : megalit.local running 64-bit Fedora release 22 (Twenty Two)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ZynqDesign_eth100_loopback_rxtx_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of ZynqDesign_eth100_loopback_rxtx_0_0 from jsykora.info:user:eth100_loopback_rxtx:2.0 (Rev. 1) to jsykora.info:user:eth100_loopback_rxtx:3.0 (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'ZynqDesign_eth100_loopback_rxtx_0_0'. These changes may impact your design.
+
+
+-upgrade has added port 'frame_in_work'
+
+
+
+
+
+
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
 | Date         : Fri Jan  8 22:37:31 2016
 | Host         : megalit.local running 64-bit Fedora release 22 (Twenty Two)
 | Command      : upgrade_ip

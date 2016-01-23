@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
-| Date              : Fri Jan  8 22:45:56 2016
+| Date              : Wed Jan 20 22:27:25 2016
 | Host              : megalit.local running 64-bit Fedora release 22 (Twenty Two)
 | Command           : report_clock_utilization -file ZynqDesign_wrapper_clock_utilization_routed.rpt
 | Design            : ZynqDesign_wrapper
@@ -26,6 +26,7 @@ Table of Contents
 10. Net wise resources used in clock region X0Y1
 11. Net wise resources used in clock region X1Y1
 12. Net wise resources used in clock region X0Y2
+13. Net wise resources used in clock region X1Y2
 
 1. Clock Primitive Utilization
 ------------------------------
@@ -55,8 +56,8 @@ Table of Contents
 |     2 | ZynqDesign_i/ps7/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG                    | ZynqDesign_i/ps7/inst/FCLK_CLK1                                 |    2 |     2 |    no |
 |     3 | ZynqDesign_i/ethernetlite_0/U0/LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX | ZynqDesign_i/ethernetlite_0/U0/O0_out                           |   44 |    12 |    no |
 |     4 | ZynqDesign_i/ethernetlite_0/U0/LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_MUX     | ZynqDesign_i/ethernetlite_0/U0/C                                |   77 |    19 |    no |
-|     5 | ZynqDesign_i/clk_wiz_0/inst/clkout1_buf                                    | ZynqDesign_i/clk_wiz_0/inst/clk_out1                            |  550 |   184 |    no |
-|     6 | ZynqDesign_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG                    | ZynqDesign_i/ps7/inst/FCLK_CLK0                                 | 2336 |   742 |    no |
+|     5 | ZynqDesign_i/clk_wiz_0/inst/clkout1_buf                                    | ZynqDesign_i/clk_wiz_0/inst/clk_out1                            |  550 |   195 |    no |
+|     6 | ZynqDesign_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG                    | ZynqDesign_i/ps7/inst/FCLK_CLK0                                 | 2337 |   716 |    no |
 +-------+----------------------------------------------------------------------------+-----------------------------------------------------------------+------+-------+-------+
 
 
@@ -100,12 +101,12 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 1300 | 20000 |    0 |  4000 |    2 |    60 |    0 |    30 |    0 |    60 |
+| X0Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 1302 | 20000 |    0 |  4000 |    2 |    60 |    0 |    30 |    0 |    60 |
 | X1Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 25600 |    0 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
-| X0Y1              |    4 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 1265 |  9600 |   72 |  1600 |    0 |    20 |    4 |    10 |    0 |    20 |
-| X1Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  106 | 20800 |    0 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
-| X0Y2              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |  233 |  9600 |   22 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 20800 |    0 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X0Y1              |    4 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 1200 |  9600 |   71 |  1600 |    0 |    20 |    4 |    10 |    0 |    20 |
+| X1Y1              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   95 | 20800 |    0 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X0Y2              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |  298 |  9600 |   23 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y2              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   10 | 20800 |    0 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * RAMB36 site can be used as two RAMB18/FIFO18 sites.
 
@@ -117,7 +118,7 @@ Table of Contents
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |            Clock Net Name            |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+--------------------------------------+
 | BUFG        | BUFHCE_X0Y8 |   no  |         0 |        0 |       0 |         2 |       0 |       0 | 486 |     0 |        0 | ZynqDesign_i/clk_wiz_0/inst/clk_out1 |
-| BUFG        | BUFHCE_X0Y9 |   no  |         0 |        0 |       0 |         2 |       0 |       0 | 814 |     0 |        0 | ZynqDesign_i/ps7/inst/FCLK_CLK0      |
+| BUFG        | BUFHCE_X0Y9 |   no  |         0 |        0 |       0 |         2 |       0 |       0 | 816 |     0 |        0 | ZynqDesign_i/ps7/inst/FCLK_CLK0      |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+--------------------------------------+
 
 
@@ -138,10 +139,10 @@ Table of Contents
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+---------------------------------------+
 | Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |             Clock Net Name            |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+---------------------------------------+
-| BUFG        | BUFHCE_X0Y22 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    6 |     0 |        0 | ZynqDesign_i/ethernetlite_0/U0/O0_out |
+| BUFG        | BUFHCE_X0Y22 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    7 |     0 |        0 | ZynqDesign_i/ethernetlite_0/U0/O0_out |
 | BUFG        | BUFHCE_X0Y20 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   58 |     4 |        0 | ZynqDesign_i/clk_wiz_0/inst/clk_out1  |
-| BUFGCTRL    | BUFHCE_X0Y21 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   69 |     8 |        0 | ZynqDesign_i/ethernetlite_0/U0/C      |
-| BUFG        | BUFHCE_X0Y23 |   no  |         0 |        0 |       0 |         8 |       0 |       0 | 1132 |    60 |        0 | ZynqDesign_i/ps7/inst/FCLK_CLK0       |
+| BUFGCTRL    | BUFHCE_X0Y21 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   58 |     8 |        0 | ZynqDesign_i/ethernetlite_0/U0/C      |
+| BUFG        | BUFHCE_X0Y23 |   no  |         0 |        0 |       0 |         8 |       0 |       0 | 1077 |    59 |        0 | ZynqDesign_i/ps7/inst/FCLK_CLK0       |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+---------------------------------------+
 
 
@@ -151,8 +152,9 @@ Table of Contents
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------------+
 | Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |             Clock Net Name            |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------------+
-| BUFG        | BUFHCE_X1Y20 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  38 |     0 |        0 | ZynqDesign_i/ethernetlite_0/U0/O0_out |
-| BUFG        | BUFHCE_X1Y21 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  68 |     0 |        0 | ZynqDesign_i/ps7/inst/FCLK_CLK0       |
+| BUFGCTRL    | BUFHCE_X1Y20 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  11 |     0 |        0 | ZynqDesign_i/ethernetlite_0/U0/C      |
+| BUFG        | BUFHCE_X1Y21 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  37 |     0 |        0 | ZynqDesign_i/ethernetlite_0/U0/O0_out |
+| BUFG        | BUFHCE_X1Y22 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  47 |     0 |        0 | ZynqDesign_i/ps7/inst/FCLK_CLK0       |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------------+
 
 
@@ -162,7 +164,17 @@ Table of Contents
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------+
 | Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |          Clock Net Name         |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------+
-| BUFG        | BUFHCE_X0Y32 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 233 |    22 |        0 | ZynqDesign_i/ps7/inst/FCLK_CLK0 |
+| BUFG        | BUFHCE_X0Y32 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 298 |    23 |        0 | ZynqDesign_i/ps7/inst/FCLK_CLK0 |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------+
+
+
+13. Net wise resources used in clock region X1Y2
+------------------------------------------------
+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |          Clock Net Name         |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------+
+| BUFG        | BUFHCE_X1Y32 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  10 |     0 |        0 | ZynqDesign_i/ps7/inst/FCLK_CLK0 |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------+
 
 
@@ -204,7 +216,7 @@ resize_pblock [get_pblocks {CLKAG_ZynqDesign_i/clk_wiz_0/inst/clk_out1}] -add {C
 #startgroup
 create_pblock {CLKAG_ZynqDesign_i/ethernetlite_0/U0/C}
 add_cells_to_pblock [get_pblocks  {CLKAG_ZynqDesign_i/ethernetlite_0/U0/C}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ZynqDesign_i/ethernetlite_0/U0/C"}]]]
-resize_pblock [get_pblocks {CLKAG_ZynqDesign_i/ethernetlite_0/U0/C}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+resize_pblock [get_pblocks {CLKAG_ZynqDesign_i/ethernetlite_0/U0/C}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
 #endgroup
 
 # Clock net "ZynqDesign_i/ethernetlite_0/U0/O0_out" driven by instance "ZynqDesign_i/ethernetlite_0/U0/LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX" located at site "BUFGCTRL_X0Y2"
@@ -214,7 +226,7 @@ add_cells_to_pblock [get_pblocks  {CLKAG_ZynqDesign_i/ethernetlite_0/U0/O0_out}]
 resize_pblock [get_pblocks {CLKAG_ZynqDesign_i/ethernetlite_0/U0/O0_out}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
 #endgroup
 
-# Clock net "ZynqDesign_i/mii_to_rmii_0/U0/rmii2mac_tx_clk" driven by instance "ZynqDesign_i/mii_to_rmii_0/U0/rmii2mac_tx_clk_reg" located at site "SLICE_X44Y75"
+# Clock net "ZynqDesign_i/mii_to_rmii_0/U0/rmii2mac_tx_clk" driven by instance "ZynqDesign_i/mii_to_rmii_0/U0/rmii2mac_tx_clk_reg" located at site "SLICE_X46Y78"
 #startgroup
 create_pblock {CLKAG_ZynqDesign_i/mii_to_rmii_0/U0/rmii2mac_tx_clk}
 add_cells_to_pblock [get_pblocks  {CLKAG_ZynqDesign_i/mii_to_rmii_0/U0/rmii2mac_tx_clk}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=ZynqDesign_i/ethernetlite_0/U0/LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_MUX && NAME!=ZynqDesign_i/ethernetlite_0/U0/LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ZynqDesign_i/mii_to_rmii_0/U0/rmii2mac_tx_clk"}]]]
@@ -225,5 +237,5 @@ resize_pblock [get_pblocks {CLKAG_ZynqDesign_i/mii_to_rmii_0/U0/rmii2mac_tx_clk}
 #startgroup
 create_pblock {CLKAG_ZynqDesign_i/ps7/inst/FCLK_CLK0}
 add_cells_to_pblock [get_pblocks  {CLKAG_ZynqDesign_i/ps7/inst/FCLK_CLK0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ZynqDesign_i/ps7/inst/FCLK_CLK0"}]]]
-resize_pblock [get_pblocks {CLKAG_ZynqDesign_i/ps7/inst/FCLK_CLK0}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+resize_pblock [get_pblocks {CLKAG_ZynqDesign_i/ps7/inst/FCLK_CLK0}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
 #endgroup

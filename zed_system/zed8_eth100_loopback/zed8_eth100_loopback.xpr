@@ -18,7 +18,7 @@
     <Option Name="BoardPart" Val="em.avnet.com:zed:part0:1.3"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../../etherlink-hdl/ip_export"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../fpga/ip_export"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
     <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
     <Option Name="IPUserFilesDir" Val="$PPRDIR/zed8_eth100_loopback.ip_user_files"/>
@@ -36,24 +36,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="ZynqDesign.bd" FileRelPathName="ip/ZynqDesign_axi_ethernetlite_0_0/ZynqDesign_axi_ethernetlite_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ZynqDesign.bd" FileRelPathName="ip/ZynqDesign_axi_gpio_0_2/ZynqDesign_axi_gpio_0_2.xci"/>
-        <CompFileExtendedInfo CompFileName="ZynqDesign.bd" FileRelPathName="ip/ZynqDesign_xbar_0/ZynqDesign_xbar_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ZynqDesign.bd" FileRelPathName="ip/ZynqDesign_clk_wiz_0_0/ZynqDesign_clk_wiz_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ZynqDesign.bd" FileRelPathName="ip/ZynqDesign_eth100_loopback_rxtx_0_0/ZynqDesign_eth100_loopback_rxtx_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ZynqDesign.bd" FileRelPathName="ip/ZynqDesign_xlconstant_0_0/ZynqDesign_xlconstant_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ZynqDesign.bd" FileRelPathName="ip/ZynqDesign_mii_to_rmii_0_0/ZynqDesign_mii_to_rmii_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ZynqDesign.bd" FileRelPathName="ip/ZynqDesign_axi_gpio_0_1/ZynqDesign_axi_gpio_0_1.xci"/>
-        <CompFileExtendedInfo CompFileName="ZynqDesign.bd" FileRelPathName="ip/ZynqDesign_processing_system7_0_0/ZynqDesign_processing_system7_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ZynqDesign.bd" FileRelPathName="ip/ZynqDesign_axi_gpio_0_0/ZynqDesign_axi_gpio_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ZynqDesign.bd" FileRelPathName="ip/ZynqDesign_processing_system7_0_axi_periph_0/ZynqDesign_processing_system7_0_axi_periph_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ZynqDesign.bd" FileRelPathName="ip/ZynqDesign_rst_processing_system7_0_100M_0/ZynqDesign_rst_processing_system7_0_100M_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ZynqDesign.bd" FileRelPathName="hdl/ZynqDesign.hwdef"/>
-        <CompFileExtendedInfo CompFileName="ZynqDesign.bd" FileRelPathName="ip/ZynqDesign_auto_pc_0/ZynqDesign_auto_pc_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ZynqDesign.bd" FileRelPathName="ZynqDesign_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="ZynqDesign.bd" FileRelPathName="hdl/ZynqDesign.v"/>
-        <CompFileExtendedInfo CompFileName="ZynqDesign.bd" FileRelPathName="hw_handoff/ZynqDesign.hwh"/>
-        <CompFileExtendedInfo CompFileName="ZynqDesign.bd" FileRelPathName="hw_handoff/ZynqDesign_bd.tcl"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/ZynqDesign/hdl/ZynqDesign_wrapper.v">
         <FileInfo>

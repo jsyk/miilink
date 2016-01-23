@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Tue Jan 19 19:22:34 2016">
+<application name="pa" timeStamp="Fri Jan 22 23:51:00 2016">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="a3d041d94dce4a0b89490f202fbda8b0" type="ProjectID"/>
-<property name="ProjectIteration" value="40" type="ProjectIteration"/>
+<property name="ProjectIteration" value="41" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -18,14 +18,14 @@ This means code written to parse this file will need to be revisited each subseq
 </item>
 <item name="Java Command Handlers">
 <property name="NewProject" value="2" type="JavaHandler"/>
-<property name="OpenProject" value="2" type="JavaHandler"/>
+<property name="OpenProject" value="3" type="JavaHandler"/>
 <property name="RunImplementation" value="0" type="JavaHandler"/>
 <property name="RunSynthesis" value="0" type="JavaHandler"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="32" type="GuiMode"/>
+<property name="GuiMode" value="34" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="25" type="TclMode"/>
+<property name="TclMode" value="27" type="TclMode"/>
 </item>
 </section>
 </application>

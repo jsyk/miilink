@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
-| Date         : Fri Jan  8 22:45:02 2016
+| Date         : Wed Jan 20 22:26:31 2016
 | Host         : megalit.local running 64-bit Fedora release 22 (Twenty Two)
 | Command      : report_io -file ZynqDesign_wrapper_io_placed.rpt
 | Design       : ZynqDesign_wrapper
@@ -23,7 +23,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           159 |
+|           160 |
 +---------------+
 
 
@@ -477,7 +477,7 @@ Table of Contents
 | W2         | DDR_dqs_n[3]        |            | PS_DDR_DQS_N3_502       | BIDIR       | DIFF_SSTL15_T_DCI |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |          |      | SPLIT            |
 | W3         | DDR_dq[30]          |            | PS_DDR_DQ30_502         | BIDIR       | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |          |      | SPLIT            |
 | W4         |                     | High Range | VCCO_13                 | VCCO        |                   |      13 |            |      |                     |                      |    3.30 |            |           |          |      |                  |
-| W5         |                     | High Range | IO_L24N_T3_13           | User IO     |                   |      13 |            |      |                     |                      |         |            |           |          |      |                  |
+| W5         | frmwrk              | High Range | IO_L24N_T3_13           | OUTPUT      | LVCMOS33          |      13 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
 | W6         |                     | High Range | IO_L24P_T3_13           | User IO     |                   |      13 |            |      |                     |                      |         |            |           |          |      |                  |
 | W7         |                     | High Range | IO_L23N_T3_13           | User IO     |                   |      13 |            |      |                     |                      |         |            |           |          |      |                  |
 | W8         |                     | High Range | IO_L2N_T0_13            | User IO     |                   |      13 |            |      |                     |                      |         |            |           |          |      |                  |

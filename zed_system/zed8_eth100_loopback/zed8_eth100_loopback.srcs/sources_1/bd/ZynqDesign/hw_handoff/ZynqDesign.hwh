@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Jan  8 22:38:29 2016" VIVADOVERSION="2015.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Jan 20 22:19:20 2016" VIVADOVERSION="2015.3">
 
   <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:zed:part0:1.3" DEVICE="7z020" NAME="ZynqDesign" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
@@ -52,6 +52,11 @@
     <PORT DIR="I" LEFT="1" NAME="rmii_rxd" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_rmii_rxd">
       <CONNECTIONS>
         <CONNECTION INSTANCE="eth100_loopback_rxtx_0" PORT="rmii_rxdt"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="frmwrk" SIGIS="data" SIGNAME="eth100_loopback_rxtx_0_frame_in_work">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="eth100_loopback_rxtx_0" PORT="frame_in_work"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -612,7 +617,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE FULLNAME="/eth100_loopback_rxtx_0" HWVERSION="2.0" INSTANCE="eth100_loopback_rxtx_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="eth100_loopback_rxtx" VLNV="jsykora.info:user:eth100_loopback_rxtx:2.0">
+    <MODULE FULLNAME="/eth100_loopback_rxtx_0" HWVERSION="3.0" INSTANCE="eth100_loopback_rxtx_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="eth100_loopback_rxtx" VLNV="jsykora.info:user:eth100_loopback_rxtx:3.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="FRBUF_MEM_ADDR_W" VALUE="9"/>
@@ -658,6 +663,11 @@
         <PORT DIR="I" NAME="aresetn" SIGIS="rst" SIGNAME="rst_ps7_100M_peripheral_aresetn">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rst_ps7_100M" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="frame_in_work" SIGIS="undef" SIGNAME="eth100_loopback_rxtx_0_frame_in_work">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="frmwrk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="5" NAME="status_leds_o" RIGHT="0" SIGIS="undef"/>

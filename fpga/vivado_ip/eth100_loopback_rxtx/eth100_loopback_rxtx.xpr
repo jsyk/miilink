@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="10" Path="/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/vivado_ip/eth100_loopback_rxtx/eth100_loopback_rxtx.xpr">
+<Project Version="7" Minor="10" Path="/home/jara/ownCloud-pluto/elektronika/miilink/fpga/vivado_ip/eth100_loopback_rxtx/eth100_loopback_rxtx.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="f022c1a818e84be49dd1ef11e305179c"/>
@@ -19,6 +19,7 @@
     <Option Name="BoardPart" Val="em.avnet.com:zed:part0:1.3"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../ip_export/eth100_loopback_v3"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../ip_export/eth100_loopback_v2"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../ip_export/eth100_loopback_v1"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>

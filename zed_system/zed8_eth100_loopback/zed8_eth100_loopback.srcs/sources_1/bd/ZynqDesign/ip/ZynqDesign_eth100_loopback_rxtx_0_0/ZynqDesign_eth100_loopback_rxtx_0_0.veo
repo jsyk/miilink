@@ -46,7 +46,7 @@
 // 
 // DO NOT MODIFY THIS FILE.
 
-// IP VLNV: jsykora.info:user:eth100_loopback_rxtx:2.0
+// IP VLNV: jsykora.info:user:eth100_loopback_rxtx:3.0
 // IP Revision: 1
 
 // The following must be inserted into your Verilog file for this
@@ -62,6 +62,7 @@ ZynqDesign_eth100_loopback_rxtx_0_0 your_instance_name (
   .rmii_txdt(rmii_txdt),          // output wire [1 : 0] rmii_txdt
   .clk(clk),                      // input wire clk
   .aresetn(aresetn),              // input wire aresetn
+  .frame_in_work(frame_in_work),  // output wire frame_in_work
   .status_leds_o(status_leds_o)  // output wire [5 : 0] status_leds_o
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------

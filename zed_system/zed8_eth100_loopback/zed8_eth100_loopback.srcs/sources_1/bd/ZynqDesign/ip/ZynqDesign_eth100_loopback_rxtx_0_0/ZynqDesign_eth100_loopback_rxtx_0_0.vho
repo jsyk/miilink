@@ -46,7 +46,7 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: jsykora.info:user:eth100_loopback_rxtx:2.0
+-- IP VLNV: jsykora.info:user:eth100_loopback_rxtx:3.0
 -- IP Revision: 1
 
 -- The following code must appear in the VHDL architecture header.
@@ -61,6 +61,7 @@ COMPONENT ZynqDesign_eth100_loopback_rxtx_0_0
     rmii_txdt : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
     clk : IN STD_LOGIC;
     aresetn : IN STD_LOGIC;
+    frame_in_work : OUT STD_LOGIC;
     status_leds_o : OUT STD_LOGIC_VECTOR(5 DOWNTO 0)
   );
 END COMPONENT;
@@ -79,6 +80,7 @@ your_instance_name : ZynqDesign_eth100_loopback_rxtx_0_0
     rmii_txdt => rmii_txdt,
     clk => clk,
     aresetn => aresetn,
+    frame_in_work => frame_in_work,
     status_leds_o => status_leds_o
   );
 -- INST_TAG_END ------ End INSTANTIATION Template ---------

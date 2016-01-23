@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD=/home/jara/ownCloud-pluto/elektronika/etherlink-hdl/vivado_ip/eth100_loopback_rxtx/eth100_loopback_rxtx.runs/synth_1
+HD_PWD=/home/jara/ownCloud-pluto/elektronika/miilink/fpga/vivado_ip/eth100_loopback_rxtx/eth100_loopback_rxtx.runs/synth_1
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -1,45 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1452289109">
-  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
-  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
-  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
-  <File Type="PA-TCL" Name="ZynqDesign_wrapper.tcl"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ZynqDesign_wrapper_timing_summary_postroute_physopted.pb"/>
-  <File Type="INIT-TIMING" Name="ZynqDesign_wrapper_timing_summary_init.rpt"/>
-  <File Type="OPT-DCP" Name="ZynqDesign_wrapper_opt.dcp"/>
-  <File Type="OPT-DRC" Name="ZynqDesign_wrapper_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="ZynqDesign_wrapper.hwdef"/>
-  <File Type="OPT-TIMING" Name="ZynqDesign_wrapper_timing_summary_opted.rpt"/>
-  <File Type="PWROPT-DCP" Name="ZynqDesign_wrapper_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="ZynqDesign_wrapper_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="ZynqDesign_wrapper_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="ZynqDesign_wrapper_placed.dcp"/>
-  <File Type="PLACE-IO" Name="ZynqDesign_wrapper_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="ZynqDesign_wrapper_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="ZynqDesign_wrapper_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="ZynqDesign_wrapper_utilization_placed.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ZynqDesign_wrapper_timing_summary_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="ZynqDesign_wrapper.bit"/>
-  <File Type="ROUTE-TIMING-RPX" Name="ZynqDesign_wrapper_timing_summary_routed.rpx"/>
-  <File Type="BG-BIN" Name="ZynqDesign_wrapper.bin"/>
-  <File Type="BITSTR-MSK" Name="ZynqDesign_wrapper.msk"/>
-  <File Type="ROUTE-CLK" Name="ZynqDesign_wrapper_clock_utilization_routed.rpt"/>
-  <File Type="BG-BGN" Name="ZynqDesign_wrapper.bgn"/>
-  <File Type="BITSTR-RBT" Name="ZynqDesign_wrapper.rbt"/>
-  <File Type="BITSTR-NKY" Name="ZynqDesign_wrapper.nky"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="ZynqDesign_wrapper_postplace_pwropt.dcp"/>
-  <File Type="BITSTR-BMM" Name="ZynqDesign_wrapper_bd.bmm"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ZynqDesign_wrapper_timing_summary_postroute_physopted.rpx"/>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1453324760">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="RDI-RDI" Name="ZynqDesign_wrapper.vdi"/>
-  <File Type="PHYSOPT-TIMING" Name="ZynqDesign_wrapper_timing_summary_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ZynqDesign_wrapper_postroute_physopt.dcp"/>
   <File Type="BG-DRC" Name="ZynqDesign_wrapper.drc"/>
-  <File Type="ROUTE-SIMILARITY" Name="ZynqDesign_wrapper_incremental_reuse_routed.rpt"/>
-  <File Type="BITSTR-MMI" Name="ZynqDesign_wrapper.mmi"/>
-  <File Type="PHYSOPT-DCP" Name="ZynqDesign_wrapper_physopt.dcp"/>
+  <File Type="BG-BGN" Name="ZynqDesign_wrapper.bgn"/>
   <File Type="BITSTR-SYSDEF" Name="ZynqDesign_wrapper.sysdef"/>
-  <File Type="PHYSOPT-DRC" Name="ZynqDesign_wrapper_drc_physopted.rpt"/>
+  <File Type="BITSTR-MMI" Name="ZynqDesign_wrapper.mmi"/>
+  <File Type="BITSTR-BMM" Name="ZynqDesign_wrapper_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="ZynqDesign_wrapper.nky"/>
+  <File Type="BITSTR-RBT" Name="ZynqDesign_wrapper.rbt"/>
+  <File Type="BITSTR-MSK" Name="ZynqDesign_wrapper.msk"/>
+  <File Type="BG-BIN" Name="ZynqDesign_wrapper.bin"/>
+  <File Type="BG-BIT" Name="ZynqDesign_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ZynqDesign_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ZynqDesign_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ZynqDesign_wrapper_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="ZynqDesign_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="ZynqDesign_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="ZynqDesign_wrapper_timing_summary_routed.rpx"/>
   <File Type="ROUTE-TIMING-PB" Name="ZynqDesign_wrapper_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="ZynqDesign_wrapper_timing_summary_routed.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="ZynqDesign_wrapper_route_status.pb"/>
@@ -49,11 +27,33 @@
   <File Type="ROUTE-DRC-PB" Name="ZynqDesign_wrapper_drc_routed.pb"/>
   <File Type="ROUTE-DRC" Name="ZynqDesign_wrapper_drc_routed.rpt"/>
   <File Type="ROUTE-DCP" Name="ZynqDesign_wrapper_routed.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="ZynqDesign_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="ZynqDesign_wrapper_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="ZynqDesign_wrapper_physopt.dcp"/>
   <File Type="POSTPLACE-PWROPT-TIMING" Name="ZynqDesign_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ZynqDesign_wrapper_postplace_pwropt.dcp"/>
   <File Type="PLACE-TIMING" Name="ZynqDesign_wrapper_timing_summary_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="ZynqDesign_wrapper_incremental_reuse_pre_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="ZynqDesign_wrapper_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-CTRL" Name="ZynqDesign_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="ZynqDesign_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="ZynqDesign_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="ZynqDesign_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="ZynqDesign_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="ZynqDesign_wrapper_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="ZynqDesign_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="ZynqDesign_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="ZynqDesign_wrapper_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="ZynqDesign_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="ZynqDesign_wrapper.hwdef"/>
+  <File Type="OPT-DRC" Name="ZynqDesign_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="ZynqDesign_wrapper_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="ZynqDesign_wrapper_timing_summary_init.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ZynqDesign_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="PA-TCL" Name="ZynqDesign_wrapper.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/ZynqDesign/ZynqDesign.bd">

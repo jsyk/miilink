@@ -1,6 +1,27 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
+| Date         : Tue Jan 19 19:31:35 2016
+| Host         : megalit.local running 64-bit Fedora release 22 (Twenty Two)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ZynqDesign_eth100_link_tx_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of ZynqDesign_eth100_link_tx_0_0 (jsykora.info:user:eth100_link_tx:3.0 (Rev. 1)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
 | Date         : Fri Dec 25 11:46:59 2015
 | Host         : megalit.local running 64-bit Fedora release 22 (Twenty Two)
 | Command      : upgrade_ip
